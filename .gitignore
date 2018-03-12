@@ -44,3 +44,5 @@ themes/thestarfish/node_modules/*
 # ================== #
 themes/thestarfish/gulpfile.js
 themes/thestarfish/build/*
+
+package-lock.json
