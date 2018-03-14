@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme.
+ * The header for the Starfish theme.
  *
- * @package RED_Starter_Theme
+ * @package Starfish_Theme
  */
 
 ?><!DOCTYPE html>
