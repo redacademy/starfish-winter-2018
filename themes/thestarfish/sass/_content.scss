@@ -47,3 +47,21 @@
 .bypostauthor {
 	display: block;
 }
+
+
+//Logo 
+
+.logo {
+	height: 50px;
+}
+
+#site-navigation {
+	display: flex;
+	flex-direction: column;
+	background: $color__main-brand;
+	.menu{
+		display: flex;
+		flex-direction: column;
+	}
+
+}

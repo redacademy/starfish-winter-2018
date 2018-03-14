@@ -602,6 +602,27 @@ a {
 .bypostauthor {
   display: block; }
 
+.logo {
+  height: 50px; }
+
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #145B51; }
+  #site-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -666,3 +687,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: #145B51;
+  height: 100px; }
