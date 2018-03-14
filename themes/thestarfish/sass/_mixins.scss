@@ -1,4 +1,12 @@
 // Rem output with px fallback
+$desktop: 600px;
+
+@mixin desktop {
+	@media (min-width: $desktop){
+		@content;
+	}
+}
+
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
