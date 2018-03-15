@@ -1,4 +1,10 @@
 .site-footer{
     background: $color__main-brand;
-    height:100px;
+    height:350px;
+    width:100%;
+    .site-info{
+        color:#fff;
+        width: 90%;
+        margin:auto;
+    }
 }

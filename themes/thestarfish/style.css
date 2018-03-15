@@ -608,10 +608,6 @@ a {
 .bypostauthor {
   display: block; }
 
-body {
-  width: 90%;
-  margin: auto; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -678,18 +674,27 @@ object {
 /* Front page */
 .site-footer {
   background: #145B51;
-  height: 100px; }
+  height: 350px;
+  width: 100%; }
+  .site-footer .site-info {
+    color: #fff;
+    width: 90%;
+    margin: auto; }
 
 .site-header {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
+  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .site-header .logo {
-    height: 60px; }
+  .site-header .site-logo {
+    width: 40%; }
+    .site-header .site-logo .logo {
+      height: 60px; }
   .site-header .fa-bars,
   .site-header .btn-close {
     font-size: 2rem;
@@ -751,8 +756,7 @@ object {
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%); }
           #site-navigation .menu-main-navigation-container .menu li {
-            -ms-flex-preferred-size: 19%;
-                flex-basis: 19%; } }
+            margin: auto; } }
   #site-navigation .nav-content {
     padding: 20px; }
     @media (min-width: 600px) {

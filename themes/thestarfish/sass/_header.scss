@@ -3,9 +3,14 @@
 .site-header{
     padding-top:1rem;
     display:flex;
+    width:90%;
+	margin:auto;
     justify-content: space-between;
-    .logo {
-        height: 60px;
+    .site-logo{
+    width:40%;
+        .logo {
+            height: 60px;
+        }
     }
     .fa-bars,
     .btn-close{
@@ -49,7 +54,7 @@
                 width: 100%;
                 transform: translateY(-50%); 
                 li{
-                    flex-basis: 19%;
+                    margin:auto;
                 }
             }
         }
