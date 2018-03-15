@@ -416,11 +416,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: grey; }
   a:visited {
-    color: purple; }
+    color: grey; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: grey; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -602,6 +602,10 @@ a {
 .bypostauthor {
   display: block; }
 
+body {
+  width: 90%;
+  margin: auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -670,8 +674,18 @@ object {
   background: #145B51;
   height: 100px; }
 
-.logo {
-  height: 60px; }
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .site-header .logo {
+    height: 60px; }
+  .site-header .fa-bars,
+  .site-header .btn-close {
+    font-size: 2rem; }
 
 #site-navigation {
   height: 100%;
@@ -698,3 +712,19 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    #site-navigation .menu a {
+      color: #fff; }
+  #site-navigation .nav-content {
+    padding: 20px; }
+
+.nav-donate {
+  background-color: #fff;
+  color: #145B51;
+  width: 150px;
+  height: 50px;
+  text-align: center; }
+  .nav-donate p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
