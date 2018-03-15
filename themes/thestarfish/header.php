@@ -28,9 +28,10 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>					
 				</div><!-- .site-branding -->
 
-				<a href="#">
-					<i class="fas fa-bars" id="menu-open"></i>
+				<a href="#" id="menu-open">
+					<i class="fas fa-bars"></i>
 				</a>
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<a href="#" class="btn-close" id="menu-close">&times;</a>

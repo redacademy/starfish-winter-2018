@@ -1,0 +1,23 @@
+//Logo 
+
+.logo {
+	height: 60px;
+}
+
+#site-navigation {
+    height:100%;
+    position: fixed;
+    top:0;
+    right:0;
+    width:0;
+    z-index:1;
+    display: flex;
+    transition: 0.5s;
+	flex-direction: column;
+	background: $color__main-brand;
+	.menu{
+		display: flex;
+		flex-direction: column;
+	}
+
+}

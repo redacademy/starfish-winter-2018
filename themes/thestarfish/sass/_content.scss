@@ -49,19 +49,3 @@
 }
 
 
-//Logo 
-
-.logo {
-	height: 60px;
-}
-
-#site-navigation {
-	display: flex;
-	flex-direction: column;
-	background: $color__main-brand;
-	.menu{
-		display: flex;
-		flex-direction: column;
-	}
-
-}

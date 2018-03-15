@@ -602,27 +602,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.logo {
-  height: 60px; }
-
-#site-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #145B51; }
-  #site-navigation .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -690,3 +669,32 @@ object {
 .site-footer {
   background: #145B51;
   height: 100px; }
+
+.logo {
+  height: 60px; }
+
+#site-navigation {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #145B51; }
+  #site-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
