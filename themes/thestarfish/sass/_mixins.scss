@@ -18,3 +18,9 @@ $desktop: 600px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@media screen and (min-width: $desktop){
+	#site-navigation{
+		display: flex !important;
+	}
+}
