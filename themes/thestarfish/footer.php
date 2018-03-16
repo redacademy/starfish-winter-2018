@@ -22,7 +22,7 @@
 					<div class="footer-social">
 						<h3>Social Media</h3>
 						<i class="fab fa-twitter"></i>
-						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-facebook"></i>
 						<i class="fab fa-instagram"></i>
 						<i class="fab fa-youtube"></i>
 					</div>

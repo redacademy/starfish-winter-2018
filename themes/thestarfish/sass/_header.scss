@@ -87,3 +87,13 @@
 
 }
 
+//HEADER HERO BANNER SITE MAIN
+
+.site-main header{
+    height:90vh;
+    .entry-title{
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%); 
+    }
+}

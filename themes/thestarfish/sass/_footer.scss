@@ -1,3 +1,20 @@
+.donation-container{
+    background: lightblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:450px;
+    .content-donation{
+        width: 90%;
+        margin: auto;
+        .content-donation-info{
+            @include desktop{
+                width: 400px;
+            }
+        }
+    }
+}
+
+
 .site-footer{
     background: $color__main-brand;
     height:350px;
@@ -14,6 +31,12 @@
                 font-size: 2rem;
                 line-height: 20px;
             }
+        }
+        @include desktop {
+        flex-direction:row;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
         }
     }
 }
