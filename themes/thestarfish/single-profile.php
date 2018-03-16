@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: single-profile
  *
  * @package starfish_Theme
  */
