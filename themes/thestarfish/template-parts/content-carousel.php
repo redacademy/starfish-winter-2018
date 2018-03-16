@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying carousel.
  *
  * @package Starfish_Theme
  */

@@ -1,5 +1,9 @@
 <?php
-/* Template Name: Archive-Top25  */
+/**
+ * The template for displaying Archive Top25 Page.
+ *
+ * @package starfish_Theme
+ */
 
 get_header(); ?>
 	<div id="primary" class="content-area">
