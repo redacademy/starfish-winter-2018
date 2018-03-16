@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Submit Page.
+ * Template Name: Submit Page
  *
  * @package starfish_Theme
  */

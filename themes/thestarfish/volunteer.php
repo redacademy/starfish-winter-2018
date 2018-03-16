@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Volunteer Page.
+ * Template Name: Volunteer Page
  *
  * @package starfish_Theme
  */

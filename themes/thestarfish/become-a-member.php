@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Become A Member Page.
+ * Template Name: Become a Member
  *
  * @package starfish_Theme
  */

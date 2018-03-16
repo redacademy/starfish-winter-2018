@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Archive Top25 Page.
+ * Template Name: Top 25
  *
  * @package starfish_Theme
  */

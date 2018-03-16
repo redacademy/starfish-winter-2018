@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Team Page.
+ * Template Name: Team Page
  *
  * @package starfish_Theme
  */

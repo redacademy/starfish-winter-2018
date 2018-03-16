@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Workshop Page.
+ * Template Name: Workshop Page
  *
  * @package starfish_Theme
  */
