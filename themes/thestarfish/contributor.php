@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Contributor Page.
+ * Template Name: Contributor Page
  *
  * @package starfish_Theme
  */
