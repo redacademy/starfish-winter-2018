@@ -37,7 +37,22 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="nav-content">
 						<a href="#" class="btn-close" id="menu-close">&times;</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );  ?>
+
+
+						<?php 
+						// wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+						  ?>
+						  <?php $walker = new Description_Walker; ?>
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary',
+									'menu_class'     => 'nav-menu',
+									'walker'         => $walker
+								)
+							);
+							?>
+
 						<div class="nav-donate">
 							<p>Donate</p>
 						</div>
