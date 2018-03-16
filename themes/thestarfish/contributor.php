@@ -1,5 +1,9 @@
 <?php
-/* Template Name: Contributor  */
+/**
+ * The template for displaying Contributor Page.
+ *
+ * @package starfish_Theme
+ */
 
 get_header(); ?>
 	<div id="primary" class="content-area">

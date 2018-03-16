@@ -1,5 +1,9 @@
 <?php
-/* Template Name: Team  */
+/**
+ * The template for displaying Team Page.
+ *
+ * @package starfish_Theme
+ */
 
 get_header(); ?>
 	<div id="primary" class="content-area">

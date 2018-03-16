@@ -1,5 +1,9 @@
 <?php
-/* Template Name: Contact  */
+/**
+ * The template for displaying Contact Page.
+ *
+ * @package starfish_Theme
+ */
 
 get_header(); ?>
 	<div id="primary" class="content-area">
