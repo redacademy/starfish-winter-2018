@@ -78,3 +78,24 @@ class Description_Walker extends Walker_Nav_Menu {
 		);
 	}
 }
+
+function starfish_change_header(){
+	if(is_page_template('single-profile')){
+		return;
+	}
+
+	$img_header_url = CFS()->get('banner_image');
+	if(! $img_header_url){
+		return;
+	}
+	$custom_css = "
+	.entry-header {
+			background: url('{$img_header_url}') no-repeat center bottom;
+			background-size: 100%;
+			width: 100%;
+    		height: 100vh;
+			color: #fff;
+	}";
+wp_add_inline_style( 'starfish-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'starfish_change_header' );
