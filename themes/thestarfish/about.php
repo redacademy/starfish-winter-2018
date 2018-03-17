@@ -19,7 +19,7 @@ get_header(); ?>
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
+
                 </header><!-- .entry-header -->
 
                 <div class="entry-content">
@@ -49,12 +49,20 @@ get_header(); ?>
 							echo '</div>';
 						}
 					?>
-					<?php
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-							'after'  => '</div>',
-						) );
-					?>
+
+					<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+						<header class="content-box-header">
+							<h2>Meet The Team</h2>
+						</header><!-- .content-box-header -->
+
+						<div class="content-box-content">
+							<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>">Meet the team
+								<span class="screen-reader-text"><?php echo esc_html( 'Meet The Team' ); ?></span>
+							</a><!-- .content-box-button -->
+						</div><!-- .content-box-content -->
+					</section><!-- #post-## -->
+					
                 </div><!-- .entry-content -->
             </article><!-- #post-## -->
 

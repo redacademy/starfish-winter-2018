@@ -6,22 +6,17 @@
  */
 ?>
 
-<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section class="content-box">
 	
 	<header class="content-box-header">
-		<?php the_title( '<h1 class="content-box-title">', '</h1>' ); ?>
+		<h2></h2>
 	</header><!-- .content-box-header -->
 
 	<div class="content-box-content">
-		<?php the_content(); ?>
-		
-		<?php
-			
-		?>
-
-		<button class="content-box-button">
-			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-		</button><!-- .content-box-button -->
+		<!-- Content (description) for the box here -->
+		<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>"><!-- Name of the button here -->
+			<span class="screen-reader-text"><?php echo esc_html( 'NAME OF THE BUTTON HERE' ); ?></span>
+		</a><!-- .content-box-button -->
 
 	</div><!-- .content-box-content -->
 </section><!-- #post-## -->
