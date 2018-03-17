@@ -80,6 +80,7 @@ class Description_Walker extends Walker_Nav_Menu {
 }
 
 function starfish_change_header(){
+	//Shows banners in the header on every page except: profiles, ...
 	if(is_page_template('single-profile')){
 		return;
 	}
