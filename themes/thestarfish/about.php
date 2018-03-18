@@ -37,13 +37,18 @@ get_header(); ?>
 								echo '<h2>' . $carousel['about_carousel_title'] . '</h2>';
 								$carousel_cells = $carousel['about_carousel_cell'];
 								foreach($carousel_cells as $carousel_cell){
-									echo '<div class="carousel-cell-container">';
-									// wrap in carousel cell
-										echo '<img src="' . $carousel_cell['about_carousel_cell_image_primary'] . '" class="carousel-cell-image-primary"/>';
-										echo '<img src="' . $carousel_cell['about_carousel_cell_image_secondary'] . '" class="carousel-cell-image-secondary"/>';
+									// loop for each carousel cell
+									$single_img = empty($carousel_cell['about_carousel_cell_image_secondary']);
+									echo '<div class="carousel-cell-container' . ($single_img ? ' single' : ' double') . '">'; //if there is no secondary img -> add class single, otherwise -> double
+									//wrap in carousel cell with all the content and img
+										echo '<div class="carousel-cell-images' . ($single_img ? '' : ' carousel-double') . '">'; //if there is no secondary img -> add nothing, otherwise -> add class carousel-double
+											echo '<img src="' . $carousel_cell['about_carousel_cell_image_primary'] . '" class="carousel-cell-image-primary"/>';
+											if ($single_img == false) { //if there is secondary img -> show the secondary img on screen
+												echo '<img src="' . $carousel_cell['about_carousel_cell_image_secondary'] . '" class="carousel-cell-image-secondary"/>';
+											}
+										echo '</div>';
 										echo '<div class="carousel-cell-content">';
 											echo $carousel_cell['about_carousel_cell_content'];
-										d($carousel_cell);
 										echo '</div>';
 									echo '</div>';
 								}
