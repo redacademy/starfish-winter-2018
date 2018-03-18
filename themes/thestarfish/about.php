@@ -43,6 +43,7 @@ get_header(); ?>
 										echo '<img src="' . $carousel_cell['about_carousel_cell_image_secondary'] . '" class="carousel-cell-image-secondary"/>';
 										echo '<div class="carousel-cell-content">';
 											echo $carousel_cell['about_carousel_cell_content'];
+										d($carousel_cell);
 										echo '</div>';
 									echo '</div>';
 								}
@@ -61,6 +62,7 @@ get_header(); ?>
 								<span class="screen-reader-text"><?php echo esc_html( 'Meet The Team' ); ?></span>
 							</a><!-- .content-box-button -->
 						</div><!-- .content-box-content -->
+
 					</section><!-- #post-## -->
 					
                 </div><!-- .entry-content -->
