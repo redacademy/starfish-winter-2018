@@ -32,7 +32,6 @@
 					<a href="#" id="menu-open">
 						<i class="fas fa-bars"></i>
 					</a>
-
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<div class="nav-content">
 							<a href="#" class="btn-close" id="menu-close">&times;</a>
