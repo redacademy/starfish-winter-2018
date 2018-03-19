@@ -6,9 +6,9 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="submit-area">
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="submit-main" role="main">
 
 			<?php the_content(); ?>
 
