@@ -19,6 +19,17 @@
 						<h3>Stay in Touch</h3>
 						<p>Contact Us</p>
 					</div>
+
+					<div id="footer-sidebar" class="secondary">
+						<div id="footer-sidebar1">
+							<?php
+								if(is_active_sidebar('footer-sidebar-1')){
+								dynamic_sidebar('footer-sidebar-1');
+								}
+							?>
+						</div><!-- #footer-sidebar1 -->
+					</div><!-- #footer-sidebar -->
+
 					<div class="footer-social">
 						<h3>Social Media</h3>
 						<i class="fab fa-twitter"></i>
