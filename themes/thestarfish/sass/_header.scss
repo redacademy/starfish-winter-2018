@@ -1,6 +1,7 @@
 //Logo 
 
 .site-header{
+    position: absolute;
     padding-top:1rem;
     display:flex;
     width:90%;
@@ -56,6 +57,9 @@
                 li{
                     margin:auto;
                 }
+                a{
+                    color: #fff;
+                }
             }
         }
     }  
@@ -80,7 +84,7 @@
             }
             @include desktop {
                 background-color: $color__secondary-brand;
-                color: black;
+                color: #fff;
             }
         }
     }
@@ -90,9 +94,10 @@
 //HEADER HERO BANNER SITE MAIN
 
 .site-main header{
-    height:90vh;
+    height:100vh;
     background-position:25% 25%;  /* Sets reference point to scale from */
     background-size:cover;
+  
     .entry-title{
         top: 50%;
         position: relative;

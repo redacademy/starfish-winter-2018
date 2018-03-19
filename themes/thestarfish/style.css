@@ -850,6 +850,7 @@ object {
                 transform: translateY(-50%); } }
 
 .site-header {
+  position: absolute;
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,7 +925,9 @@ object {
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%); }
           #site-navigation .menu-main-navigation-container .nav-menu li {
-            margin: auto; } }
+            margin: auto; }
+          #site-navigation .menu-main-navigation-container .nav-menu a {
+            color: #fff; } }
   #site-navigation .nav-content {
     padding: 20px; }
     @media (min-width: 600px) {
@@ -951,10 +954,10 @@ object {
       @media (min-width: 600px) {
         #site-navigation .nav-content .nav-donate {
           background-color: #FF8271;
-          color: black; } }
+          color: #fff; } }
 
 .site-main header {
-  height: 90vh;
+  height: 100vh;
   background-position: 25% 25%;
   /* Sets reference point to scale from */
   background-size: cover; }
