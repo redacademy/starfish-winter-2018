@@ -100,6 +100,8 @@ function starfish_scripts() {
 
 	wp_enqueue_script('carousels', get_template_directory_uri() . '/build/js/carousels.min.js', array(), '20130115', true);
 
+	wp_enqueue_script('submit_form', get_template_directory_uri() . '/build/js/submit_form.min.js', array(), '20130115', true);
+
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.7/js/all.js' );
 	
 	wp_enqueue_script( 'starfish-get-flickity-cdn', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), true);
