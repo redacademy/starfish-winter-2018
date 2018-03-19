@@ -88,7 +88,11 @@ function starfish_scripts() {
 	// This is the ENQUEUE scripts for opening menu javascript file
 	wp_enqueue_script( 'open-side-menu', get_template_directory_uri() . '/build/js/open-side-menu.min.js', array(), '20130115', true);
 
+	wp_enqueue_script('carousels', get_template_directory_uri() . '/build/js/carousels.min.js', array(), '20130115', true);
+
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.7/js/all.js' );
+	
+	wp_enqueue_script( 'starfish-get-flickity-cdn', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), true);
 
 	wp_enqueue_script( 'starfish-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

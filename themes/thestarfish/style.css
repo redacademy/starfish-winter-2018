@@ -358,35 +358,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #145B51;
+  border-radius: 0;
+  background: transparent;
+  color: #145B51;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
+  padding: .6rem 1rem .4rem; }
+  button:hover, button:focus,
   input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
   input[type="button"]:focus,
-  input[type="reset"]:active,
+  input[type="reset"]:hover,
   input[type="reset"]:focus,
-  input[type="submit"]:active,
+  input[type="submit"]:hover,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #145B51;
+    background: #145B51;
+    color: #fff; }
 
 /* Fields */
 input[type="text"],
@@ -435,6 +424,34 @@ textarea {
     .btn-donate {
       width: 300px;
       margin: 0; } }
+
+/*Carousel Slider Buttons*/
+.flickity-button {
+  background: #145B51;
+  margin: 0 .5rem; }
+  .flickity-button:hover {
+    background: transparent; }
+    .flickity-button:hover .flickity-button-icon {
+      fill: #145B51; }
+  .flickity-button:disabled {
+    display: none; }
+
+.flickity-prev-next-button {
+  width: 48px;
+  height: 48px;
+  z-index: 300; }
+  .flickity-prev-next-button .flickity-button-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px; }
+  @media (min-width: 600px) {
+    .flickity-prev-next-button {
+      width: 60px;
+      height: 60px; }
+      .flickity-prev-next-button .flickity-button-icon {
+        fill: #fff;
+        width: 25px;
+        height: 25px; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -633,10 +650,10 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem; }
+  padding-bottom: 4rem; }
   @media (min-width: 600px) {
     .carousel-container {
-      margin-bottom: 6rem; } }
+      padding-bottom: 6rem; } }
 
 .single .carousel-cell-content, .double .carousel-cell-content {
   -webkit-box-ordinal-group: 2;
@@ -675,7 +692,15 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 100%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  counter-increment: carousel-cell; }
+  .carousel-cell-container .carousel-cell-image-primary {
+    width: 100%;
+    min-width: 312px;
+    position: inherit; }
   @media (min-width: 600px) {
     .carousel-cell-container {
       -webkit-box-orient: horizontal;

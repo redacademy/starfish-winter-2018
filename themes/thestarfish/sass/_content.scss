@@ -53,9 +53,9 @@
 .carousel-container {
 	width: 90%;
 	@include center-block;
-	margin-bottom: 4rem;
+	padding-bottom: 4rem;
 	@include desktop {
-		margin-bottom: 6rem;
+		padding-bottom: 6rem;
 	}
 }
 
@@ -91,6 +91,15 @@
 .carousel-cell-container {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	counter-increment: carousel-cell;
+	.carousel-cell-image-primary {
+		width: 100%;
+		min-width: 312px;
+		position: inherit;
+	}
 	@include desktop {
 		flex-direction: row;
 		.carousel-cell-content {
