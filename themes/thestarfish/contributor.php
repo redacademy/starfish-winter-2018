@@ -5,6 +5,7 @@
  * @package starfish_Theme
  */
 
+
 get_header(); ?>
 	<div id="primary" class="content-area">
 
@@ -23,7 +24,14 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+			<?php get_template_part( 'template-parts/content' ); ?>
+				
+				<?php echo $image = CFS()->get('volunteer_roles_image');?>
+ 				<?php echo '<img src="' . $image . '" />'; ?>
+				<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
+				<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
+
+				
 
 			<?php endwhile; ?>
 
@@ -37,5 +45,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_template_part( 'template-parts/content-donation', 'donation' ); ?>
 <?php get_footer(); ?>
