@@ -80,7 +80,7 @@
             }
             @include desktop {
                 background-color: $color__secondary-brand;
-                color: #fff;
+                color: black;
             }
         }
     }
@@ -91,6 +91,8 @@
 
 .site-main header{
     height:90vh;
+    background-position:25% 25%;  /* Sets reference point to scale from */
+    background-size:cover;
     .entry-title{
         top: 50%;
         position: relative;
