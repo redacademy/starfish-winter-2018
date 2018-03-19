@@ -25,7 +25,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content' ); ?>
 				
-				<?php echo $image = CFS()->get('volunteer_roles_image');?>
+				<?php $image = CFS()->get('volunteer_roles_image');?>
  				<?php echo '<img src="' . $image . '" />'; ?>
 				<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
 				<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
@@ -44,5 +44,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 <?php get_template_part( 'template-parts/content-donation', 'donation' ); ?>
 <?php get_footer(); ?>
