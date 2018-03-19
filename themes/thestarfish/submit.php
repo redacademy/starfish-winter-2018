@@ -5,14 +5,19 @@
  * @package starfish_Theme
  */
 
-get_header(); ?>
-	<div id="primary" class="submit-area">
-
+?>
+	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
 
-			<?php the_content(); ?>
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php get_template_part( 'template-parts/content' ); ?>
+				
+				<?php echo CFS()->get( 'submit_title' ); ?>
+				<?php echo CFS()->get( 'submit_form' ); ?>
+
+			<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>
