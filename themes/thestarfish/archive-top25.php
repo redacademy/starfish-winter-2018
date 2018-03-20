@@ -35,6 +35,39 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+
+<section class="editorial-team">
+		<?php
+			$args = array( 
+				'posts_per_page' => 25, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'nominees',
+			);
+			$myposts = get_posts( $args );
+			?>
+		<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : 
+		?>
+			<div class="editorial-container">
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    <li>
+        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+	</li>
+	</div>
+<?php endforeach;
+wp_reset_postdata();
+?>
+</section>
+
+
+
+
+
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

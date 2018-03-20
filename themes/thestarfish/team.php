@@ -39,25 +39,89 @@ get_header(); ?>
 
 
 
+<!-- EDITORIAL TEAM -->
 
-
-
+<section class="editorial-team">
 		<?php
-
-$args = array( 
-	'posts_per_page' => 8, 
-	'offset'=> 1, 
-	'post_type' => 'profile', 
-	'profile_type' => 'Judges',
-);
-$myposts = get_posts( $args );
-foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+			$args = array( 
+				'posts_per_page' => 8, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'editorial team',
+			);
+			$myposts = get_posts( $args );
+			?>
+		<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : 
+		?>
+			<div class="editorial-container">
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
     <li>
         <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-    </li>
+	</li>
+	</div>
 <?php endforeach;
 wp_reset_postdata();
 ?>
+</section>
+
+<!-- EXECUTIVE TEAM -->
+
+<section class="editorial-team">
+		<?php
+			$args = array( 
+				'posts_per_page' => 8, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'executive team',
+			);
+			$myposts = get_posts( $args );
+			?>
+		<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : 
+		?>
+			<div class="editorial-container">
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    <li>
+        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+	</li>
+	</div>
+<?php endforeach;
+wp_reset_postdata();
+?>
+</section>
+
+<!-- BOARD DIRECTORS -->
+
+<section class="editorial-team">
+		<?php
+			$args = array( 
+				'posts_per_page' => 8, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'board directors',
+			);
+			$myposts = get_posts( $args );
+			?>
+		<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : 
+		?>
+			<div class="editorial-container">
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    <li>
+        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+	</li>
+	</div>
+<?php endforeach;
+wp_reset_postdata();
+?>
+</section>
 
 <script>
     (function($){
@@ -68,6 +132,11 @@ wp_reset_postdata();
         });
     })(jQuery);
 </script>
+
+
+
+
+
 
 
 
