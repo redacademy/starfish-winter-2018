@@ -458,11 +458,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: grey; }
+  color: white; }
   a:visited {
-    color: grey; }
+    color: white; }
   a:hover, a:focus, a:active {
-    color: grey; }
+    color: #FF8271; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -743,6 +743,13 @@ a {
         top: 57%;
         left: 9%; } }
 
+.button::after {
+  content: ''; }
+
+.button.is-active::after {
+  content: '\f067';
+  font-family: fontAwesome; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -855,7 +862,7 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -899,7 +906,13 @@ object {
               justify-content: flex-end;
       position: relative;
       top: auto;
-      right: auto; } }
+      right: auto; }
+      #site-navigation .sub-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 400px;
+        background: lightblue; } }
   #site-navigation .menu-main-navigation-container {
     width: 100%; }
     #site-navigation .menu-main-navigation-container .nav-menu {

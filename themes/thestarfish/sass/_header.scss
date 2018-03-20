@@ -4,7 +4,7 @@
     position: absolute;
     padding-top:1rem;
     display:flex;
-    width:90%;
+    width:100%;
 	margin:auto;
     justify-content: space-between;
     .site-logo{
@@ -41,6 +41,11 @@
         position: relative;
         top:auto;
         right: auto;
+        .sub-menu{
+            display: flex;
+            width: 400px;
+            background: lightblue;
+        }
     }
     .menu-main-navigation-container{
         width:100%;

@@ -146,3 +146,20 @@
 		}
 	}
 }
+
+
+
+// todo remove this
+.button {
+	&::after {
+		content: '';
+	}
+	// jQuery $(this).toggleClass('is-active');
+	&.is-active {
+		&::after {
+			content: '\f067';
+			font-family: fontAwesome;
+
+		}
+	}
+}

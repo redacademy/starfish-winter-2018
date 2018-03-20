@@ -36,6 +36,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_footer(); ?>

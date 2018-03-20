@@ -36,6 +36,41 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+
+
+
+
+
+
+		<?php
+
+$args = array( 
+	'posts_per_page' => 8, 
+	'offset'=> 1, 
+	'post_type' => 'profile', 
+	'profile_type' => 'Judges',
+);
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+    <li>
+        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+    </li>
+<?php endforeach;
+wp_reset_postdata();
+?>
+
+<script>
+    (function($){
+        $('.profile-picture').on('click', function(evt){
+           evt.preventDefault();
+           let postId = $(this).attr('id');
+           alert(postId);
+        });
+    })(jQuery);
+</script>
+
+
+
 	</div><!-- #primary -->
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_footer(); ?>
