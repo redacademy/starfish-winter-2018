@@ -10,32 +10,26 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header class='entry-header'>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
-				</header>
-				
-			<?php endif; ?>
-
 			<?php /* Start the Loop */ ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<header class="entry-header" >
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-			<?php endwhile; ?>
+				</header><!-- .entry-header -->
 
-			<?php the_posts_navigation(); ?>
+				<div class="entry-content">
+					<?php the_content(); ?>
 
-		<?php else : ?>
+				</div><!-- .entry-content -->
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_footer(); ?>
