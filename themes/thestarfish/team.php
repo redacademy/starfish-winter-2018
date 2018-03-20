@@ -52,6 +52,9 @@ $args = array(
 );
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+<?php if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'large' ); ?>
+				<?php endif; ?>
     <li>
         <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
     </li>
