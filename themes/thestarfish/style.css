@@ -979,3 +979,8 @@ object {
     position: relative;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+
+.editorial-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
