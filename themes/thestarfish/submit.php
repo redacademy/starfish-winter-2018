@@ -4,7 +4,7 @@
  *
  * @package starfish_Theme
  */
-
+get_header();
 ?>
 	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
@@ -21,3 +21,5 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php get_footer(); ?>
