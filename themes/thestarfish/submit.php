@@ -4,7 +4,7 @@
  *
  * @package starfish_Theme
  */
-get_header();
+get_header(); //remember to hide header and footer; only hre for js//
 ?>
 	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
@@ -12,7 +12,7 @@ get_header();
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content' ); ?>
+		
 				
 				<?php echo CFS()->get( 'submit_title' ); ?>
 				<?php echo CFS()->get( 'submit_form' ); ?>
@@ -22,4 +22,4 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+	<?php get_footer(); ?> 
