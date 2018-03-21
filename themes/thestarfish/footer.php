@@ -11,15 +11,6 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<div class="footer-subscribe">
-						<h3>Subscribe</h3>
-						<p>Enter your email to get our newsletter</p>
-					</div>
-					<div class="footer-contact">
-						<h3>Stay in Touch</h3>
-						<p>Contact Us</p>
-					</div>
-
 					<div id="footer-sidebar" class="secondary">
 						<div id="footer-sidebar1">
 							<?php
@@ -30,15 +21,29 @@
 						</div><!-- #footer-sidebar1 -->
 					</div><!-- #footer-sidebar -->
 
+					<div class="footer-contact">
+						<h3>Stay in Touch</h3>
+						<p>Contact Us</p>
+					</div><!-- .footer-contact -->
+
 					<div class="footer-social">
 						<h3>Social Media</h3>
 						<i class="fab fa-twitter"></i>
 						<i class="fab fa-facebook"></i>
 						<i class="fab fa-instagram"></i>
 						<i class="fab fa-youtube"></i>
-					</div>
+					</div><!-- .footer-social -->
 
 				</div><!-- .site-info -->
+
+				<div class="site-copyright">
+					<div class="site-footer-logo">
+						<img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" class="logo" alt="Starfish Logo">
+					</div>
+					
+					<p>&copy; <?php echo date( 'Y' ); ?> The Starfish Environmental Society. Website by <a href="https://redacademy.com/" target="_blank">Red Academy</a></p>
+				</div><!-- .site-copyright -->
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
