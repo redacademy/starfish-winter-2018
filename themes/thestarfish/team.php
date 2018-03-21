@@ -44,7 +44,7 @@ get_header(); ?>
 <section class="editorial-team">
 		<?php
 			$args = array( 
-				'posts_per_page' => 8, 
+				'posts_per_page' => 12, 
 				'offset'=> 1, 
 				'post_type' => 'profile', 
 				'profile_type' => 'editorial team',
@@ -72,7 +72,7 @@ wp_reset_postdata();
 <section class="editorial-team">
 		<?php
 			$args = array( 
-				'posts_per_page' => 8, 
+				'posts_per_page' => 12, 
 				'offset'=> 1, 
 				'post_type' => 'profile', 
 				'profile_type' => 'executive team',
@@ -100,7 +100,7 @@ wp_reset_postdata();
 <section class="editorial-team">
 		<?php
 			$args = array( 
-				'posts_per_page' => 8, 
+				'posts_per_page' => 12, 
 				'offset'=> 1, 
 				'post_type' => 'profile', 
 				'profile_type' => 'board directors',

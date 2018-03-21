@@ -977,7 +977,36 @@ object {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
+.sf-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .editorial-team {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .editorial-team .editorial-container {
+    -webkit-box-flex: 25%;
+        -ms-flex-positive: 25%;
+            flex-grow: 25%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 25%; }

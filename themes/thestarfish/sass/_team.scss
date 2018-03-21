@@ -8,6 +8,17 @@
     background: rgba(white,0.9);
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.editorial-team{
+    display: flex;
+    flex-wrap: wrap;
+    .editorial-container{
+        flex-grow: 25%;
+        flex-wrap: wrap;
+        max-width: 25%;
+    }
 }
