@@ -240,14 +240,15 @@ input,
 select,
 textarea {
   color: #394442;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Poppins", sans-serif; }
 
 /* Copy */
 p {
