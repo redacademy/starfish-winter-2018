@@ -32,7 +32,7 @@ get_header(); ?>
 
 						foreach ( $carousels as $carousel ) {
 							
-							$single_img = empty($carousel['workshop_carousel_cell'][0]['carousel_cell_image_secondary']); //check if the first cell in the carousel contains one or two imgs
+							$single_img = empty($carousel['workshop_carousel_cell'][0]['carousel_cell_image_secondary']); //check if the first cell in the carousel contains one or two images
 
 							echo '<div class="carousel-container ' . ($single_img ? 'container-single' : 'container-double') . '">'; //if there is no secondary img -> add class container-single, otherwise -> add class container-double
 								//wrap in whole carousel
