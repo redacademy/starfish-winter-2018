@@ -9,68 +9,100 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+				
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			</header>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="entry-content">
+					<?php the_content(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+					<section class="front-page-carousel">
+						<?php
+							/**
+							* Set the Custom Field Suite Loops Working
+							*/
 
-			<?php endwhile; ?>
+							$carousels = CFS()->get( 'front_page_carousel' );
 
-			<?php the_posts_navigation(); ?>
+							foreach ( $carousels as $carousel ) {
+								
+								$single_img = empty($carousel['front_page_carousel_cell']);
 
-		<?php else : ?>
+								echo '<div class="carousel-container container-single">';
+									//wrap in whole carousel
+									$carousel_cells = $carousel['front_page_carousel_cell'];
+									foreach($carousel_cells as $carousel_cell){
+										// loop for each carousel cell
+										echo '<div class="carousel-cell-container single">';
+											echo '<div class="carousel-cell-images" />';
+												echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image" />';
+											echo '</div>';
+											echo '<div class="carousel-cell-content">';
+												echo '<h2>' . $carousel['carousel_title'] . '</h2>';
+												echo $carousel_cell['carousel_cell_content'];
+											echo '</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+							}
+						?>
+					</section><!-- .front-page-carousel -->
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<section class="front-page-workshops">
 
-		<?php endif; ?>
-		<section class="front-page-carousel">
-		<?php
-						/**
-						* Set the Custom Field Suite Loops Working
-						*/
+						<?php $image1 = CFS()->get('first_workshop_image');?>
+						<?php echo '<img src="' . $image1 . '" />'; ?>
 
-						$carousels = CFS()->get( 'front_page_carousel' );
+						<?php $image2 = CFS()->get('second_workshop_image');?>
+						<?php echo '<img src="' . $image2 . '" />'; ?>
 
-						foreach ( $carousels as $carousel ) {
+						<?php echo CFS()->get( 'workshops_content' ); ?>
+
+					</section><!-- .front-page-workshops -->
+
+					<section class="journal">
+
+						<h2> Journal</h2>
+
+						<!-- Getting the journal posts data -->
+
+						<?php
+							$args = array( 'post_type' => 'post', 'order' => 'DESC', 'numberposts' => 3 );
+							$journal_posts = get_posts( $args ); // returns an array of posts
+						?>
+
+						<!-- Displaying the journal posts data -->
+
+						<div class="carousel-container container-single">
+							<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+							<div class="carousel-cell-container single">
+								<div class="carousel-cell-images" >
+									<?php the_post_thumbnail('medium_large'); ?>
+								</div>
+								<div class="carousel-cell-content">
+									<h3><?php the_title(); ?></h3>
+									<p><?php the_excerpt(); ?></p>
+									<a href="<?php the_permalink(); ?>" class="btn">Read More</a>
+								</div>
+								</div>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</div>
+
+					</section><!-- .journal -->
+
+					<section class="become">
+
 							
-							$single_img = empty($carousel['front_page_carousel_cell'][0]['front_page_carousel_cell_image_secondary']); //check if the first cell in the carousel contains one or two imgs
 
-							echo '<div class="carousel-container ' . ($single_img ? 'container-single' : 'container-double') . '">'; //if there is no secondary img -> add class container-single, otherwise -> add class container-double
-								//wrap in whole carousel
-								$carousel_cells = $carousel['front_page_carousel_cell'];
-								foreach($carousel_cells as $carousel_cell){
-									// loop for each carousel cell
-									
-									echo '<div class="carousel-cell-container' . ($single_img ? ' single' : ' double') . '">'; //if there is no secondary img -> add class single, otherwise -> double
-									//wrap in carousel cell with all the content and img
-										echo '<div class="carousel-cell-images' . ($single_img ? '' : ' carousel-double') . '">'; //if there is no secondary img -> add nothing, otherwise -> add class carousel-double
-											echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image"/>';
-											if ($single_img == false) { //if there is secondary img -> show the secondary img on screen
-												echo '<img src="' . $carousel_cell['front_page_carousel_cell_image_secondary'] . '" class="carousel-cell-image-secondary"/>';
-											}
-										echo '</div>';
-										echo '<div class="carousel-cell-content">';
-											echo '<h2>' . $carousel['carousel_title'] . '</h2>';
-											echo $carousel_cell['carousel_cell_content'];
-										echo '</div>';
-									echo '</div>';
-								}
-							echo '</div>';
-						}
-					?>
-					</section>
+					</section><!-- .become -->
 
+				</div><!-- .entry-content -->			
 					
-
+			<?php endwhile; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>

@@ -126,3 +126,13 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+/**
+ * Filter the first sentence in the post to create an excerpt.
+ */
+
+function starfish_first_sentence( $string ) {
+ 
+    $sentence = preg_split( '/(\.|!|\?)\s/', $string, 2, PREG_SPLIT_DELIM_CAPTURE );
+    return $sentence['0'] . $sentence['1'];
+ 
+} add_filter( 'get_the_excerpt', 'starfish_first_sentence', 10, 1 );
