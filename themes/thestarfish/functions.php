@@ -100,6 +100,9 @@ function starfish_scripts() {
 
 	wp_enqueue_script('carousels', get_template_directory_uri() . '/build/js/carousels.min.js', array(), '20130115', true);
 
+	wp_enqueue_script('profile-popup', get_template_directory_uri() . '/build/js/profile-popup.min.js', array(), '20130115', true);
+
+
 	wp_enqueue_script('submit_form', get_template_directory_uri() . '/build/js/submit_form.min.js', array(), '20130115', true);
 
 	wp_enqueue_script('nominate_form', get_template_directory_uri() . '/build/js/nominate_form.min.js', array(), '20130115', true);

@@ -17,10 +17,12 @@
         console.log(data);
 
         var teamTitle = data.title.rendered;
+        var teamContent = data.content.rendered;
 
         var htmlTemplate = '<div class="sf-modal">';
         htmlTemplate += '<div id="sf-modal-close"><i class="fas fa-times"></i></div>';
         htmlTemplate += '<h2>' + teamTitle + '</h2>';
+        htmlTemplate += '<div>' + teamContent +'</div>'
         htmlTemplate += '</div>';
 
         $('body').append(htmlTemplate);
