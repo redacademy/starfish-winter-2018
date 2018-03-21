@@ -38,7 +38,7 @@
 
 				<div class="site-copyright">
 					<div class="site-footer-logo">
-						<img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" class="logo" alt="Starfish Logo">
+						<img src="<?php echo get_template_directory_uri() . '/images/logo-white.svg'; ?>" class="logo" alt="Starfish Logo">
 					</div>
 					
 					<p>&copy; <?php echo date( 'Y' ); ?> The Starfish Environmental Society. Website by <a href="https://redacademy.com/" target="_blank">Red Academy</a></p>
