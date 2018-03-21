@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Journal Page
  *
  * @package starfish_Theme
  */
@@ -21,7 +20,7 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 		<?php if ( have_posts() ) : ?>
 		
-			<?php if ( is_home() && ! is_front_page() ) : ?>
+			<?php if ( is_home() ) : ?>
 			
 			<header class="entry-header" style="background: url(<?php echo $post_page_banner; ?>); width: 100%; height: 600px; background-size: cover; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
@@ -29,6 +28,20 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 			</header><!-- .entry-header -->
 			
 			<?php endif; ?>
+
+			<?php
+
+				global $post;
+				$args = array();
+
+				$myposts = get_posts( entry_post_type ($args));
+				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+				<li>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</li>
+				<?php endforeach; 
+				wp_reset_postdata();?>
+
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
