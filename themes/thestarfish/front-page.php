@@ -94,11 +94,36 @@ get_header(); ?>
 
 					</section><!-- .journal -->
 
-					<section class="become">
+					<section class="front-page-become-box">
 
+						<div class="fornt-page-become-volunteer">
 							
+							<header class="front-page-volunteer-header">
+								<h2>Become a Volunteer</h2>
+							</header><!-- .front-page-volunteer-header -->
 
-					</section><!-- .become -->
+							<div class="front-page-volunteer-content">
+								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
+									<span class="screen-reader-text"><?php echo esc_html( 'Volunteer' ); ?></span>
+								</a><!-- .content-box-button -->
+							</div><!-- .front-page-volunteer-content -->
+
+						</div><!-- .fornt-page-become-volunteer -->
+
+						<div class="front-page-become-member">
+						
+							<header class="front-page-member-header">
+								<h2>Become a Member</h2>
+							</header><!-- .front-page-member-header -->
+
+							<div class="front-page-member-content">
+								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
+									<span class="screen-reader-text"><?php echo esc_html( 'Membership' ); ?></span>
+								</a><!-- .content-box-button -->
+							</div><!-- .front-page-member-content -->
+						</div><!-- .front-page-become-member -->
+
+					</section><!-- .front-page-become-box -->
 
 				</div><!-- .entry-content -->			
 					
