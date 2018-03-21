@@ -22,7 +22,9 @@
         var htmlTemplate = '<div class="sf-modal">';
         htmlTemplate += '<div id="sf-modal-close"><i class="fas fa-times"></i></div>';
         htmlTemplate += '<h2>' + teamTitle + '</h2>';
-        htmlTemplate += '<div>' + teamContent +'</div>'
+        htmlTemplate += '<div>' + teamContent +'</div>';
+        htmlTemplate += '<div>' + "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed" +'</div>';
+
         htmlTemplate += '</div>';
 
         $('body').append(htmlTemplate);
