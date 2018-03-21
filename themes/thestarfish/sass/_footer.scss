@@ -15,28 +15,24 @@
 }
 
 
-.site-footer{
+.site-footer {
     background: $color__main-brand;
-    height:350px;
-    width:100%;
-    .site-info{
+    height: 445px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .site-info {
         color:#fff;
-        width: 90%;
-        margin:auto;
+    }
+    .site-copyright {
         display: flex;
-        flex-direction: column;
-        .footer-social{
-            span{
-                border: 1px solid #fff;
-                font-size: 2rem;
-                line-height: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        .site-footer-logo {
+            max-width: 59px;
+            img {
+                width: 59px;
             }
-        }
-        @include desktop {
-        flex-direction:row;
-        top: 50%;
-        position: relative;
-        transform: translateY(-50%);
         }
     }
 }
