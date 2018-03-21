@@ -45,8 +45,21 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 		<?php endif; ?>
 
+		<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="content-box-header">
+				<h2>Want to contribute to our Journal and get your story published?</h2>
+			</header><!-- .content-box-header -->
+
+			<div class="content-box-content">
+				<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
+					<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
+				</a><!-- .content-box-button -->
+			</div><!-- .content-box-content -->
+		</section><!-- #post-## -->
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_sidebar(); ?>
