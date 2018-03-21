@@ -123,15 +123,7 @@ wp_reset_postdata();
 ?>
 </section>
 
-<script>
-    (function($){
-        $('.profile-picture').on('click', function(evt){
-           evt.preventDefault();
-           let postId = $(this).attr('id');
-           alert(postId);
-        });
-    })(jQuery);
-</script>
+
 
 
 
