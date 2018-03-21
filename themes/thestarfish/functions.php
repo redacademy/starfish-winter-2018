@@ -132,7 +132,12 @@ require get_template_directory() . '/inc/extras.php';
 
 function starfish_first_sentence( $string ) {
  
-    $sentence = preg_split( '/(\.|!|\?)\s/', $string, 2, PREG_SPLIT_DELIM_CAPTURE );
+	if(is_front_page() ){
+	$sentence = preg_split( '/(\.|!|\?)\s/', $string, 2, PREG_SPLIT_DELIM_CAPTURE );
     return $sentence['0'] . $sentence['1'];
- 
+	}
+
+	return $string;
+
+
 } add_filter( 'get_the_excerpt', 'starfish_first_sentence', 10, 1 );
