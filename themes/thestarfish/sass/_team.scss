@@ -18,7 +18,9 @@
     flex-wrap: wrap;
     .editorial-container{
         flex-grow: 25%;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         max-width: 25%;
+        min-width: 25%;
+
     }
 }
