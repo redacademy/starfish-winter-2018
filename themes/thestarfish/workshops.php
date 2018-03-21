@@ -28,7 +28,7 @@ get_header(); ?>
 						* Set the Custom Field Suite Loops Working
 						*/
 
-						$carousels = CFS()->get( 'workshop' );
+						$carousels = CFS()->get( 'workshop_carousel' );
 
 						foreach ( $carousels as $carousel ) {
 							
