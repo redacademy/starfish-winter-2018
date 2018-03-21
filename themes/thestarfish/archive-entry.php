@@ -1,8 +1,7 @@
 <?php
 /**
- *
- * @package starfish_Theme
- */
+ * Template Name: Entry Archive
+*/
 
 get_header(); ?>
 
@@ -12,51 +11,43 @@ get_header(); ?>
 <?php 
 
 $post_page_id = get_option( 'page_for_posts' );
-// echo($post_page_id);=
+
 
 $post_page_banner = (CFS()->get('banner_image', $post_page_id)); 
 // echo $post_page_banner;
 ?>
 
 		<?php if ( have_posts() ) : ?>
-		
-			<?php if ( is_home() ) : ?>
-			
+
+
 			<header class="entry-header" style="background: url(<?php echo $post_page_banner; ?>); width: 100%; height: 600px; background-size: cover; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
 			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header><!-- .entry-header -->
+
+		
 			
-			<?php endif; ?>
+      <?php
 
-			<?php
+				$args = array( 'post_type' => array ('post', 'entry') );
+				$myposts = get_posts($args);
 
-				global $post;
-				$args = array();
+        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+     
+          <h2></h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<?php 
+					
+					if ( has_post_thumbnail() ) {
+							the_post_thumbnail('medium');
+					}
 
-				$myposts = get_posts( entry_post_type ($args));
-				foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-				<li>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li>
-				<?php endforeach; 
-				wp_reset_postdata();?>
-
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+					the_excerpt(); ?>
+  
+        <?php endforeach; 
+        	wp_reset_postdata();?>
+      
 		<?php endif; ?>
+
 
 		<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="content-box-header">
@@ -70,9 +61,9 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 			</div><!-- .content-box-content -->
 		</section><!-- #post-## -->
 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_sidebar(); ?>
