@@ -12,21 +12,17 @@ get_header(); ?>
 
 $post_page_id = get_option( 'page_for_posts' );
 
-
 $post_page_banner = (CFS()->get('banner_image', $post_page_id)); 
-// echo $post_page_banner;
+
 ?>
 
 		<?php if ( have_posts() ) : ?>
-
 
 			<header class="entry-header" style="background: url(<?php echo $post_page_banner; ?>); width: 100%; height: 600px; background-size: cover; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
 			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header><!-- .entry-header -->
-
-		
-			
+	
       <?php
 
 				$args = array( 'post_type' => array ('post', 'entry') );
@@ -50,6 +46,7 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 
 		<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		
 			<header class="content-box-header">
 				<h2>Want to contribute to our Journal and get your story published?</h2>
 			</header><!-- .content-box-header -->
@@ -60,7 +57,6 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 				</a><!-- .content-box-button -->
 			</div><!-- .content-box-content -->
 		</section><!-- #post-## -->
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
