@@ -66,7 +66,7 @@ class Description_Walker extends Walker_Nav_Menu {
 					//    . "<a $attributes>"
 					   . $title
 					   . '</a>'
-					   . '<br>'
+					//    . '<br>'
 		               . $args->link_after
 		               . $description
 		               . $args->after;
@@ -102,3 +102,14 @@ function starfish_change_header(){
 wp_add_inline_style( 'starfish-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'starfish_change_header' );
+
+
+// Return an alternate title, without prefix, for every type used in the get_the_archive_title().
+add_filter('get_the_archive_title', function ($title) {
+
+	if ( is_post_type_archive('entry') ) {
+			$title = 'Journal';
+	} 
+	return $title;
+	
+});

@@ -6,7 +6,6 @@
     bottom: 0;
     z-index: 99;
     background: rgba(white,0.9);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,8 +13,13 @@
 }
 
 .profile-box{
+    .profile-box-preview{
+        display: none;
+    }
+    .profile-container{
     display: flex;
     flex-wrap: wrap;
+    }
     .profile-content{
         flex-grow: 25%;
         max-width: 25%;
@@ -31,5 +35,12 @@
     }
     .profile-headline{
         width: 100%;
+    }
+    @include desktop {
+        display: flex;
+        .profile-box-preview{
+            display: flex;
+            flex-basis: 30%;
+        }
     }
 }

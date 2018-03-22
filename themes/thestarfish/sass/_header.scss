@@ -52,8 +52,10 @@
         .nav-menu{
             display: flex;
             flex-direction: column;
+
             li{
                 height: 40px;
+                // width:50px;
             }
             @include desktop {
                 flex-direction: row;
@@ -121,7 +123,7 @@
 #menu-close{
     margin-top:25px;
 }
-
+//FIXES LINKS IN HEADER SO THAT ONLY LEARN MORE IS CLICKABLE AND JOURNAL
 .menu-item-has-children a{
     pointer-events: none;
 }
@@ -129,6 +131,7 @@
 #learn-more{
     pointer-events: auto;
 }
+//
 .show-sub-menu {
     display: block;
 }

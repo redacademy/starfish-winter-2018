@@ -5,7 +5,6 @@
  * @package starfish_Theme
  */
 
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -18,10 +17,9 @@ get_header(); ?>
 				<?php echo CFS()->get( 'form_title' ); ?>
 				<?php echo CFS()->get( 'apply_here' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php endwhile; ?> // End of the loop. 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

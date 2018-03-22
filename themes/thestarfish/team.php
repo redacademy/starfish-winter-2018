@@ -42,10 +42,16 @@ get_header(); ?>
 <!-- EDITORIAL TEAM -->
 
 <section class="profile-box">
-	<div class="profile-headline">
-	<h1>Editorial Team</h1>
-	<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+
+<div class="profile-box-preview">
+	<p>Test</p>
 </div>
+
+<div class="profile-container">
+	<div class="profile-headline">
+		<h1>Editorial Team</h1>
+		<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+	</div>
 
 		<?php
 			$args = array( 
@@ -72,16 +78,18 @@ get_header(); ?>
 <?php endforeach;
 wp_reset_postdata();
 ?>
+</div>
 </section>
 
 <!-- EXECUTIVE TEAM -->
 
 <section class="profile-box">
-<div class="profile-headline">
 
-	<h1>Executive Team</h1>
-	<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
-		</div>
+
+	<div class="profile-headline">
+		<h1>Executive Team</h1>
+		<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+	</div>
 		<?php
 			$args = array( 
 				'posts_per_page' => 12, 
