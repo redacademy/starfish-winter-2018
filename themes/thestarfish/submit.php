@@ -4,7 +4,8 @@
  *
  * @package starfish_Theme
  */
-wp_head(); 
+
+ wp_head(); 
 ?>
 	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
