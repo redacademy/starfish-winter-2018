@@ -13,11 +13,11 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header class='entry-header'>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
-				</header>
 				
+				<header class='entry-header'>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>	
+				</header>
+			
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
@@ -60,7 +60,9 @@ get_header(); ?>
 		<?php endif; ?>
     <li>
         <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-	</li>
+		</li>
+		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
+
 	</div>
 <?php endforeach;
 wp_reset_postdata();
@@ -88,7 +90,8 @@ wp_reset_postdata();
 		<?php endif; ?>
     <li>
         <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-	</li>
+		</li>
+		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 	</div>
 <?php endforeach;
 wp_reset_postdata();
@@ -116,7 +119,8 @@ wp_reset_postdata();
 		<?php endif; ?>
     <li>
         <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-	</li>
+		</li>
+		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 	</div>
 <?php endforeach;
 wp_reset_postdata();
