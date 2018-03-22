@@ -355,10 +355,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid #145B51;
+  border: 1px solid black;
   border-radius: 0;
   background: transparent;
-  color: #145B51;
+  color: black;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -451,9 +451,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white; }
+  color: red; }
   a:visited {
-    color: white; }
+    color: red; }
   a:hover, a:focus, a:active {
     color: #FF8271; }
   a:focus {

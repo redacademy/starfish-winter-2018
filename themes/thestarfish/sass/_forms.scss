@@ -8,10 +8,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid $color__main-brand;
+	border: 1px solid black;
 	border-radius: 0;
 	background: transparent;
-	color: $color__main-brand;
+	color: black;
 	@include font-size(0.75);
 	line-height: 1;
 	padding: .6rem 1rem .4rem;
