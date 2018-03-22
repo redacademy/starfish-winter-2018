@@ -44,6 +44,29 @@ get_header(); ?>
 <section class="profile-box">
 <div class="profile-box-preview profile-box-preview-executive">
 	<!-- <p>Test</p> -->
+	<div class="preview-content-container-executive">
+	<?php
+			$args = array( 
+				'posts_per_page' => 1, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'executive team',
+			);
+			$myposts = get_posts( $args );
+			?>
+				<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : ?>
+		<?php the_title(); ?>
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+		<?php endforeach;
+		wp_reset_postdata();
+		?>
+	</div>
+
+
+
 </div>
 <div class="profile-container">
 	<div class="profile-headline">
@@ -84,6 +107,29 @@ wp_reset_postdata();
 
 <div class="profile-box-preview profile-box-preview-editorial">
 	<!-- <p>Test</p> -->
+	<div class="preview-content-container-editorial">
+	<?php
+			$args = array( 
+				'posts_per_page' => 1, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'editorial team',
+			);
+			$myposts = get_posts( $args );
+			?>
+				<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : ?>
+		<?php the_title(); ?>
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+		<?php endforeach;
+		wp_reset_postdata();
+		?>
+	</div>
+
+
+
 </div>
 
 <div class="profile-container">
@@ -113,7 +159,7 @@ wp_reset_postdata();
 		<?php endif; ?>
 		</a>
 		</li>
-		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
+
 
 	</div>
 	<?php endforeach;
@@ -128,6 +174,26 @@ wp_reset_postdata();
 
 <div class="profile-box-preview profile-box-preview-bd">
 	<!-- <p>Test</p> -->
+	<div class="preview-content-container-bd">
+	<?php
+			$args = array( 
+				'posts_per_page' => 1, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'board directors',
+			);
+			$myposts = get_posts( $args );
+			?>
+				<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : ?>
+		<?php the_title(); ?>
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+		<?php endforeach;
+		wp_reset_postdata();
+		?>
+	</div>
 </div>
 
 <div class="profile-container">
@@ -155,7 +221,7 @@ wp_reset_postdata();
 			<?php the_post_thumbnail( 'large' ); ?>
 			<?php endif; ?></a>
 			</li>
-			<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
+			
 		</div>
 	<?php endforeach;
 	wp_reset_postdata();

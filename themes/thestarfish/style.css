@@ -1057,9 +1057,7 @@ object {
   bottom: 0;
   z-index: 99;
   background: rgba(255, 255, 255, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
