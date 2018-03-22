@@ -835,9 +835,6 @@ object {
     color: #fff; }
     .site-footer .site-info .widget-title {
       margin: 0; }
-  .site-footer .footer-sidebar1 .mc4wp-form-455 label {
-    font-weight: 300;
-    font-size: .85rem; }
   .site-footer .site-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -854,6 +851,10 @@ object {
       max-width: 59px; }
       .site-footer .site-copyright .site-footer-logo img {
         max-width: 59px; }
+
+.mc4wp-form-455 .mc4wp-form-fields label {
+  font-weight: 300;
+  font-size: .85rem; }
 
 .site-header {
   position: absolute;

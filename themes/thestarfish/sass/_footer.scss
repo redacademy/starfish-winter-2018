@@ -28,15 +28,6 @@
             margin: 0;
         }
     }
-    .footer-sidebar1 {
-        .mc4wp-form-455 {
-            label {
-                font-weight: 300;
-                font-size: .85rem;
-            }
-        }
-        
-    }
     .site-copyright {
         display: flex;
         flex-direction: row;
@@ -47,6 +38,18 @@
             img {
                 max-width: 59px;
             }
+        }
+    }
+}
+
+.mc4wp-form-455 {
+    .mc4wp-form-fields {
+        label {
+            font-weight: 300;
+            font-size: .85rem;
+        }
+        input {
+            
         }
     }
 }
