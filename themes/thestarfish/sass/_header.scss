@@ -125,13 +125,12 @@
 }
 //FIXES LINKS IN HEADER SO THAT ONLY LEARN MORE IS CLICKABLE AND JOURNAL
 .menu-item-has-children a{
+    @include desktop{
     pointer-events: none;
+    }
 }
 
 #learn-more{
     pointer-events: auto;
 }
 //
-.show-sub-menu {
-    display: block;
-}

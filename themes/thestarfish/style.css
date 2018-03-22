@@ -451,9 +451,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: red; }
+  color: lightgreen; }
   a:visited {
-    color: red; }
+    color: lightgreen; }
   a:hover, a:focus, a:active {
     color: #FF8271; }
   a:focus {
@@ -982,14 +982,12 @@ object {
 #menu-close {
   margin-top: 25px; }
 
-.menu-item-has-children a {
-  pointer-events: none; }
+@media (min-width: 600px) {
+  .menu-item-has-children a {
+    pointer-events: none; } }
 
 #learn-more {
   pointer-events: auto; }
-
-.show-sub-menu {
-  display: block; }
 
 .sf-modal {
   position: fixed;
@@ -1022,9 +1020,6 @@ object {
       flex-wrap: wrap; }
 
 .profile-box .profile-content {
-  -webkit-box-flex: 25%;
-      -ms-flex-positive: 25%;
-          flex-grow: 25%;
   max-width: 25%;
   min-width: 25%; }
   .profile-box .profile-content img {
@@ -1042,10 +1037,25 @@ object {
   .profile-box {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%; }
     .profile-box .profile-box-preview {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
+      display: block;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%; }
+    .profile-box .profile-container {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%; }
+    .profile-box .profile-content img {
+      width: 120px;
+      height: 120px; } }
+
+.editorial {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.hfeed {
+  position: relative;
+  top: -22px; }
