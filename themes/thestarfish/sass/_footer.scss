@@ -27,11 +27,11 @@
     .site-copyright {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         .site-footer-logo {
             max-width: 59px;
             img {
-                width: 59px;
+                max-width: 59px;
             }
         }
     }

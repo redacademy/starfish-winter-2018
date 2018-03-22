@@ -50,9 +50,10 @@
 								);
 								?>
 
-							<div class="nav-donate">
-								<p>Donate</p>
-							</div>
+							<a class="nav-donate" href="<?php echo esc_url(get_permalink(get_page_by_path( 'donate' ) ) ); ?>" >
+							<p>Donate</p>
+							<span class="screen-reader-text"><?php echo esc_html( 'Donate' ); ?></span>
+							</a>
 						</div>
 					</nav><!-- #site-navigation -->
 				</header><!-- #masthead -->
