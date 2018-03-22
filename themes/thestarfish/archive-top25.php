@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>">Nominate</a>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
