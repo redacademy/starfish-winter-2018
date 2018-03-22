@@ -30,7 +30,7 @@
         $('body').append(htmlTemplate);
 
         $('#sf-modal-close').on('click', function(){
-            var animTiming = 2000;
+            var animTiming = 250;
             $('.sf-modal').fadeOut(animTiming);
             setTimeout(function(){
                 $('.sf-modal').remove();
