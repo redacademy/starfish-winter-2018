@@ -66,7 +66,7 @@ class Description_Walker extends Walker_Nav_Menu {
 					//    . "<a $attributes>"
 					   . $title
 					   . '</a>'
-					   . '<br>'
+					//    . '<br>'
 		               . $args->link_after
 		               . $description
 		               . $args->after;
