@@ -10,6 +10,8 @@ get_header(); ?>
 
 <?php 
 
+
+
 $post_page_id = get_option( 'page_for_posts' );
 
 $post_page_banner = (CFS()->get('banner_image', $post_page_id)); 
@@ -24,6 +26,8 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 			</header><!-- .entry-header -->
 	
       <?php
+
+			the_archive_title();
 
 				$args = array( 'post_type' => array ('post', 'entry') );
 				$myposts = get_posts($args);

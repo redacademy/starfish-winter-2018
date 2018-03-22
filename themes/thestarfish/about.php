@@ -15,20 +15,22 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header" >
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        
+				<header class="entry-header" >
 					
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-                </header><!-- .entry-header -->
+        </header><!-- .entry-header -->
 
-                <div class="entry-content">
+				<div class="entry-content">
+							
 					<?php the_content(); ?>
 					<?php
 						/**
 						* Set the Custom Field Suite Loops Working
 						*/
-
+						
 						$carousels = CFS()->get( 'about_carousel' );
 
 						foreach ( $carousels as $carousel ) {
@@ -61,9 +63,9 @@ get_header(); ?>
 
 					<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-						<header class="content-box-header">
+						<div class="content-box-header">
 							<h2>Meet The Team</h2>
-						</header><!-- .content-box-header -->
+						</div><!-- .content-box-header -->
 
 						<div class="content-box-content">
 							<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>">Meet the team
@@ -73,8 +75,9 @@ get_header(); ?>
 
 					</section><!-- #post-## -->
 					
-                </div><!-- .entry-content -->
-            </article><!-- #post-## -->
+				</div><!-- .entry-content -->
+					
+			</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
 

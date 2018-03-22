@@ -8,9 +8,9 @@
 
 <section class="content-box">
 	
-	<header class="content-box-header">
+	<div class="content-box-header">
 		<h2></h2>
-	</header><!-- .content-box-header -->
+	</div><!-- .content-box-header -->
 
 	<div class="content-box-content">
 		<!-- Content (description) for the box here -->
