@@ -17,27 +17,49 @@
 
 .site-footer {
     background: $color__main-brand;
-    height: 445px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 1.75rem;
+    h3 {
+        margin: 0;
+    }
     .site-info {
         color:#fff;
-        .widget-title {
-            margin: 0;
-        }
         .footer-contact {
-            
+            margin: 1rem 0 2rem 0;
+            h3{
+                margin-bottom: 1.5rem;
+            }
+        }
+        .footer-social {
+            margin-bottom: 2rem;
+            .svg-inline--fa {
+                font-size: 1.5rem;
+                margin-right: 2.45rem;
+                border: 1px solid #fff;
+                padding: .75rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            h3 {
+                margin-bottom: 1rem;
+            }
         }
     }
     .site-copyright {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         font-size: .75rem;
+        color: $color__background-body;
+        font-weight: 300;
         .site-footer-logo {
             max-width: 59px;
+            margin-right: 1rem;
             img {
                 max-width: 59px;
             }
@@ -56,7 +78,7 @@
             display: flex;
             margin-top: .5rem;
             input[type="email"] {
-                padding: .75rem;
+                padding: .75rem 2.45rem .75rem .75rem;
                 border-radius: 0;
                 border: $border__light;
                 background: transparent;

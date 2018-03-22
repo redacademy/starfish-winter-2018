@@ -25,7 +25,9 @@
 					
 					<div class="footer-contact">
 						<h3>Stay in Touch</h3>
-						<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'contact' ) ) ); ?>" >Contact Us</a>
+						<div>
+							<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'contact' ) ) ); ?>">Contact Us</a>
+						</div>
 					</div><!-- .footer-contact -->
 
 					<div class="footer-social">
