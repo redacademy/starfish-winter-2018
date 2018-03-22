@@ -6,13 +6,17 @@
     bottom: 0;
     z-index: 99;
     background: rgba(white,0.9);
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .profile-box{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    margin-top: 50px;
     .profile-box-preview{
         display: none;
     }
@@ -37,7 +41,7 @@
     }
     @include desktop {
         display: flex;
-        width:100%;
+        // width:100%;
         .profile-box-preview{
             display: block;
             flex-basis: 40%;
@@ -56,6 +60,20 @@
     flex-direction: row-reverse;
 }
 
-.hfeed{
-    position: relative; top: -22px;
+
+//top25
+.top25-box{
+    display: flex;
+    
 }
+
+
+
+
+
+.hfeed{
+    position: relative; 
+    top: -22px;
+}
+
+
