@@ -18,16 +18,30 @@
 .site-footer {
     background: $color__main-brand;
     height: 445px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 1rem 1.75rem;
     .site-info {
         color:#fff;
+        .widget-title {
+            margin: 0;
+        }
+    }
+    .footer-sidebar1 {
+        .mc4wp-form-455 {
+            label {
+                font-weight: 300;
+                font-size: .85rem;
+            }
+        }
+        
     }
     .site-copyright {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        font-size: .75rem;
         .site-footer-logo {
             max-width: 59px;
             img {
