@@ -12,8 +12,6 @@ get_header(); //remember to hide header and footer; only hre for js//
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-		
-				
 				<?php echo CFS()->get( 'submit_title' ); ?>
 				<?php echo CFS()->get( 'submit_form' ); ?>
 
