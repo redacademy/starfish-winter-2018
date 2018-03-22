@@ -982,6 +982,9 @@ object {
 #menu-close {
   margin-top: 25px; }
 
+.show-sub-menu {
+  display: block; }
+
 .sf-modal {
   position: fixed;
   left: 0;
@@ -1002,15 +1005,24 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
-.editorial-team {
+.profile-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .editorial-team .editorial-container {
+  .profile-box .profile-content {
     -webkit-box-flex: 25%;
         -ms-flex-positive: 25%;
             flex-grow: 25%;
     max-width: 25%;
     min-width: 25%; }
+    .profile-box .profile-content img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100px;
+      height: 100px; }
+    .profile-box .profile-content li {
+      list-style: none; }
+  .profile-box .profile-headline {
+    width: 100%; }

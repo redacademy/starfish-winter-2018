@@ -36,7 +36,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 
-<section class="editorial-team">
+<section class="profile-box">
 		<?php
 			$args = array( 
 				'posts_per_page' => 25, 
@@ -50,7 +50,7 @@ get_header(); ?>
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : 
 		?>
-			<div class="editorial-container">
+			<div class="profile-content">
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>

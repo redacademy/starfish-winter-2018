@@ -13,14 +13,23 @@
     align-items: center;
 }
 
-.editorial-team{
+.profile-box{
     display: flex;
     flex-wrap: wrap;
-    .editorial-container{
+    .profile-content{
         flex-grow: 25%;
-        // flex-wrap: wrap;
         max-width: 25%;
         min-width: 25%;
-
+        img{
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    .profile-headline{
+        width: 100%;
     }
 }

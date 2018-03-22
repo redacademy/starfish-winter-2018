@@ -41,7 +41,12 @@ get_header(); ?>
 
 <!-- EDITORIAL TEAM -->
 
-<section class="editorial-team">
+<section class="profile-box">
+	<div class="profile-headline">
+	<h1>Editorial Team</h1>
+	<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+</div>
+
 		<?php
 			$args = array( 
 				'posts_per_page' => 12, 
@@ -55,7 +60,7 @@ get_header(); ?>
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : 
 		?>
-			<div class="editorial-container">
+			<div class="profile-content">
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
@@ -71,7 +76,12 @@ wp_reset_postdata();
 
 <!-- EXECUTIVE TEAM -->
 
-<section class="editorial-team">
+<section class="profile-box">
+<div class="profile-headline">
+
+	<h1>Executive Team</h1>
+	<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+		</div>
 		<?php
 			$args = array( 
 				'posts_per_page' => 12, 
@@ -85,7 +95,7 @@ wp_reset_postdata();
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : 
 		?>
-			<div class="editorial-container">
+			<div class="profile-content">
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
@@ -100,7 +110,12 @@ wp_reset_postdata();
 
 <!-- BOARD DIRECTORS -->
 
-<section class="editorial-team">
+<section class="profile-box">
+<div class="profile-headline">
+
+<h1>Board Directors</h1>
+<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+		</div>
 		<?php
 			$args = array( 
 				'posts_per_page' => 12, 
@@ -114,7 +129,7 @@ wp_reset_postdata();
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : 
 		?>
-			<div class="editorial-container">
+			<div class="profile-content">
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
