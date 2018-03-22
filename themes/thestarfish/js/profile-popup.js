@@ -55,7 +55,7 @@
 */ 
     $('.profile-picture-executive').on('click', function(event){
         event.preventDefault();
-        $(".preview-content-container").remove();
+        $(".preview-content-container-executive").remove();
         var postId = $(this).attr('id');
         console.log(postId);
 
@@ -66,9 +66,11 @@
             console.log(data);
             var teamTitle = data.title.rendered;
             var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
-            var preview = '<div class="preview-content-container">';
+            var preview = '<div class="preview-content-container-executive">';
+            var link = data.link;
             preview += '<h2>' + teamTitle + '</h2>';
             preview += '<img src="' + teamPhoto + '">';
+            preview += '<a href="' + link + '">' + 'Learn More</a>'
             preview += '</div>';
             $('.profile-box-preview-executive').append(preview);
         })
@@ -80,7 +82,7 @@
 
     $('.profile-picture-editorial').on('click', function(event){
         event.preventDefault();
-        $(".preview-content-container").remove();
+        $(".preview-content-container-editorial").remove();
         var postId = $(this).attr('id');
         console.log(postId);
 
@@ -91,7 +93,7 @@
             console.log(data);
             var teamTitle = data.title.rendered;
             var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
-            var preview = '<div class="preview-content-container">';
+            var preview = '<div class="preview-content-container-editorial">';
             preview += '<h2>' + teamTitle + '</h2>';
             preview += '<img src="' + teamPhoto + '">';
             preview += '</div>';
@@ -104,7 +106,7 @@
     });
     $('.profile-picture-bd').on('click', function(event){
         event.preventDefault();
-        $(".preview-content-container").remove();
+        $(".preview-content-container-bd").remove();
         var postId = $(this).attr('id');
         console.log(postId);
 
@@ -115,7 +117,7 @@
             console.log(data);
             var teamTitle = data.title.rendered;
             var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
-            var preview = '<div class="preview-content-container">';
+            var preview = '<div class="preview-content-container-bd">';
             preview += '<h2>' + teamTitle + '</h2>';
             preview += '<img src="' + teamPhoto + '">';
             preview += '</div>';
