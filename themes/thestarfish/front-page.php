@@ -112,10 +112,8 @@ get_header(); ?>
 						</div><!-- .fornt-page-become-volunteer -->
 
 						<div class="front-page-become-member">
-						
-							<header class="front-page-member-header">
-								<h2>Become a Member</h2>
-							</header><!-- .front-page-member-header -->
+							
+								<h2 class="front-page-member-header">Become a Member</h2>
 
 							<div class="front-page-member-content">
 								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
