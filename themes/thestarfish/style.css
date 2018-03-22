@@ -418,6 +418,19 @@ textarea {
       width: 300px;
       margin: 0; } }
 
+.btn-transparent,
+.btn-transparent:visited {
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: .75rem 6.75rem;
+  color: #fff;
+  background: #145B51; }
+  .btn-transparent:hover, .btn-transparent:focus,
+  .btn-transparent:visited:hover,
+  .btn-transparent:visited:focus {
+    background: #fff;
+    color: #145B51; }
+
 /*Carousel Slider Buttons*/
 .flickity-button {
   background: #145B51;
@@ -835,9 +848,6 @@ object {
     color: #fff; }
     .site-footer .site-info .widget-title {
       margin: 0; }
-  .site-footer .footer-sidebar1 .mc4wp-form-455 label {
-    font-weight: 300;
-    font-size: .85rem; }
   .site-footer .site-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -854,6 +864,48 @@ object {
       max-width: 59px; }
       .site-footer .site-copyright .site-footer-logo img {
         max-width: 59px; }
+
+.mc4wp-form-455 .mc4wp-form-fields {
+  margin-top: .5rem; }
+  .mc4wp-form-455 .mc4wp-form-fields label {
+    font-weight: 300;
+    font-size: .85rem; }
+  .mc4wp-form-455 .mc4wp-form-fields .input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: .5rem; }
+    .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"] {
+      padding: .75rem;
+      border-radius: 0;
+      border: 1px solid #fff;
+      background: transparent; }
+      .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"]::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+        font-style: italic; }
+      .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"]:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+        font-style: italic; }
+      .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"]::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+        font-style: italic; }
+      .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"]::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+        font-style: italic; }
+    .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"] {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #fff;
+      background: #fff;
+      color: #145B51; }
+      .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:hover, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:active, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:focus {
+        background: #145B51;
+        color: #fff;
+        border-left: none; }
 
 .site-header {
   position: absolute;
