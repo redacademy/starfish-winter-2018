@@ -4,7 +4,7 @@
  *
  * @package starfish_Theme
  */
-get_header(); //remember to hide header and footer; only hre for js//
+wp_head(); 
 ?>
 	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
@@ -20,4 +20,4 @@ get_header(); //remember to hide header and footer; only hre for js//
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php get_footer(); ?> 
+	<?php wp_footer(); ?> 
