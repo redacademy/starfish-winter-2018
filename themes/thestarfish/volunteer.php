@@ -30,7 +30,32 @@ get_header(); ?>
 				<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
 				<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
 
-				
+				<section class="volunteer-carousel">
+						<?php
+							/**
+							* Set the Custom Field Suite Loops Working
+							*/
+							
+							echo '<h2>' . CFS()->get('join_our_team_carousel_title') . '</h2>';
+							$carousel_cells = CFS()->get( 'join_our_team_carousel_cell' );
+								echo '<div class="carousel-container container-single">';
+									foreach($carousel_cells as $carousel_cell){
+										// loop for each carousel cell
+										echo '<div class="carousel-cell-container single">';
+											echo '<div class="carousel-cell-images" />';
+												echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image" />';
+											echo '</div>';
+											echo '<div class="carousel-cell-content">';
+												echo $carousel_cell['carousel_cell_content'];
+												echo '<div class="btn">';
+													echo '<a href="' . esc_url(get_permalink(get_page_by_path( 'contributor' ) ) ) . '">Join the team</a>';
+												echo '</div>';
+											echo '</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+						?>
+					</section><!-- .front-page-carousel -->
 
 			<?php endwhile; ?>
 
