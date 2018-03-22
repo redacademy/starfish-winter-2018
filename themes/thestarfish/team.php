@@ -42,8 +42,8 @@ get_header(); ?>
 <!-- EXECUTIVE TEAM -->
 
 <section class="profile-box">
-<div class="profile-box-preview">
-	<p>Test</p>
+<div class="profile-box-preview profile-box-preview-executive">
+	<!-- <p>Test</p> -->
 </div>
 <div class="profile-container">
 	<div class="profile-headline">
@@ -67,7 +67,7 @@ get_header(); ?>
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
-        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+        <a class="profile-picture profile-picture-executive" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
 		</li>
 		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 	</div>
@@ -82,7 +82,7 @@ wp_reset_postdata();
 <section class="profile-box editorial">
 
 <div class="profile-box-preview">
-	<p>Test</p>
+	<!-- <p>Test</p> -->
 </div>
 
 <div class="profile-container">
@@ -108,7 +108,7 @@ wp_reset_postdata();
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
-        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+        <a class="profile-picture profile-picture-editorial" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
 		</li>
 		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 
@@ -124,7 +124,7 @@ wp_reset_postdata();
 <section class="profile-box">
 
 <div class="profile-box-preview">
-	<p>Test</p>
+	<!-- <p>Test</p> -->
 </div>
 
 <div class="profile-container">
@@ -149,7 +149,7 @@ wp_reset_postdata();
 			<?php the_post_thumbnail( 'large' ); ?>
 			<?php endif; ?>
 		<li>
-			<a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+			<a class="profile-picture profile-picture-bd" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
 			</li>
 			<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 		</div>

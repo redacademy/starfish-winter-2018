@@ -292,6 +292,7 @@ big {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: auto;
   font-size: 16px;
   font-size: 1rem; }
 
@@ -1016,52 +1017,57 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
-.profile-box .profile-box-preview {
-  display: none; }
-
-.profile-box .profile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.profile-box .profile-content {
-  max-width: 25%;
-  min-width: 25%; }
-  .profile-box .profile-content img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100px;
-    height: 100px; }
-  .profile-box .profile-content li {
-    list-style: none; }
-
-.profile-box .profile-headline {
-  width: 100%; }
-
-@media (min-width: 600px) {
-  .profile-box {
+.profile-box {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  margin-top: 50px; }
+  .profile-box .profile-box-preview {
+    display: none; }
+  .profile-box .profile-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
-    .profile-box .profile-box-preview {
-      display: block;
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; }
-    .profile-box .profile-container {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .profile-box .profile-content {
+    max-width: 25%;
+    min-width: 25%; }
     .profile-box .profile-content img {
-      width: 120px;
-      height: 120px; } }
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100px;
+      height: 100px; }
+    .profile-box .profile-content li {
+      list-style: none; }
+  .profile-box .profile-headline {
+    width: 100%; }
+  @media (min-width: 600px) {
+    .profile-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .profile-box .profile-box-preview {
+        display: block;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%; }
+      .profile-box .profile-container {
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%; }
+      .profile-box .profile-content img {
+        width: 120px;
+        height: 120px; } }
 
 .editorial {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+
+.top25-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .hfeed {
   position: relative;

@@ -9,7 +9,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 
 		<main id="main" class="site-main" role="main">
-
+		<section class="top25-box">
+		<div class="top25-content">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -34,9 +35,10 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+</div>
 
 
-<section class="profile-box">
+<div class="top25-profiles-box">
 		<?php
 			$args = array( 
 				'posts_per_page' => 25, 
@@ -50,16 +52,17 @@ get_header(); ?>
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : 
 		?>
-			<div class="profile-content">
+			<div class="top25-profile-content">
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
     <li>
-        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+        <a class="top25-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
 	</li>
 	</div>
 <?php endforeach;
 wp_reset_postdata();
 ?>
+</div>
 </section>
 
 
