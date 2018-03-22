@@ -919,6 +919,8 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      #site-navigation .menu-main-navigation-container .nav-menu li {
+        height: 40px; }
       @media (min-width: 600px) {
         #site-navigation .menu-main-navigation-container .nav-menu {
           -webkit-box-orient: horizontal;
@@ -934,11 +936,12 @@ object {
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%); }
           #site-navigation .menu-main-navigation-container .nav-menu li {
-            margin: auto; }
+            margin: auto;
+            height: auto; }
           #site-navigation .menu-main-navigation-container .nav-menu a {
             color: #fff; } }
   #site-navigation .nav-content {
-    padding: 20px; }
+    padding: 40px; }
     @media (min-width: 600px) {
       #site-navigation .nav-content {
         display: -webkit-box;
@@ -947,7 +950,8 @@ object {
         width: 100%;
         -webkit-box-pack: end;
             -ms-flex-pack: end;
-                justify-content: flex-end; } }
+                justify-content: flex-end;
+        padding: 20px; } }
     #site-navigation .nav-content .nav-donate {
       background-color: #fff;
       color: #145B51;
@@ -975,6 +979,12 @@ object {
     position: relative;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+
+#menu-open {
+  margin-right: 15px; }
+
+#menu-close {
+  margin-top: 25px; }
 
 .sf-modal {
   position: fixed;
@@ -1006,6 +1016,5 @@ object {
     -webkit-box-flex: 25%;
         -ms-flex-positive: 25%;
             flex-grow: 25%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 25%; }
+    max-width: 25%;
+    min-width: 25%; }

@@ -52,6 +52,9 @@
         .nav-menu{
             display: flex;
             flex-direction: column;
+            li{
+                height: 40px;
+            }
             @include desktop {
                 flex-direction: row;
                 justify-content: flex-end;
@@ -61,6 +64,7 @@
                 transform: translateY(-50%); 
                 li{
                     margin:auto;
+                    height: auto;
                 }
                 a{
                     color: #fff;
@@ -69,11 +73,13 @@
         }
     }  
     .nav-content{
-        padding:20px;
+        padding:40px;
         @include desktop {
             display: flex;
             width: 100%;
             justify-content: flex-end;
+            padding:20px;
+
         }
         .nav-donate{
             background-color: #fff;
@@ -109,4 +115,9 @@
         transform: translateY(-50%); 
     }
 }
-
+#menu-open{
+ margin-right:15px;
+}
+#menu-close{
+    margin-top:25px;
+}
