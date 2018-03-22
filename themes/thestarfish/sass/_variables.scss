@@ -24,7 +24,7 @@ $color__main-brand: #145B51;
 $color__secondary-brand: #FF8271;
 $color__third-brand: #EDEFE1;
 $color__text-main: #394442; 
-
+$color__input: rgba(255,255,255, .5);
 
 // Typography
 
@@ -34,3 +34,8 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//Borders
+
+$border__light: 1px solid #fff;
+$border__main-brand: 1px solid $color__main-brand;

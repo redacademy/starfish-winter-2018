@@ -73,6 +73,20 @@ textarea {
 	}
 }
 
+.btn-transparent,
+.btn-transparent:visited {
+		border: $border__light;
+		text-decoration: none;
+		padding: .75rem 6.75rem;
+		color: $color__background-body;
+		background: $color__main-brand;
+	&:hover,
+	&:focus {
+		background: $color__background-body;
+		color: $color__main-brand;
+	}
+}
+
 /*Carousel Slider Buttons*/
 
 .flickity-button {

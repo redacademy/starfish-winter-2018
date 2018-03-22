@@ -27,6 +27,9 @@
         .widget-title {
             margin: 0;
         }
+        .footer-contact {
+            
+        }
     }
     .site-copyright {
         display: flex;
@@ -44,12 +47,39 @@
 
 .mc4wp-form-455 {
     .mc4wp-form-fields {
+        margin-top: .5rem;
         label {
             font-weight: 300;
             font-size: .85rem;
         }
-        input {
-            
+        .input-wrapper {
+            display: flex;
+            margin-top: .5rem;
+            input[type="email"] {
+                padding: .75rem;
+                border-radius: 0;
+                border: $border__light;
+                background: transparent;
+                &::placeholder {
+                    color: $color__input;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+            }
+            input[type="submit"] {
+                padding: 1rem;
+                font-size: 1rem;
+                border: $border__light;
+                background: $color__background-body;
+                color: $color__main-brand;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: $color__main-brand;
+                    color: $color__background-body;
+                    border-left: none;
+                }
+            }
         }
     }
 }
