@@ -23,8 +23,8 @@ get_header(); ?>
 
         </header><!-- .entry-header -->
 
-        <div class="entry-content">
-					
+				<div class="entry-content">
+							
 					<?php the_content(); ?>
 					<?php
 						/**
@@ -63,9 +63,9 @@ get_header(); ?>
 
 					<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-						<header class="content-box-header">
+						<div class="content-box-header">
 							<h2>Meet The Team</h2>
-						</header><!-- .content-box-header -->
+						</div><!-- .content-box-header -->
 
 						<div class="content-box-content">
 							<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>">Meet the team
@@ -75,8 +75,9 @@ get_header(); ?>
 
 					</section><!-- #post-## -->
 					
-        </div><!-- .entry-content -->
-      </article><!-- #post-## -->
+				</div><!-- .entry-content -->
+					
+			</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
 
