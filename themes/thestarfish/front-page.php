@@ -19,6 +19,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="entry-content">
 					<?php the_content(); ?>
+					<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'about' ) ) ); ?>">Learn More</a>
 
 					<section class="front-page-carousel">
 						<?php
@@ -62,6 +63,8 @@ get_header(); ?>
 
 						<?php echo CFS()->get( 'workshops_content' ); ?>
 
+						<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'workshops' ) ) ); ?>">Learn More</a>
+
 					</section><!-- .front-page-workshops -->
 
 					<section class="journal">
@@ -98,9 +101,7 @@ get_header(); ?>
 
 						<div class="fornt-page-become-volunteer">
 							
-							<header class="front-page-volunteer-header">
-								<h2>Become a Volunteer</h2>
-							</header><!-- .front-page-volunteer-header -->
+							<h2  class="front-page-volunteer-header">Become a Volunteer</h2>
 
 							<div class="front-page-volunteer-content">
 								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
