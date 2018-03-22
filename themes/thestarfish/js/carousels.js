@@ -6,7 +6,8 @@
         wrapAround: true,
         freeScroll: true,
         fullscreen: true,
-        pageDots: false
+        pageDots: false,
+        contain: true
     });
 
 })( jQuery );
