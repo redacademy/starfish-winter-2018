@@ -982,6 +982,12 @@ object {
 #menu-close {
   margin-top: 25px; }
 
+.menu-item-has-children a {
+  pointer-events: none; }
+
+#learn-more {
+  pointer-events: auto; }
+
 .show-sub-menu {
   display: block; }
 

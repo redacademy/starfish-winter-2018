@@ -58,17 +58,15 @@ class Description_Walker extends Walker_Nav_Menu {
 		// insert description for top level elements only
 		// you may change this
 		$description = ( ! empty ( $item->description ) and 1 == $depth )
-			? '<small class="nav_desc">' . esc_attr( $item->description ) . '</small><a href="' . esc_attr( $item->url ) . '">Learn More</a>' : '';
+			? '<small class="nav_desc">' . esc_attr( $item->description ) . '</small><a href="' . esc_attr( $item->url ) . '" id="learn-more">Learn More</a>' : '';
 		$title = apply_filters( 'the_title', $item->title, $item->ID );
 		$item_output = $args->before
-					//    . "<a $attributes>"
-					// . '<span>' 
+					   . "<a $attributes>"
 					   . $args->link_before
+					//    . "<a $attributes>"
 					   . $title
+					   . '</a>'
 					   . '<br>'
-					//    . '</span>'
-
-		            //    . '</a> '
 		               . $args->link_after
 		               . $description
 		               . $args->after;
