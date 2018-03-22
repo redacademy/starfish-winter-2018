@@ -21,7 +21,6 @@
     flex-wrap: wrap;
     }
     .profile-content{
-        flex-grow: 25%;
         max-width: 25%;
         min-width: 25%;
         img{
@@ -38,9 +37,25 @@
     }
     @include desktop {
         display: flex;
+        width:100%;
         .profile-box-preview{
-            display: flex;
-            flex-basis: 30%;
+            display: block;
+            flex-basis: 40%;
+        }
+        .profile-container{
+            flex-basis: 60%;
+        }
+        .profile-content img{
+            width: 120px;
+            height: 120px;
         }
     }
+}
+
+.editorial{
+    flex-direction: row-reverse;
+}
+
+.hfeed{
+    position: relative; top: -22px;
 }

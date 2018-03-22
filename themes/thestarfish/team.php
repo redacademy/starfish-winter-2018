@@ -39,9 +39,47 @@ get_header(); ?>
 
 
 
-<!-- EDITORIAL TEAM -->
+<!-- EXECUTIVE TEAM -->
 
 <section class="profile-box">
+<div class="profile-box-preview">
+	<p>Test</p>
+</div>
+<div class="profile-container">
+	<div class="profile-headline">
+		<h1>Executive Team</h1>
+		<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+	</div>
+		<?php
+			$args = array( 
+				'posts_per_page' => 12, 
+				'offset'=> 1, 
+				'post_type' => 'profile', 
+				'profile_type' => 'executive team',
+			);
+			$myposts = get_posts( $args );
+			?>
+		<?php 
+		foreach ( $myposts as $post ) : setup_postdata( $post );
+		if ( has_post_thumbnail() ) : 
+		?>
+			<div class="profile-content">
+		<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
+    <li>
+        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+		</li>
+		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
+	</div>
+<?php endforeach;
+wp_reset_postdata();
+?>
+</div>
+</section>
+
+<!-- EDITORIAL TEAM -->
+
+<section class="profile-box editorial">
 
 <div class="profile-box-preview">
 	<p>Test</p>
@@ -75,79 +113,50 @@ get_header(); ?>
 		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
 
 	</div>
-<?php endforeach;
-wp_reset_postdata();
-?>
+	<?php endforeach;
+	wp_reset_postdata();
+	?>
 </div>
-</section>
-
-<!-- EXECUTIVE TEAM -->
-
-<section class="profile-box">
-
-
-	<div class="profile-headline">
-		<h1>Executive Team</h1>
-		<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
-	</div>
-		<?php
-			$args = array( 
-				'posts_per_page' => 12, 
-				'offset'=> 1, 
-				'post_type' => 'profile', 
-				'profile_type' => 'executive team',
-			);
-			$myposts = get_posts( $args );
-			?>
-		<?php 
-		foreach ( $myposts as $post ) : setup_postdata( $post );
-		if ( has_post_thumbnail() ) : 
-		?>
-			<div class="profile-content">
-		<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-    <li>
-        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-		</li>
-		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
-	</div>
-<?php endforeach;
-wp_reset_postdata();
-?>
 </section>
 
 <!-- BOARD DIRECTORS -->
 
 <section class="profile-box">
-<div class="profile-headline">
 
-<h1>Board Directors</h1>
-<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
-		</div>
-		<?php
-			$args = array( 
-				'posts_per_page' => 12, 
-				'offset'=> 1, 
-				'post_type' => 'profile', 
-				'profile_type' => 'board directors',
-			);
-			$myposts = get_posts( $args );
+<div class="profile-box-preview">
+	<p>Test</p>
+</div>
+
+<div class="profile-container">
+	<div class="profile-headline">
+	<h1>Board Directors</h1>
+	<p>We are a volunteer run organization working closely together to celebrate and amplify the Canadian youth conservation movement.</p>
+			</div>
+			<?php
+				$args = array( 
+					'posts_per_page' => 8, 
+					'offset'=> 1, 
+					'post_type' => 'profile', 
+					'profile_type' => 'board directors',
+				);
+				$myposts = get_posts( $args );
+				?>
+			<?php 
+			foreach ( $myposts as $post ) : setup_postdata( $post );
+			if ( has_post_thumbnail() ) : 
 			?>
-		<?php 
-		foreach ( $myposts as $post ) : setup_postdata( $post );
-		if ( has_post_thumbnail() ) : 
-		?>
-			<div class="profile-content">
-		<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-    <li>
-        <a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-		</li>
-		<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
-	</div>
-<?php endforeach;
-wp_reset_postdata();
-?>
+				<div class="profile-content">
+			<?php the_post_thumbnail( 'large' ); ?>
+			<?php endif; ?>
+		<li>
+			<a class="profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+			</li>
+			<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'learn more' ) ) ); ?>">Learn More</a>
+		</div>
+	<?php endforeach;
+	wp_reset_postdata();
+	?>
+</div>
 </section>
 
 
