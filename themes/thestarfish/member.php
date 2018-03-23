@@ -29,17 +29,17 @@ get_header(); ?>
 
 					<section class="member-box-area">
 
-						<div class="member-box">
+						<div class="content-box">
 
-							<div class="member-box-header">
+							<div class="content-box-header">
 								<h2>Support the Leaders of tomorrow!</h2>
-							</div><!-- .member-box-header -->
+							</div><!-- .content-box-header -->
 
-							<div class="member-box-content">
-								<a class="member-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
+							<div class="content-box-content">
+								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
 									<span class="screen-reader-text"><?php echo esc_html( 'Become a Member' ); ?></span>
-								</a><!-- .member-box-button -->
-							</div><!-- .member-box-content -->
+								</a><!-- .content-box-button -->
+							</div><!-- .content-box-content -->
 
 						</div>	
 

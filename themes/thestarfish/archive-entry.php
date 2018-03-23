@@ -51,17 +51,17 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 		<section class="entry-box-area">
 
-			<div class="entry-box">
+			<div class="content-box">
 		
-				<div class="entry-box-header">
+				<div class="content-box-header">
 					<h2>Want to contribute to our Journal and get your story published?</h2>
-				</div><!-- .entry-box-header -->
+				</div><!-- .content-box-header -->
 
-				<div class="entry-box-content">
-					<a class="entry-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
+				<div class="content-box-content">
+					<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
 						<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
-					</a><!-- .entry-box-button -->
-				</div><!-- .entry-box-content -->
+					</a><!-- .content-box-button -->
+				</div><!-- .content-box-content -->
 			
 			</div>	
 		
