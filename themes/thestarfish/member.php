@@ -27,17 +27,21 @@ get_header(); ?>
 					<?php echo '<img src="' . $image . '" />'; ?>
 					<?php echo CFS()->get( 'member_steps_content' ); ?>
 
-					<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<section class="member-box-area">
 
-						<header class="content-box-header">
-							<h2>Support the Leaders of tomorrow!</h2>
-						</header><!-- .content-box-header -->
+						<div class="member-box">
 
-						<div class="content-box-content">
-							<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
-								<span class="screen-reader-text"><?php echo esc_html( 'Become a Member' ); ?></span>
-							</a><!-- .content-box-button -->
-						</div><!-- .content-box-content -->
+							<div class="member-box-header">
+								<h2>Support the Leaders of tomorrow!</h2>
+							</div><!-- .member-box-header -->
+
+							<div class="member-box-content">
+								<a class="member-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
+									<span class="screen-reader-text"><?php echo esc_html( 'Become a Member' ); ?></span>
+								</a><!-- .member-box-button -->
+							</div><!-- .member-box-content -->
+
+						</div>	
 
 					</section><!-- #post-## -->
 
