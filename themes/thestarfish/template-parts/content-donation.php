@@ -10,7 +10,7 @@
 <section class="donation-container">
 	<div class="content-donation">
 		<div class="content-donation-info">
-			<h1>You can Help!</h1>
+			<h2>You can Help!</h2>
 			<p>Your support will help us run our programs, provide a plateform to changemakers of tommorow and give them the recognition they deserve.</p>
 		</div>
 		<div class="btn-donate">
