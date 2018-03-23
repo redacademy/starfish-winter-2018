@@ -56,10 +56,10 @@ get_header(); ?>
 					<section class="front-page-workshops">
 
 						<?php $image1 = CFS()->get('first_workshop_image');?>
-						<?php echo '<img src="' . $image1 . '" />'; ?>
+						<?php echo esc_url('<img src="') . $image1 . '" />'; ?>
 
 						<?php $image2 = CFS()->get('second_workshop_image');?>
-						<?php echo '<img src="' . $image2 . '" />'; ?>
+						<?php echo esc_url('<img src="') . $image2 . '" />'; ?>
 
 						<?php echo CFS()->get( 'workshops_content' ); ?>
 
