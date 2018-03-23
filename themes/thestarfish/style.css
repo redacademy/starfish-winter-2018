@@ -1254,7 +1254,38 @@ object {
   height: 450px; }
   .donation-container .content-donation {
     width: 90%;
-    margin: auto; }
+    margin: auto;
+    padding: 75px 0 0 90px; }
     @media (min-width: 600px) {
       .donation-container .content-donation .content-donation-info {
         width: 400px; } }
+    .donation-container .content-donation .content-donation-info p {
+      line-height: 28px;
+      color: #394442;
+      font-weight: 300; }
+
+.btn-donate {
+  background: #FF8271;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .btn-donate a {
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  @media (min-width: 600px) {
+    .btn-donate {
+      width: 250px;
+      margin: 0; } }

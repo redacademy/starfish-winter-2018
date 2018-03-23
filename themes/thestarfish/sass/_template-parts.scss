@@ -1,20 +1,56 @@
 
 //** CONTENT_DONATION **//
 
-.donation-container{
+.donation-container {
   background: 
-  url('../../images/donation.png') center  no-repeat;
+  url('../../images/donation.png') center no-repeat;
   background-size: cover;
-  
   height:450px;
   
-  .content-donation{
-      width: 90%;
-      margin: auto;
-      .content-donation-info{
-          @include desktop{
-              width: 400px;
-          }
+  .content-donation {
+    width: 90%;
+    margin: auto;
+    padding: 75px 0 0 90px;
+      
+    .content-donation-info {
+      @include desktop{
+        width: 400px;
       }
+      
+      p {
+      line-height: 28px;
+      color: $color__text-main;
+      font-weight: 300;
+      }   
+    }
   }
+}
+
+.btn-donate {
+	background: $color__secondary-brand;
+	color:#fff;
+  text-align: center;
+	width: 100%;
+	height: 60px;
+  // margin: auto;
+  margin-top: 20px;
+  display: flex;
+  
+	a {
+		// position: relative;
+		// top: 50%;
+		// transform: translateY(-50%); 
+		// margin: 0;
+    font-size: 19px;
+    font-family: $font__title;
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+      
+	}
+	@include desktop {
+		width: 250px;
+		margin: 0;
+	}
 }
