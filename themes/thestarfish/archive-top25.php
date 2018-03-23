@@ -76,7 +76,7 @@ wp_reset_postdata();
 		</div><!-- .archive-box-header -->
 
 		<div class="archive-box-content">
-			<a class="archive-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'profile_type-judges' ) ) ); ?>">Meet the team
+			<a class="archive-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'taxonomy-judges' ) ) ); ?>">Meet the Judges
 				<span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
 			</a><!-- .archive-box-button -->
 		</div><!-- .archive-box-content -->
