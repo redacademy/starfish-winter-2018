@@ -893,7 +893,7 @@ object {
                 order: 2;
         margin: 4rem 0 2rem 0; }
         .footer-wrapper .site-info .secondary .widget-title {
-          margin-bottom: 1.25rem; } }
+          margin-bottom: .3rem; } }
     .footer-wrapper .site-info .footer-social {
       margin-bottom: 2rem; }
       @media (min-width: 1000px) {
@@ -911,8 +911,8 @@ object {
           .footer-wrapper .site-info .footer-social .svg-inline--fa {
             margin-right: .5rem;
             border-width: 2px;
-            padding: .5rem;
-            margin-top: 2.75rem; } }
+            padding: .75rem;
+            margin-top: 2.25rem; } }
         .footer-wrapper .site-info .footer-social .svg-inline--fa:last-child {
           margin-right: 0; }
       .footer-wrapper .site-info .footer-social h3 {
@@ -964,7 +964,7 @@ object {
       display: none; }
     @media (min-width: 1000px) {
       .mc4wp-form-455 .mc4wp-form-fields label {
-        font-size: 1.1rem; }
+        font-size: 1.125rem; }
         .mc4wp-form-455 .mc4wp-form-fields label span {
           display: inline; } }
   .mc4wp-form-455 .mc4wp-form-fields .input-wrapper {
@@ -979,9 +979,10 @@ object {
       background: transparent; }
       @media (min-width: 1000px) {
         .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"] {
-          padding: .75rem 6.85rem .75rem .75rem;
+          padding: .8125rem .75rem .75rem .8125rem;
           margin-right: 5px;
-          margin-top: .75rem; } }
+          margin-top: .75rem;
+          width: 298px; } }
       .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"]::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-weight: 300;
@@ -1007,12 +1008,15 @@ object {
       @media (min-width: 1000px) {
         .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"] {
           font-size: 1.25rem;
-          padding: 1rem 1.5rem;
-          margin-top: .75rem; } }
+          margin-top: .75rem;
+          width: 125px; } }
       .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:hover, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:active, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:focus {
         background: #145B51;
         color: #fff;
         border-left: none; }
+        @media (min-width: 1000px) {
+          .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:hover, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:active, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:focus {
+            border-left: 1px solid #fff; } }
 
 .site-header {
   position: absolute;
