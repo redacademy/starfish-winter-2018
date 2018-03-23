@@ -20,7 +20,7 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="entry-header" style="background: url(<?php echo $post_page_banner; ?>); width: 100%; height: 600px; background-size: cover; ">
+			<header class="entry-header" style="background: url(<?php echo esc_url($post_page_banner); ?>); width: 100%; height: 600px; background-size: cover; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
 			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header><!-- .entry-header -->
@@ -49,17 +49,22 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 		<?php endif; ?>
 
 
-		<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		
-			<div class="content-box-header">
-				<h2>Want to contribute to our Journal and get your story published?</h2>
-			</div><!-- .content-box-header -->
+		<section class="entry-box-area">
 
-			<div class="content-box-content">
-				<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
-					<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
-				</a><!-- .content-box-button -->
-			</div><!-- .content-box-content -->
+			<div class="entry-box">
+		
+				<div class="entry-box-header">
+					<h2>Want to contribute to our Journal and get your story published?</h2>
+				</div><!-- .entry-box-header -->
+
+				<div class="entry-box-content">
+					<a class="entry-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
+						<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
+					</a><!-- .entry-box-button -->
+				</div><!-- .entry-box-content -->
+			
+			</div>	
+		
 		</section><!-- #post-## -->
 
 		</main><!-- #main -->
