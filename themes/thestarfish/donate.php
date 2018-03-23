@@ -5,7 +5,8 @@
  * @package starfish_Theme
  */
 
-?>
+get_header(); ?>
+	
 	<div id="primary" class="content-area"
 		<main id="main" class="content-main" role="main">
 
@@ -18,3 +19,5 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+<?php get_footer(); ?>	

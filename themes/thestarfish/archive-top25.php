@@ -37,7 +37,6 @@ get_header(); ?>
 		<?php endif; ?>
 </div>
 
-
 <div class="top25-profiles-box">
 		<?php
 			$args = array( 
@@ -58,18 +57,33 @@ get_header(); ?>
     <li>
         <a class="top25-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
 	</li>
-	</div>
+</div>
 <?php endforeach;
 wp_reset_postdata();
 ?>
 </div>
 </section>
 
+<section class="archive-box-area">
+	
+	<div class="archive-box">
+		
+		<div class="archive-box-header">
+			<h2>Judges</h2>
+			<p>Just like our Top 25 list,these changemakers are committed to progressive, 
+			positive change in their communities and are lending their expertise to finding 
+			our next round of young Canadian leaders</p>
+		</div><!-- .archive-box-header -->
 
+		<div class="archive-box-content">
+			<a class="archive-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'profile_type-judges' ) ) ); ?>">Meet the team
+				<span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
+			</a><!-- .archive-box-button -->
+		</div><!-- .archive-box-content -->
+	
+	</div>	
 
-
-
-
+</section><!-- #post-## -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
