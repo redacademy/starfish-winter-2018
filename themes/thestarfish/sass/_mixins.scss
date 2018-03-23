@@ -7,6 +7,14 @@ $desktop: 600px;
 	}
 }
 
+$desktop-for-footer: 1000px;
+
+@mixin desktop-for-footer {
+	@media (min-width: $desktop-for-footer){
+		@content;
+	}
+}
+
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;

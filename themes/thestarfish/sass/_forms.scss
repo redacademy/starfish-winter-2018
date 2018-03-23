@@ -80,6 +80,11 @@ textarea {
 		padding: .75rem 7.69rem;
 		color: $color__background-body;
 		background: $color__main-brand;
+		@include desktop {
+			padding: .75rem 3.5rem;
+			font-size: 1.25rem;
+			border-width: $border__bold-width;
+		}
 	&:hover,
 	&:focus {
 		background: $color__background-body;
