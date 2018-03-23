@@ -66,20 +66,20 @@ wp_reset_postdata();
 
 <section class="archive-box-area">
 	
-	<div class="archive-box">
+	<div class="content-box">
 		
-		<div class="archive-box-header">
+		<div class="content-box-header">
 			<h2>Judges</h2>
 			<p>Just like our Top 25 list,these changemakers are committed to progressive, 
 			positive change in their communities and are lending their expertise to finding 
 			our next round of young Canadian leaders</p>
-		</div><!-- .archive-box-header -->
+		</div><!-- .content-box-header -->
 
-		<div class="archive-box-content">
-			<a class="archive-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'profile_type-judges' ) ) ); ?>">Meet the team
+		<div class="content-box-content">
+			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'taxonomy-judges' ) ) ); ?>">Meet the Judges
 				<span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
-			</a><!-- .archive-box-button -->
-		</div><!-- .archive-box-content -->
+			</a><!-- .content-box-button -->
+		</div><!-- .content-box-content -->
 	
 	</div>	
 

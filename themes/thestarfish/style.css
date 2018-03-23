@@ -242,7 +242,7 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   clear: both;
   font-family: "Poppins", sans-serif; }
 
@@ -285,6 +285,20 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.nav-menu {
+  font-family: "Poppins", sans-serif; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  letter-spacing: 1px; }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 550px; }
 
 /*--------------------------------------------------------------
 # Elements

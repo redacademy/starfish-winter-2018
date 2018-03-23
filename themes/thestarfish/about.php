@@ -63,17 +63,17 @@ get_header(); ?>
 
 					<section class="about-box-area">
 						
-						<div class="about-box">
+						<div class="content-box">
 							
-							<div class="about-box-header">
+							<div class="content-box-header">
 								<h2>Meet The Team</h2>
-							</div><!-- .about-box-header -->
+							</div><!-- .content-box-header -->
 
-							<div class="about-box-content">
-								<a class="about-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>">Meet the team
+							<div class="content-box-content">
+								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'team' ) ) ); ?>">Meet the team
 									<span class="screen-reader-text"><?php echo esc_html( 'Meet The Team' ); ?></span>
-								</a><!-- .about-box-button -->
-							</div><!-- .about-box-content -->
+								</a><!-- .content-box-button -->
+							</div><!-- .content-box-content -->
 						
 						</div>
 					
