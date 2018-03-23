@@ -5,11 +5,41 @@
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: rgba(white,0.9);
+    background: white;
     display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+    .popup-profile-content{
+        flex-basis: 45%;
+        .content-single-profile{
+            padding-left:100px;
+            padding-right:100px;
+            overflow: scroll;
+            height: 90%;
+            h2{
+                border-bottom: 4px solid $color__secondary-brand;
+            }
+            p{
+                line-height: 40px;
+            }
+        }
+    }
+    .popup-profile-image{
+        flex-basis: 55%;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width:100%;
+        }
+    }
+    .sf-modal-close{
+        text-align: right;
+        font-size: 40px;
+        color: $color__secondary-brand;
+        padding-right:50px;
+    }
 }
 
 .profile-box{
@@ -38,6 +68,9 @@
     }
     .profile-headline{
         width: 100%;
+        h1{
+            border-bottom: 4px solid $color__secondary-brand;
+        }
     }
     @include desktop {
         display: flex;
@@ -45,13 +78,40 @@
         .profile-box-preview{
             display: block;
             flex-basis: 40%;
+            padding-top: 100px;
+            padding-left:10px;
+            padding-right:10px;
+            img{
+                width:425px;
+                height:450px;
+                object-fit: cover;
+            }
+            h2{
+                position: absolute;
+                color: white;
+                margin-top: 375px;
+                margin-left:20px;
+                text-shadow: 2px 2px 4px #000000;
+                font-weight: 100;
+                font-size: 1.5rem;
+                border-bottom: 4px solid $color__secondary-brand;
+            }
+            input{
+                width:425px;
+                height: 75px;
+                font-size: 30px;
+            }
         }
         .profile-container{
             flex-basis: 60%;
         }
-        .profile-content img{
-            width: 120px;
-            height: 120px;
+        .profile-content {
+            max-width: 16%;
+            min-width:16%;
+            img{
+                width: 120px;
+                height: 120px;
+            }
         }
     }
 }
@@ -61,12 +121,20 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 //top25
-.top25-box{
+.top25-profiles-box{
     display: flex;
     
 }
-
 
 
 

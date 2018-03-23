@@ -4,21 +4,21 @@
      * Get post id and create a modal/lightbox for team members
      */
 
+
     /*
      * THIS IS FOR LOADING THE PREVIEW IMAGE
      */
     $('.profile-picture-executive').on('click', function (event) {
+        $(".sf-modal").remove();
         event.preventDefault();
         $(".preview-content-container-executive").remove();
         var postId = $(this).attr('id');
-        console.log(postId);
-
         $.ajax({
                 method: "GET",
                 url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed",
             }).done(function (data) {
                 console.log(data);
-                 var teamContent = data.content.rendered;
+                var teamContent = data.content.rendered;
                 var teamTitle = data.title.rendered;
                 var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
                 var preview = '<div class="preview-content-container-executive">';
@@ -29,12 +29,15 @@
                 preview += '</div>';
                 $('.profile-box-preview-executive').append(preview);
 
-                var htmlTemplate = '<div class="sf-modal">';
-                            htmlTemplate += '<div id="sf-modal-close"><i class="fas fa-times"></i></div>';
+                            var htmlTemplate = '<div class="sf-modal">';
+                            htmlTemplate += '<div class="popup-profile-content">'
+                            htmlTemplate += '<div id="sf-modal-close" class="sf-modal-close"><i class="fas fa-times"></i></div>';
+                            htmlTemplate += '<div class="content-single-profile">'
                             htmlTemplate += '<h2>' + teamTitle + '</h2>';
-                            htmlTemplate += '<div>' + teamContent + '</div>';
-                            htmlTemplate += '<img src="' + teamPhoto + '">';
-    
+                            htmlTemplate += '<p>' + teamContent + '</p>';
+                            htmlTemplate += '</div>'
+                            htmlTemplate += '</div>'
+                            htmlTemplate += '<div class="popup-profile-image"><img src="' + teamPhoto + '"></div>';
                             htmlTemplate += '</div>';
     
                             $('body').append(htmlTemplate);
@@ -121,15 +124,16 @@
                 preview += '</div>';
                 $('.profile-box-preview-editorial').append(preview);
 
-
-
                 var htmlTemplate = '<div class="sf-modal">';
-                            htmlTemplate += '<div id="sf-modal-close"><i class="fas fa-times"></i></div>';
-                            htmlTemplate += '<h2>' + teamTitle + '</h2>';
-                            htmlTemplate += '<div>' + teamContent + '</div>';
-                            htmlTemplate += '<img src="' + teamPhoto + '">';
-    
-                            htmlTemplate += '</div>';
+                htmlTemplate += '<div class="popup-profile-content">'
+                htmlTemplate += '<div id="sf-modal-close" class="sf-modal-close"><i class="fas fa-times"></i></div>';
+                htmlTemplate += '<div class="content-single-profile">'
+                htmlTemplate += '<h2>' + teamTitle + '</h2>';
+                htmlTemplate += '<p>' + teamContent + '</p>';
+                htmlTemplate += '</div>'
+                htmlTemplate += '</div>'
+                htmlTemplate += '<div class="popup-profile-image"><img src="' + teamPhoto + '"></div>';
+                htmlTemplate += '</div>';
     
                             $('body').append(htmlTemplate);
     
@@ -210,12 +214,16 @@
                 preview += '</div>';
                 $('.profile-box-preview-bd').append(preview);
 
-
                 var htmlTemplate = '<div class="sf-modal">';
-                            htmlTemplate += '<div id="sf-modal-close"><i class="fas fa-times"></i></div>';
-                            htmlTemplate += '<h2>' + teamTitle + '</h2>';
-                            htmlTemplate += '<div>' + teamContent + '</div>';
-                            htmlTemplate += '<img src="' + teamPhoto + '">';
+                htmlTemplate += '<div class="popup-profile-content">'
+                htmlTemplate += '<div id="sf-modal-close" class="sf-modal-close"><i class="fas fa-times"></i></div>';
+                htmlTemplate += '<div class="content-single-profile">'
+                htmlTemplate += '<h2>' + teamTitle + '</h2>';
+                htmlTemplate += '<p>' + teamContent + '</p>';
+                htmlTemplate += '</div>'
+                htmlTemplate += '</div>'
+                htmlTemplate += '<div class="popup-profile-image"><img src="' + teamPhoto + '"></div>';
+                htmlTemplate += '</div>';
     
                             htmlTemplate += '</div>';
     
