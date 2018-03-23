@@ -1242,3 +1242,14 @@ object {
 .hfeed {
   position: relative;
   top: -22px; }
+
+.donation-container {
+  background: url("../../images/donation.png") center no-repeat;
+  background-size: cover;
+  height: 450px; }
+  .donation-container .content-donation {
+    width: 90%;
+    margin: auto; }
+    @media (min-width: 600px) {
+      .donation-container .content-donation .content-donation-info {
+        width: 400px; } }
