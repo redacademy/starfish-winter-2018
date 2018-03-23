@@ -1,0 +1,20 @@
+
+//** CONTENT_DONATION **//
+
+.donation-container{
+  background: 
+  url('../../images/donation.png') center  no-repeat;
+  background-size: cover;
+  
+  height:450px;
+  
+  .content-donation{
+      width: 90%;
+      margin: auto;
+      .content-donation-info{
+          @include desktop{
+              width: 400px;
+          }
+      }
+  }
+}
