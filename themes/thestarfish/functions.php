@@ -95,9 +95,17 @@ add_filter( 'stylesheet_uri', 'starfish_minified_css', 10, 2 );
 function starfish_scripts() {
 	wp_enqueue_style( 'starfish-style', get_stylesheet_uri() );
 
+	// This is ENQUEUE style for flickity.css
+	wp_enqueue_style( 'flickity-style', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
+
+	// This is the ENQUEUE styles for the main fonts
+	wp_enqueue_style( 'poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600' );
+	wp_enqueue_style( 'open-sans-font', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' );
+
 	// This is the ENQUEUE scripts for opening menu javascript file
 	wp_enqueue_script( 'open-side-menu', get_template_directory_uri() . '/build/js/open-side-menu.min.js', array(), '20130115', true);
 
+	// This is the  ENQUEUE script for carousels js file
 	wp_enqueue_script('carousels', get_template_directory_uri() . '/build/js/carousels.min.js', array(), '20130115', true);
 
 	wp_enqueue_script('profile-popup', get_template_directory_uri() . '/build/js/profile-popup.min.js', array(), '20130115', true);
@@ -108,6 +116,7 @@ function starfish_scripts() {
 
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.7/js/all.js' );
 	
+	//This is the ENQUEUE script for flickity
 	wp_enqueue_script( 'starfish-get-flickity-cdn', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), true);
 
 	wp_enqueue_script( 'starfish-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
