@@ -136,10 +136,11 @@
             display: flex;
             margin-top: .5rem;
             input[type="email"] {
-                padding: .75rem 2.45rem .75rem .75rem;
+                padding: .8125rem .75rem .75rem .8125rem;
                 border-radius: 0;
                 border: $border__light;
                 background: transparent;
+                width: 195px;
                 @include desktop-for-footer {
                     padding: .8125rem .75rem .75rem .8125rem;
                     margin-right: 5px;
