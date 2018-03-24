@@ -47,20 +47,21 @@ get_header(); ?>
 			);
 			$myposts = get_posts( $args );
 			?>
-		<?php 
-		foreach ( $myposts as $post ) : setup_postdata( $post );
-		if ( has_post_thumbnail() ) : 
-		?>
-			<div class="top25-profile-content">
-		<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-    <li>
-        <a class="top25-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-	</li>
-</div>
-<?php endforeach;
-wp_reset_postdata();
-?>
+
+			<div class="carousel-top-25">
+				
+				<?php 
+				foreach ( $myposts as $post ) : setup_postdata( $post );?>
+						<div class="carousel-top-25-cell">
+						<?php if ( has_post_thumbnail() ) : 
+								the_post_thumbnail( 'large' ); 
+							endif; ?>
+							<a class="top25-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+						</div>
+				<?php endforeach;
+				wp_reset_postdata();
+				?>
+			</div>
 </div>
 </section>
 

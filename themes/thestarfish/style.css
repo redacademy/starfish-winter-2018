@@ -760,6 +760,12 @@ a {
         top: 57%;
         left: 9%; } }
 
+/* Carousel on Top 25 Page */
+.carousel-top-25 {
+  width: 100%; }
+  .carousel-top-25 .carousel-top-25-cell {
+    width: 50%; }
+
 .button::after {
   content: ''; }
 
