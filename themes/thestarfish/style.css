@@ -244,8 +244,14 @@ textarea {
 /* Headings */
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 55px;
-  letter-spacing: 1px; }
+  font-size: 10vw;
+  letter-spacing: 1px;
+  margin-top: 60px; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 55px;
+      width: 800px;
+      margin-left: 100px; } }
 
 h2 {
   font-family: "Poppins", sans-serif;
@@ -1136,6 +1142,10 @@ object {
     width: 40%; }
     .site-header .site-logo .logo {
       height: 60px; }
+      @media (min-width: 600px) {
+        .site-header .site-logo .logo {
+          margin-top: 15px;
+          margin-left: 80px; } }
   .site-header .fa-bars,
   .site-header .btn-close {
     font-size: 2rem;
