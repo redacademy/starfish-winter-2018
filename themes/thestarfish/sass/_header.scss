@@ -11,6 +11,10 @@
     width:40%;
         .logo {
             height: 60px;
+            @include desktop {
+                margin-top: 15px;
+                margin-left: 80px;
+            }
         }
     }
     .fa-bars,
