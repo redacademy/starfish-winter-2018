@@ -15,6 +15,19 @@ textarea {
 
 /* Headings */
 
+h1 {
+	font-family: $font__title;
+	font-size: 55px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-family: $font__title;
+	font-size: 45px;
+	letter-spacing: .7px;
+	font-weight: 500px;
+}
+
 h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font__title;
@@ -68,21 +81,8 @@ big {
 	font-size: 125%;
 }
 
-.nav-menu  {
-	font-family: $font__title;
-}
 
-h1 {
-	font-family: $font__title;
-	font-size: 55px;
-	letter-spacing: 1px;
-}
 
-h2 {
-	font-family: $font__title;
-	font-size: 40px;
-	letter-spacing: 1px;
-	font-weight: 550px;
-}
+
 
 
