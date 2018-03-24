@@ -1380,10 +1380,6 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
-.hfeed {
-  position: relative;
-  top: -22px; }
-
 .donation-container {
   background: url("../../images/donation.png") center no-repeat;
   background-size: cover;
@@ -1398,15 +1394,18 @@ object {
       line-height: 28px;
       color: #394442;
       font-weight: 300;
-      margin-bottom: 40px; }
+      margin-top: 20px;
+      margin-bottom: 50px; }
 
 .btn-donate {
   background: #FF8271;
   color: #fff;
-  font-size: 19px;
+  padding: 13px 70px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: .5px; }
   @media (min-width: 600px) {
     .btn-donate {
       width: 210px;
