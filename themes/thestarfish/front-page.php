@@ -99,7 +99,7 @@ get_header(); ?>
 
 					<section class="front-page-become-box">
 
-						<div class="fornt-page-become-volunteer">
+						<div class="front-page-become-volunteer">
 							
 							<h2  class="front-page-volunteer-header">Become a Volunteer</h2>
 
