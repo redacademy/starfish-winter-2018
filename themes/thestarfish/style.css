@@ -831,6 +831,98 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-become-box {
+  background: url("../../images/mountain-range.png") center top 230px no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.front-page-become-volunteer {
+  background: url("../../images/become-volunteer.png") center 100px no-repeat;
+  background-size: cover;
+  height: 485px;
+  width: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px; }
+  .front-page-become-volunteer h2 {
+    color: #fff;
+    height: 170px;
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .front-page-become-volunteer .front-page-volunteer-content {
+    height: 70px;
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+.front-page-become-member {
+  background: url("../../images/become-member.png") center 100px no-repeat;
+  height: 485px;
+  width: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 20px; }
+  .front-page-become-member h2 {
+    color: #fff;
+    height: 170px;
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .front-page-become-member .front-page-member-content {
+    height: 70px;
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
 .donation-container {
   background: lightblue;
   background-size: cover;
@@ -1297,7 +1389,6 @@ object {
   background-size: cover;
   height: 450px; }
   .donation-container .content-donation {
-    width: 90%;
     margin: auto;
     padding: 75px 0 0 130px; }
     @media (min-width: 600px) {
