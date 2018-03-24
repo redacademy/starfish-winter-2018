@@ -136,11 +136,15 @@
     height:100vh;
     background-position:25% 25%;  /* Sets reference point to scale from */
     background-size:cover;
-  
     .entry-title{
         top: 50%;
         position: relative;
         transform: translateY(-50%); 
+        a{
+            text-decoration: none;
+            color:white;
+            pointer-events: none;
+        }
     }
 }
 #menu-open{

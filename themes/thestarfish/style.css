@@ -1299,6 +1299,10 @@ object {
     position: relative;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+    .site-main header .entry-title a {
+      text-decoration: none;
+      color: white;
+      pointer-events: none; }
 
 #menu-open {
   margin-right: 15px; }
@@ -1378,7 +1382,8 @@ object {
   .profile-box .profile-headline {
     width: 100%; }
     .profile-box .profile-headline h1 {
-      border-bottom: 4px solid #FF8271; }
+      border-bottom: 4px solid #FF8271;
+      margin-left: 0; }
   @media (min-width: 600px) {
     .profile-box {
       display: -webkit-box;

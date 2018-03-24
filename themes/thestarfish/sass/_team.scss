@@ -70,6 +70,7 @@
         width: 100%;
         h1{
             border-bottom: 4px solid $color__secondary-brand;
+            margin-left:0
         }
     }
     @include desktop {
