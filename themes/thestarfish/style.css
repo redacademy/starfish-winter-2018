@@ -242,6 +242,17 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  letter-spacing: 1px; }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  letter-spacing: .7px;
+  font-weight: 500px; }
+
 h3, h4, h5, h6 {
   clear: both;
   font-family: "Poppins", sans-serif; }
@@ -285,20 +296,6 @@ mark, ins {
 
 big {
   font-size: 125%; }
-
-.nav-menu {
-  font-family: "Poppins", sans-serif; }
-
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 55px;
-  letter-spacing: 1px; }
-
-h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  letter-spacing: 1px;
-  font-weight: 550px; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1092,6 +1089,7 @@ object {
   #site-navigation .menu-main-navigation-container {
     width: 100%; }
     #site-navigation .menu-main-navigation-container .nav-menu {
+      font-family: "Poppins", sans-serif;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1301,20 +1299,21 @@ object {
   .donation-container .content-donation {
     width: 90%;
     margin: auto;
-    padding: 75px 0 0 90px; }
+    padding: 75px 0 0 130px; }
     @media (min-width: 600px) {
       .donation-container .content-donation .content-donation-info {
         width: 400px; } }
     .donation-container .content-donation .content-donation-info p {
       line-height: 28px;
       color: #394442;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 40px; }
 
 .btn-donate {
   background: #FF8271;
   color: #fff;
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,5 +1331,5 @@ object {
     color: #fff; }
   @media (min-width: 600px) {
     .btn-donate {
-      width: 250px;
+      width: 210px;
       margin: 0; } }

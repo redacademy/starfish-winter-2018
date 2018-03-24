@@ -10,7 +10,7 @@
   .content-donation {
     width: 90%;
     margin: auto;
-    padding: 75px 0 0 90px;
+    padding: 75px 0 0 130px;
       
     .content-donation-info {
       @include desktop{
@@ -21,6 +21,7 @@
       line-height: 28px;
       color: $color__text-main;
       font-weight: 300;
+      margin-bottom: 40px;
       }   
     }
   }
@@ -30,7 +31,7 @@
 	background: $color__secondary-brand;
 	color:#fff;
 	width: 100%;
-	height: 60px;
+	height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +45,7 @@
 	}
   
   @include desktop {
-		width: 250px;
+		width: 210px;
 		margin: 0;
 	}
 }
