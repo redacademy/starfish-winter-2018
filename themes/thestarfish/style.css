@@ -1301,8 +1301,7 @@ object {
             transform: translateY(-50%); }
     .site-main header .entry-title a {
       text-decoration: none;
-      color: white;
-      pointer-events: none; }
+      color: white; }
 
 #menu-open {
   margin-right: 15px; }
@@ -1359,8 +1358,9 @@ object {
 .profile-box {
   width: 90%;
   margin: auto;
-  height: 100vh;
-  margin-top: 50px; }
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 180px; }
   .profile-box .profile-box-preview {
     display: none; }
   .profile-box .profile-container {
