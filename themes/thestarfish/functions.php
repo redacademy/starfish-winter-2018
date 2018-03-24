@@ -95,10 +95,11 @@ add_filter( 'stylesheet_uri', 'starfish_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function starfish_scripts() {
-	wp_enqueue_style( 'starfish-style', get_stylesheet_uri() );
 
 	// This is ENQUEUE style for flickity.css
 	wp_enqueue_style( 'flickity-style', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
+
+	wp_enqueue_style( 'starfish-style', get_stylesheet_uri() );
 
 	// This is the ENQUEUE styles for the main fonts
 	wp_enqueue_style( 'poppins-font', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600' );
