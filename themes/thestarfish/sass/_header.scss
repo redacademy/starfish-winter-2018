@@ -46,10 +46,11 @@
             flex-direction: column;
             padding:10px;
             line-height: 30px;
-            background: beige;
+            background: white;
             width:250px;
             #submenu-title{
                 color:black;
+                border-bottom: 3px solid $color__secondary-brand;
             }
             #learn-more{
                 background: white;
@@ -58,7 +59,8 @@
                 width: 100px;
                 text-align: center;
                 padding: 2px;
-                margin-bottom:20px;
+                margin-top: 10px;
+                margin-bottom:10px;
                 &:hover{
                     background:$color__main-brand;
                     color:white;
