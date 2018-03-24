@@ -34,7 +34,7 @@
 	flex-direction: column;
     background: $color__main-brand;
     @include desktop{
-        z-index: 0;
+        z-index: 999;
         background: none;
         flex-direction: row;
         justify-content: flex-end;
@@ -43,8 +43,27 @@
         right: auto;
         .sub-menu{
             display: flex;
-            width: 400px;
-            background: lightblue;
+            flex-direction: column;
+            padding:10px;
+            line-height: 30px;
+            background: beige;
+            width:250px;
+            #submenu-title{
+                color:black;
+            }
+            #learn-more{
+                background: white;
+                color: $color__main-brand;
+                border: 2px solid $color__main-brand;
+                width: 100px;
+                text-align: center;
+                padding: 2px;
+                margin-bottom:20px;
+                &:hover{
+                    background:$color__main-brand;
+                    color:white;
+                }
+            }
         }
     }
     .menu-main-navigation-container{
