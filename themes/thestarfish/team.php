@@ -57,12 +57,15 @@ get_header(); ?>
 				<?php 
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : ?>
+		<h2>
 		<?php the_title(); ?>
+		</h2>
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
+		<input type="button" class="popup-profile" value="Learn More"/>
 	</div>
 
 
@@ -106,7 +109,6 @@ wp_reset_postdata();
 <section class="profile-box editorial">
 
 <div class="profile-box-preview profile-box-preview-editorial">
-	<!-- <p>Test</p> -->
 	<div class="preview-content-container-editorial">
 	<?php
 			$args = array( 
@@ -120,12 +122,16 @@ wp_reset_postdata();
 				<?php 
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : ?>
+		<h2>
 		<?php the_title(); ?>
+		</h2>
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
+				<input type="button" class="popup-profile" value="Learn More"/>
+
 	</div>
 
 
@@ -187,13 +193,17 @@ wp_reset_postdata();
 				<?php 
 		foreach ( $myposts as $post ) : setup_postdata( $post );
 		if ( has_post_thumbnail() ) : ?>
+				<h2>
 		<?php the_title(); ?>
+		</h2>
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
 	</div>
+	<input type="button" class="popup-profile" value="Learn More"/>
+
 </div>
 
 <div class="profile-container">

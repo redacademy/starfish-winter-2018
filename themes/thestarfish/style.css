@@ -760,12 +760,6 @@ a {
         top: 57%;
         left: 9%; } }
 
-/* Carousel on Top 25 Page */
-.carousel-top-25 {
-  width: 100%; }
-  .carousel-top-25 .carousel-top-25-cell {
-    width: 50%; }
-
 .button::after {
   content: ''; }
 
@@ -1170,7 +1164,7 @@ object {
   background: #145B51; }
   @media (min-width: 600px) {
     #site-navigation {
-      z-index: 0;
+      z-index: 999;
       background: none;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1186,8 +1180,27 @@ object {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 400px;
-        background: lightblue; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 10px;
+        line-height: 30px;
+        background: beige;
+        width: 250px; }
+        #site-navigation .sub-menu #submenu-title {
+          color: black; }
+        #site-navigation .sub-menu #learn-more {
+          background: white;
+          color: #145B51;
+          border: 2px solid #145B51;
+          width: 100px;
+          text-align: center;
+          padding: 2px;
+          margin-bottom: 20px; }
+          #site-navigation .sub-menu #learn-more:hover {
+            background: #145B51;
+            color: white; } }
   #site-navigation .menu-main-navigation-container {
     width: 100%; }
     #site-navigation .menu-main-navigation-container .nav-menu {
@@ -1385,10 +1398,21 @@ object {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
+<<<<<<< HEAD
+/* Carousel on Top 25 Page */
+.carousel-top-25 {
+  width: 100%; }
+  .carousel-top-25 .carousel-top-25-cell {
+    width: 50%; }
+    .carousel-top-25 .carousel-top-25-cell img {
+      width: 40%;
+      text-align: center; }
+=======
 .top25-profiles-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+>>>>>>> 326335a8c6edbf887bc9f07d8f92ab9044fd0625
 
 .donation-container {
   background: url("../../images/donation.png") center no-repeat;
@@ -1410,12 +1434,32 @@ object {
 .btn-donate {
   background: #FF8271;
   color: #fff;
+<<<<<<< HEAD
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .btn-donate a {
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff; }
+=======
   padding: 13px 70px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-decoration: none;
   letter-spacing: .5px; }
+>>>>>>> 326335a8c6edbf887bc9f07d8f92ab9044fd0625
   @media (min-width: 600px) {
     .btn-donate {
       width: 210px;

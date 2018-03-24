@@ -61,7 +61,7 @@ class Description_Walker extends Walker_Nav_Menu {
 			? '<small class="nav_desc">' . esc_attr( $item->description ) . '</small><a href="' . esc_attr( $item->url ) . '" id="learn-more">Learn More</a>' : '';
 		$title = apply_filters( 'the_title', $item->title, $item->ID );
 		$item_output = $args->before
-					   . "<a $attributes>"
+					   . "<a $attributes id='submenu-title'>"
 					   . $args->link_before
 					//    . "<a $attributes>"
 					   . $title

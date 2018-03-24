@@ -131,9 +131,22 @@
 
 
 //top25
-.top25-profiles-box{
-    display: flex;
-    
+// .top25-profiles-box{
+//     display: flex;
+// }
+
+/* Carousel on Top 25 Page */
+
+.carousel-top-25 {
+	width: 100%;
+	.carousel-top-25-cell {
+        width: 50%;
+
+        img{
+            width:40%;
+            text-align: center;
+        }
+	}
 }
 
 
