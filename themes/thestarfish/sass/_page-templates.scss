@@ -5,66 +5,94 @@
 /* Front page */
 
 .front-page-become-box {
-  background: 
-    url('../../images/mountain-range.png') center top 230px no-repeat;
-  background-size: cover;
-  height: 600px;
+  height: 700px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+
+  @include desktop {
+    background: 
+    url('../../images/mountain-range.png') center top 230px no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .front-page-become-volunteer {
   background: 
   url('../../images/become-volunteer.png') center 100px no-repeat;
   background-size: cover;
-  height: 485px;
-  width: 525px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 20px;
+  height: 380px;
+  width: 100%;
+
+  @include desktop {
+    height: 485px;
+    width: 525px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
 
   h2 {
     color: #fff;
     height: 170px;
-    width: 440px;
+    width: 100%;
     display: flex;
     align-items: flex-start;
   }
 
   .front-page-volunteer-content {
     height: 70px;
-    width: 440px;
     display: flex;
     align-items: flex-start;
+
+    @include desktop {
+      width: 440px;
+    }
   }
 }
 
 .front-page-become-member {
   background: 
   url('../../images/become-member.png') center 100px no-repeat;
-  height: 485px;
-  width: 525px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 385px;
+
+  @include desktop {
+    height: 485px;
+    width: 525px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
 
   h2 {
     color: #fff;
     height: 170px;
-    width: 440px;
-    display: flex;
-    align-items: flex-start;
+    width: 100%;
+
+    @include desktop {
+      display: flex;
+      align-items: flex-start;
+    }
+    
   }
 
   .front-page-member-content {
     height: 70px;
-    width: 440px;
     display: flex;
     align-items: flex-start;
-  }
+
+    @include desktop {
+      width: 440px;
+    }
+  }  
 }

@@ -832,43 +832,57 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .front-page-become-box {
-  background: url("../../images/mountain-range.png") center top 230px no-repeat;
-  background-size: cover;
-  height: 600px;
+  height: 700px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 600px) {
+    .front-page-become-box {
+      background: url("../../images/mountain-range.png") center top 230px no-repeat;
+      background-size: cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .front-page-become-volunteer {
   background: url("../../images/become-volunteer.png") center 100px no-repeat;
   background-size: cover;
-  height: 485px;
-  width: 525px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 20px; }
+  height: 380px;
+  width: 100%; }
+  @media (min-width: 600px) {
+    .front-page-become-volunteer {
+      height: 485px;
+      width: 525px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-right: 20px; } }
   .front-page-become-volunteer h2 {
     color: #fff;
     height: 170px;
-    width: 440px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -877,51 +891,62 @@ object {
             align-items: flex-start; }
   .front-page-become-volunteer .front-page-volunteer-content {
     height: 70px;
-    width: 440px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    @media (min-width: 600px) {
+      .front-page-become-volunteer .front-page-volunteer-content {
+        width: 440px; } }
 
 .front-page-become-member {
   background: url("../../images/become-member.png") center 100px no-repeat;
-  height: 485px;
-  width: 525px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 20px; }
+  background-size: cover;
+  width: 100%;
+  height: 385px; }
+  @media (min-width: 600px) {
+    .front-page-become-member {
+      height: 485px;
+      width: 525px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-right: 20px; } }
   .front-page-become-member h2 {
     color: #fff;
     height: 170px;
-    width: 440px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .front-page-become-member h2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
   .front-page-become-member .front-page-member-content {
     height: 70px;
-    width: 440px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    @media (min-width: 600px) {
+      .front-page-become-member .front-page-member-content {
+        width: 440px; } }
 
 .donation-container {
   background: lightblue;
@@ -1398,7 +1423,6 @@ object {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
-<<<<<<< HEAD
 /* Carousel on Top 25 Page */
 .carousel-top-25 {
   width: 100%; }
@@ -1407,20 +1431,20 @@ object {
     .carousel-top-25 .carousel-top-25-cell img {
       width: 40%;
       text-align: center; }
-=======
-.top25-profiles-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
->>>>>>> 326335a8c6edbf887bc9f07d8f92ab9044fd0625
 
 .donation-container {
-  background: url("../../images/donation.png") center no-repeat;
-  background-size: cover;
-  height: 450px; }
+  background: url("../../images/donation.png") center bottom no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 435px; }
+  @media (min-width: 600px) {
+    .donation-container {
+      background-size: cover; } }
   .donation-container .content-donation {
-    margin: auto;
-    padding: 75px 0 0 130px; }
+    margin: auto; }
+    @media (min-width: 600px) {
+      .donation-container .content-donation {
+        padding: 75px 0 0 130px; } }
     @media (min-width: 600px) {
       .donation-container .content-donation .content-donation-info {
         width: 400px; } }
@@ -1429,38 +1453,26 @@ object {
       color: #394442;
       font-weight: 300;
       margin-top: 20px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      margin-left: 25px;
+      width: 90%; }
+      @media (min-width: 600px) {
+        .donation-container .content-donation .content-donation-info p {
+          margin-left: 0;
+          width: 100%; } }
 
 .btn-donate {
   background: #FF8271;
   color: #fff;
-<<<<<<< HEAD
-  width: 100%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .btn-donate a {
-    font-size: 19px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff; }
-=======
-  padding: 13px 70px;
+  padding: 13px 120px;
+  margin-left: 20px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-decoration: none;
   letter-spacing: .5px; }
->>>>>>> 326335a8c6edbf887bc9f07d8f92ab9044fd0625
   @media (min-width: 600px) {
     .btn-donate {
       width: 210px;
-      margin: 0; } }
+      margin: 0;
+      padding: 13px 70px; } }
