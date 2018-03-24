@@ -66,7 +66,8 @@ get_header(); ?>
 </section>
 
 <section class="judges-section">
-	
+	<div id="judges-image">
+	</div>
 	<div class="judges-container">
 		
 		<div class="judges-container-content">

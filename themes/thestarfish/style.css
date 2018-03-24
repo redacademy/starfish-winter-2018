@@ -1433,8 +1433,6 @@ object {
     .carousel-top-25 .carousel-top-25-cell img {
       width: 40%;
       text-align: center; }
-<<<<<<< HEAD
-=======
 
 .judges-section {
   background: lightblue;
@@ -1495,7 +1493,6 @@ object {
           width: 200px; }
           .judges-section .judges-container .judges-container-btn .content-box-button input {
             width: 200px; } }
->>>>>>> 968ca50bda606e7f407fba5a2252feda44002cb0
 
 .donation-container {
   background: url("../../images/donation.png") center bottom no-repeat;
@@ -1529,12 +1526,8 @@ object {
 .btn-donate {
   background: #FF8271;
   color: #fff;
-<<<<<<< HEAD
   padding: 13px 120px;
   margin-left: 20px;
-=======
-  padding: 13px 70px;
->>>>>>> 968ca50bda606e7f407fba5a2252feda44002cb0
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
