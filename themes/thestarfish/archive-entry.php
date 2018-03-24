@@ -71,5 +71,4 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 	</div><!-- #primary -->
 
 <?php get_template_part( 'template-parts/content', 'donation' ); ?>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
