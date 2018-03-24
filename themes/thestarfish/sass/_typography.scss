@@ -17,8 +17,16 @@ textarea {
 
 h1 {
 	font-family: $font__title;
-	font-size: 55px;
+	font-size: 10vw;
 	letter-spacing: 1px;
+	margin-top: 60px;
+	
+	@include desktop {
+		font-size: 55px;
+		width: 800px;
+		margin-left: 100px;
+	}
+	
 }
 
 h2 {
