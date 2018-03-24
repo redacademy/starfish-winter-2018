@@ -65,20 +65,20 @@ get_header(); ?>
 </div>
 </section>
 
-<section class="archive-box-area">
+<section class="judges-section">
 	
-	<div class="content-box">
+	<div class="judges-container">
 		
-		<div class="content-box-header">
+		<div class="judges-container-content">
 			<h2>Judges</h2>
 			<p>Just like our Top 25 list,these changemakers are committed to progressive, 
 			positive change in their communities and are lending their expertise to finding 
 			our next round of young Canadian leaders</p>
 		</div><!-- .content-box-header -->
 
-		<div class="content-box-content">
-			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'taxonomy-judges' ) ) ); ?>">Meet the Judges
-				<span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
+		<div class="judges-container-btn">
+			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'taxonomy-judges' ) ) ); ?>">
+			<input type="button" value="Meet the Judges"></input><span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
 			</a><!-- .content-box-button -->
 		</div><!-- .content-box-content -->
 	
@@ -88,5 +88,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_footer(); ?>
