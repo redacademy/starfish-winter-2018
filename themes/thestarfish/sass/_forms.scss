@@ -73,18 +73,17 @@ textarea {
 	}
 }
 
-.btn-transparent,
-.btn-transparent:visited {
-		border: $border__light;
-		text-decoration: none;
-		padding: .75rem 7.69rem;
-		color: $color__background-body;
-		background: $color__main-brand;
-		@include desktop {
-			padding: .75rem 3.5rem;
-			font-size: 1.25rem;
-			border-width: $border__bold-width;
-		}
+.btn-transparent {
+	border: $border__light;
+	text-decoration: none;
+	padding: .75rem 7.69rem;
+	color: $color__background-body;
+	background: $color__main-brand;
+	@include desktop {
+		padding: .75rem 3.5rem;
+		font-size: 1.25rem;
+		border-width: $border__bold-width;
+	}
 	&:hover,
 	&:focus {
 		background: $color__background-body;
