@@ -158,8 +158,15 @@ textarea {
 // Nominate Form //
 #gform_3 {
 	width: 330px;
-	padding-left: 5px;
 	margin-top: 60px;
+
+	.gform_title {
+		display: none;
+	}
+
+	.gform_page_footer {
+		border: none;
+	}
 	
 	input[type=text] {
 		border: 1px solid $color__main-brand;
@@ -168,12 +175,28 @@ textarea {
 		margin-top: 10px;
 	}
 
+	#field_3_9 {
+		.gfield_label {
+			font-size: 20px;
+			font-weight: 600;
+			letter-spacing: .5px;
+			&:after {
+				content: ""; 
+				display: block;
+				width: 124%;
+				padding-top: 25px;
+				margin-bottom: 25px;
+				border-bottom: 4px solid coral;
+			}
+		}
+	}
+
 	#input_3_9_3_container {
-		margin-top: 50px;
+		margin-top: 10px;
 	}
 
 	#input_3_9_3, #input_3_9_6, #input_3_10, #input_3_11  {
-		padding-left: 15px;
+		padding-left: 20px;
 		font-size: 15px;
 		font-style: italic;
 	}
@@ -217,6 +240,13 @@ textarea {
 	}
 }
 
+.gform_wrapper .gform_page_footer {
+	border-top: none;
+}
+
+.gform_next_button_3_8 {
+	
+}
 
 
 
