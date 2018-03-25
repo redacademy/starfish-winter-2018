@@ -492,6 +492,50 @@ textarea {
     border: none;
     padding: 20px 128px;
     margin-left: 8px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: .5px; }
+
+#gform_3 {
+  width: 330px;
+  padding-left: 5px;
+  margin-top: 60px; }
+  #gform_3 input[type=text] {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 10px; }
+  #gform_3 #input_3_9_3_container {
+    margin-top: 50px; }
+  #gform_3 #input_3_9_3, #gform_3 #input_3_9_6, #gform_3 #input_3_10, #gform_3 #input_3_11 {
+    padding-left: 15px;
+    font-size: 15px;
+    font-style: italic; }
+  #gform_3 input[type=email] {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 10px; }
+  #gform_3 textarea {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 6px 0;
+    margin-top: 10px; }
+  #gform_3 p {
+    font-size: 16px;
+    color: #394442; }
+  #gform_3 .gfield_label {
+    font-size: 15px;
+    color: #394442;
+    font-weight: 300; }
+  #gform_3 input[type=submit] {
+    background: #FF8271;
+    color: #fff;
+    border: none;
+    padding: 20px 128px;
+    margin-left: 8px;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 300;

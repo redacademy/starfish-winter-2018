@@ -6,11 +6,13 @@
  */
 
 get_header(); ?>
-<?php get_sidebar(); ?>
+
 	<div id="primary" class="content-area">
 
 		<main id="main" class="site-main" role="main">
-
+		
+		<?php get_sidebar(); ?>
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
