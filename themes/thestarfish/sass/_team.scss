@@ -127,28 +127,70 @@
 
 //top25**************************************
 
-// .top25-profiles-box{
-//     display: flex;
-// }
-
 /* Carousel on Top 25 Page */
-
-.carousel-top-25 {
-	width: 100%;
-	.carousel-top-25-cell {
-        width: 50%;
-
-        img{
-            width:40%;
-            text-align: center;
+.nominee-carousel{
+    display: block;
+    @include desktop{
+        display: none;
+    }
+    .carousel-top-25 {
+        width: 100%;
+        .carousel-top-25-cell {
+            width: 50%;
+            img{
+                width:40%;
+                text-align: center;
+            }
         }
-	}
+    }
+}
+
+.profile-scroll-box{
+    display: none;
+    height: 600px;
+    @include desktop{
+        display: flex;
+        .nominee-content{
+            display: flex;
+            flex-basis: 55%;
+            flex-wrap: wrap;
+            overflow: scroll;
+            justify-content: space-between;
+            padding-left:120px;
+            padding-right:120px;
+            .nominee-profiles-box{
+                width:300px;
+                margin-bottom: 80px;
+
+                img{
+                    height: 400px;
+                    width:300px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .nominee-meet-container{
+            flex-basis: 45%;
+        }
+    }
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .judges-section{
+    @include desktop{
     background: lightblue;
     height: 700px;
+    }
     .judges-container{
         background: $color__main-brand;
         color:white;

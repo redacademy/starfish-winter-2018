@@ -38,6 +38,39 @@ get_header(); ?>
 </div>
 
 <div class="top25-profiles-box">
+		<div class="profile-scroll-box">
+ 				<?php
+				$args = array( 
+					'posts_per_page' => 25, 
+					'offset'=> 1, 
+					'post_type' => 'profile', 
+					'profile_type' => 'nominees',	
+				);
+				$myposts = get_posts( $args );
+				?>
+			<div class="nominee-content">
+					<?php 
+					foreach ( $myposts as $post ) : setup_postdata( $post );?>
+							<div class="nominee-profiles-box">
+							<a class="nominee-popup" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>">							<?php if ( has_post_thumbnail() ) : 
+								the_post_thumbnail( 'large' ); 
+								endif; ?>
+							</a>
+								<?php the_title(); ?>
+							</div>
+					<?php endforeach;
+					wp_reset_postdata();
+					?>
+			</div>
+			<div class="nominee-meet-container">
+				<p>hello</p>
+			</div>
+
+		<div>
+
+
+
+<div class="nominee-carousel">
 		<?php
 			$args = array( 
 				'posts_per_page' => 25, 
@@ -62,6 +95,8 @@ get_header(); ?>
 				wp_reset_postdata();
 				?>
 			</div>
+</div>
+
 </div>
 </section>
 
