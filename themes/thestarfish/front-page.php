@@ -40,7 +40,7 @@ get_header(); ?>
 										// loop for each carousel cell
 										echo '<div class="carousel-cell-container single">';
 											echo '<div class="carousel-cell-images" />';
-												echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image" />';
+												echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" alt="" class="carousel-cell-image" />';
 											echo '</div>';
 											echo '<div class="carousel-cell-content">';
 												echo '<h2>' . $carousel['carousel_title'] . '</h2>';
@@ -59,10 +59,10 @@ get_header(); ?>
 					<section class="front-page-workshops">
 
 						<?php $image1 = CFS()->get('first_workshop_image');?>
-						<?php echo '<img src="' . $image1 . '" />'; ?>
+						<?php echo '<img src="' . $image1 . '" alt="" />'; ?>
 
 						<?php $image2 = CFS()->get('second_workshop_image');?>
-						<?php echo '<img src="' . $image2 . '" />'; ?>
+						<?php echo '<img src="' . $image2 . '" alt="" />'; ?>
 
 						<?php echo CFS()->get( 'workshops_content' ); ?>
 

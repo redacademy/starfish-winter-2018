@@ -26,7 +26,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content' ); ?>
 				
 				<?php $image = CFS()->get('volunteer_roles_image');?>
- 				<?php echo '<img src="' . $image . '" />'; ?>
+ 				<?php echo '<img src="' . $image . '" alt=""/>'; ?>
 				<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
 				<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
 
@@ -43,7 +43,7 @@ get_header(); ?>
 									// loop for each carousel cell
 									echo '<div class="carousel-cell-container single">';
 										echo '<div class="carousel-cell-images" />';
-											echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image" />';
+											echo '<img src="' . $carousel_cell['carousel_cell_image'] . '" class="carousel-cell-image" alt=""/>';
 										echo '</div>';
 										echo '<div class="carousel-cell-content">';
 											echo $carousel_cell['carousel_cell_content'];
