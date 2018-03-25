@@ -147,6 +147,68 @@ textarea {
 		border: none;
 		padding: 20px 128px;
 		margin-left: 8px;
+		font-size: 16px;
+		font-family: $font__title;
+		font-weight: 300;
+		text-decoration: none;
+		letter-spacing: .5px;
+	}
+}
+
+// Nominate Form //
+#gform_3 {
+	width: 330px;
+	padding-left: 5px;
+	margin-top: 60px;
+	
+	input[type=text] {
+		border: 1px solid $color__main-brand;
+		border-radius: 2px;
+		padding: 8px 0;
+		margin-top: 10px;
+	}
+
+	#input_3_9_3_container {
+		margin-top: 50px;
+	}
+
+	#input_3_9_3, #input_3_9_6, #input_3_10, #input_3_11  {
+		padding-left: 15px;
+		font-size: 15px;
+		font-style: italic;
+	}
+
+	input[type=email] {
+		border: 1px solid $color__main-brand;
+		border-radius: 2px;
+		padding: 8px 0;
+		margin-top: 10px;
+	}
+
+	textarea {
+		border: 1px solid $color__main-brand;
+		border-radius: 2px;
+		padding: 6px 0;
+		margin-top: 10px;
+	}
+
+	p {
+		font-size: 16px;
+		color: $color__text-main;
+	}
+
+	.gfield_label {
+		font-size: 15px;
+		color: $color__text-main;
+		font-weight: 300;
+	}
+
+	input[type=submit] {
+		background: $color__secondary-brand;
+		color:#fff;
+		border: none;
+		padding: 20px 128px;
+		margin-left: 8px;
 		font-size: 15px;
 		font-family: $font__title;
 		font-weight: 300;
@@ -154,6 +216,9 @@ textarea {
 		letter-spacing: .5px;
 	}
 }
+
+
+
 
 
 // Location Sidebar //
