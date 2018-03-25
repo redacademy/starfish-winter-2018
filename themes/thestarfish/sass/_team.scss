@@ -146,6 +146,7 @@
 }
 
 .profile-scroll-box{
+    margin-top: 100px;
     display: none;
     height: 600px;
     @include desktop{
@@ -156,12 +157,11 @@
             flex-wrap: wrap;
             overflow: scroll;
             justify-content: space-between;
-            padding-left:120px;
-            padding-right:120px;
+            margin-left:120px;
+            margin-right:120px;
             .nominee-profiles-box{
                 width:300px;
                 margin-bottom: 80px;
-
                 img{
                     height: 400px;
                     width:300px;
@@ -171,20 +171,21 @@
         }
         .nominee-meet-container{
             flex-basis: 45%;
+            button{
+                width:200px;
+                height: 50px;
+                font-size: 20px;
+            }
+            p{
+                width:400px;
+                font-weight: 100;
+                line-height: 30px;
+            }
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+// JUDGES SECTION*******************
 
 .judges-section{
     @include desktop{

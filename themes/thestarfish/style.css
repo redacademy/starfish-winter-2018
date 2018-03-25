@@ -371,10 +371,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid black;
+  border: 2px solid #145B51;
   border-radius: 0;
   background: transparent;
-  color: black;
+  color: #145B51;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -1477,6 +1477,7 @@ object {
         text-align: center; }
 
 .profile-scroll-box {
+  margin-top: 100px;
   display: none;
   height: 600px; }
   @media (min-width: 600px) {
@@ -1496,8 +1497,8 @@ object {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding-left: 120px;
-        padding-right: 120px; }
+        margin-left: 120px;
+        margin-right: 120px; }
         .profile-scroll-box .nominee-content .nominee-profiles-box {
           width: 300px;
           margin-bottom: 80px; }
@@ -1508,7 +1509,15 @@ object {
                object-fit: cover; }
       .profile-scroll-box .nominee-meet-container {
         -ms-flex-preferred-size: 45%;
-            flex-basis: 45%; } }
+            flex-basis: 45%; }
+        .profile-scroll-box .nominee-meet-container button {
+          width: 200px;
+          height: 50px;
+          font-size: 20px; }
+        .profile-scroll-box .nominee-meet-container p {
+          width: 400px;
+          font-weight: 100;
+          line-height: 30px; } }
 
 @media (min-width: 600px) {
   .judges-section {

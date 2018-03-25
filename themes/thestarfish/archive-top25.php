@@ -10,32 +10,22 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 		<section class="top25-box">
-		<div class="top25-content">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header class='entry-header'>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
-				</header>
-				
+				</header>	
 			<?php endif; ?>
-
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'template-parts/content' ); ?>
-				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>">Nominate</a>
 			<?php endwhile; ?>
-
 			<?php the_posts_navigation(); ?>
-
 		<?php else : ?>
-
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 		<?php endif; ?>
-</div>
+
 
 <div class="top25-profiles-box">
 		<div class="profile-scroll-box">
@@ -52,21 +42,23 @@ get_header(); ?>
 					<?php 
 					foreach ( $myposts as $post ) : setup_postdata( $post );?>
 							<div class="nominee-profiles-box">
-							<a class="nominee-popup" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>">							<?php if ( has_post_thumbnail() ) : 
+							<a class="nominee-popup" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php if ( has_post_thumbnail() ) : 
 								the_post_thumbnail( 'large' ); 
 								endif; ?>
 							</a>
-								<?php the_title(); ?>
+							<?php the_title(); ?>
 							</div>
 					<?php endforeach;
 					wp_reset_postdata();
 					?>
 			</div>
 			<div class="nominee-meet-container">
-				<p>hello</p>
+				<h2>Meet the Top 25</h2>
+				<?php the_excerpt(); ?>
+				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>"><button>Nominate</button></a>
 			</div>
 
-		<div>
+		</div>
 
 
 
@@ -113,9 +105,10 @@ get_header(); ?>
 		</div><!-- .content-box-header -->
 
 		<div class="judges-container-btn">
-			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'taxonomy-judges' ) ) ); ?>">
+			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'judges' ) ) ); ?>">
 			<input type="button" value="Meet the Judges"></input><span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
 			</a><!-- .content-box-button -->
+
 		</div><!-- .content-box-content -->
 	
 	</div>	
