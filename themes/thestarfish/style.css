@@ -255,7 +255,6 @@ h1 {
   @media (min-width: 600px) {
     h1 {
       font-size: 55px;
-      width: 800px;
       margin-left: 100px; } }
 
 h2 {
@@ -582,6 +581,38 @@ textarea {
 
 .gform_wrapper .gform_page_footer {
   border-top: none; }
+
+@media (min-width: 600px) {
+  .contributor-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+#gform_1 {
+  margin: 0 20px;
+  width: calc(100% - 40px); }
+  @media (min-width: 600px) {
+    #gform_1 {
+      width: 500px; } }
+
+@media (min-width: 600px) {
+  #secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 80px;
+    position: absolute;
+    left: 700px;
+    top: 600px; } }
+  @media (min-width: 600px) and (max-width: 1000px) {
+    #secondary {
+      position: static; } }
 
 #text-2 {
   margin-left: 25px;
