@@ -158,6 +158,7 @@
                 border: $border__light;
                 background: $color__background-body;
                 color: $color__main-brand;
+                margin-left: 0;
                 @include desktop-for-footer {
                     font-size: 1.25rem;
                     margin-top: .75rem;
