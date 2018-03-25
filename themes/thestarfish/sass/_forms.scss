@@ -114,12 +114,20 @@ textarea {
 	width: 330px;
 	padding-left: 20px;
 	margin-top: 60px;
+	@include desktop {
+		width: 625px;
+		padding-left: 80px;
+	}
 	
 	input[type=text] {
 		border: 1px solid $color__main-brand;
 		border-radius: 2px;
 		padding: 8px 0;
 		margin-top: 10px;
+		@include desktop {
+			padding: 14px 0;
+			width: 625px;
+		}
 	}
 
 	input[type=email] {
@@ -127,6 +135,10 @@ textarea {
 		border-radius: 2px;
 		padding: 8px 0;
 		margin-top: 10px;
+		@include desktop {
+			padding: 14px 0;
+			width: 625px;
+		}
 	}
 
 	textarea {
@@ -134,16 +146,22 @@ textarea {
 		border-radius: 2px;
 		padding: 8px 0;
 		margin-top: 10px;
+		@include desktop{
+			padding: 0 0;
+		}
 	}
 
 	p {
 		font-size: 15px;
 		color: $color__text-main;
+		@include desktop{
+			font-size: 16px;
+		}
 	}
 
 	input[type=submit] {
 		background: $color__secondary-brand;
-		color:#fff;
+		color:$color__background-body;
 		border: none;
 		padding: 20px 128px;
 		margin-left: 8px;
@@ -152,8 +170,17 @@ textarea {
 		font-weight: 300;
 		text-decoration: none;
 		letter-spacing: .5px;
+		@include desktop {
+			background-color: $color__main-brand;
+			color: $color__background-body;
+			padding: 20px 80px;	
+			margin-left: 0;
+		}
 	}
 }
+
+
+
 
 // Nominate Form //
 #gform_3 {
