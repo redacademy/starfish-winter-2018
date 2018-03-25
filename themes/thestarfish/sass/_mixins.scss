@@ -7,7 +7,7 @@ $desktop: 600px;
 	}
 }
 
-$desktop-for-footer: 1000px;
+$desktop-for-footer: 1135px;
 
 @mixin desktop-for-footer {
 	@media (min-width: $desktop-for-footer){
