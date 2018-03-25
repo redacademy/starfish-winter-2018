@@ -16,9 +16,7 @@
 		order: 1;
 	}
 	.carousel-cell-images {
-    // height: 180px;
     order: 2;
-    // overflow: hidden;
 	}
 	@include desktop {
 		.carousel-cell-content {
@@ -68,6 +66,7 @@
     }
     h3 {
       margin-bottom: 1rem;
+      font-weight: 400;
     }
     .button {
       margin-top: 3.5rem;
