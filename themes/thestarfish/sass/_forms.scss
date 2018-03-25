@@ -110,6 +110,7 @@ textarea {
 }
 
 // Contact Us Form //
+
 .wpcf7-form {
 	width: 330px;
 	padding-left: 20px;
@@ -275,10 +276,43 @@ textarea {
 	
 }
 
+//Contributor Form //
+
+.contributor-form {
+	@include desktop {
+		display: flex;
+		justify-content: center;
+	}	
+}
+
+#gform_1 {
+	margin: 0 20px;
+	width: calc(100% - 40px);
+	@include desktop {
+		width: 500px;
+	}	
+}
 
 
 
 // Location Sidebar //
+
+#secondary  {
+	@include desktop {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 80px;
+		// 
+		position: absolute;
+		left: 700px;
+		top: 600px;
+
+		@media (max-width: 1000px) {
+			position: static;
+		}
+	}
+}
+
 #text-2 {
 	margin-left: 25px;
 	margin-bottom: 40px;
