@@ -464,6 +464,40 @@ textarea {
     background: #145B51;
     color: #fff; }
 
+.wpcf7-form {
+  width: 330px;
+  padding-left: 20px; }
+  .wpcf7-form input[type=text] {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 10px; }
+  .wpcf7-form input[type=email] {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 10px; }
+  .wpcf7-form textarea {
+    border: 1px solid #145B51;
+    border-radius: 2px;
+    padding: 8px 0;
+    margin-top: 10px; }
+  .wpcf7-form p {
+    font-size: 15px;
+    color: #394442; }
+
+input[type=submit] {
+  background: #FF8271;
+  color: #fff;
+  border: none;
+  padding: 20px 128px;
+  margin-left: 8px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: .5px; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
