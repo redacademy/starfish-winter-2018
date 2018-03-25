@@ -70,7 +70,7 @@ get_header(); ?>
 
 					</section><!-- .front-page-workshops -->
 
-					<section class="journal">
+					<section class="front-page-journal">
 
 						<h2> Journal</h2>
 
@@ -92,7 +92,9 @@ get_header(); ?>
 								<div class="carousel-cell-content">
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_excerpt(); ?></p>
-									<a href="<?php the_permalink(); ?>" class="btn">Read More</a>
+									<div class="button">
+										<a href="<?php the_permalink(); ?>" class="btn-transparent-dark">Read More</a>
+									</div>
 								</div>
 								</div>
 							<?php endforeach; wp_reset_postdata(); ?>
