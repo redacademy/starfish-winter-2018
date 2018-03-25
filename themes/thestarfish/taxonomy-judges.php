@@ -25,7 +25,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>">Nominate</a>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -38,40 +37,42 @@ get_header(); ?>
 </div>
 
 
-<div class="judges-profiles-box">
-		<?php
-			$args = array( 
-				'posts_per_page' => 25, 
-				'offset'=> 1, 
-				'post_type' => 'profile', 
-				'profile_type' => 'judges',
-			);
-			$myposts = get_posts( $args );
-			?>
-		<?php 
-		foreach ( $myposts as $post ) : setup_postdata( $post );
-		if ( has_post_thumbnail() ) : 
-		?>
-			<div class="judges-profile-content">
-		<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-    <li>
-        <a class="judges-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
-	</li>
-	</div>
-<?php endforeach;
-wp_reset_postdata();
-?>
-</div>
+	<div class="profile-scroll-box">
+ 				<?php
+				$args = array( 
+					'posts_per_page' => 25, 
+					'offset'=> 1, 
+					'post_type' => 'profile', 
+					'profile_type' => 'judges',	
+				);
+				$myposts = get_posts( $args );
+				?>
+			<div class="nominee-content">
+					<?php 
+					foreach ( $myposts as $post ) : setup_postdata( $post );?>
+							<div class="nominee-profiles-box">
+							<a class="nominee-popup" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php if ( has_post_thumbnail() ) : 
+								the_post_thumbnail( 'large' ); 
+								endif; ?>
+							</a>
+							<?php the_title(); ?>
+							</div>
+					<?php endforeach;
+					wp_reset_postdata();
+					?>
+			</div>
+			<div class="nominee-meet-container">
+				<h2>Meet the Judges</h2>
+				<?php the_excerpt(); ?>
+			</div>
+
+		</div>
+
+
+
 </section>
-
-
-
-
-
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<?php get_template_part( 'template-parts/content', 'donation' ); ?>
 
 <?php get_footer(); ?>
