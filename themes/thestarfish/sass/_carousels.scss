@@ -16,8 +16,9 @@
 		order: 1;
 	}
 	.carousel-cell-images {
-    max-height: 180px;
-		order: 2;
+    // height: 180px;
+    order: 2;
+    // overflow: hidden;
 	}
 	@include desktop {
 		.carousel-cell-content {

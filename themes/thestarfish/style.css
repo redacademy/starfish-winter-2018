@@ -1122,7 +1122,8 @@ object {
       font-size: 1rem;
       border: 1px solid #fff;
       background: #fff;
-      color: #145B51; }
+      color: #145B51;
+      margin-left: 0; }
       @media (min-width: 1000px) {
         .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"] {
           font-size: 1.25rem;
@@ -1553,7 +1554,6 @@ object {
           order: 1; }
 
 .single .carousel-cell-images, .double .carousel-cell-images {
-  max-height: 180px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
