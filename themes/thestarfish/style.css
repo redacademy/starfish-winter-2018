@@ -1538,6 +1538,17 @@ object {
 /*--------------------------------------------------------------
 # Carousels
 --------------------------------------------------------------*/
+.front-page-journal h2 {
+  margin-left: 1.938rem;
+  font-size: 2.188rem;
+  margin-bottom: 1rem; }
+  .front-page-journal h2:after {
+    content: "";
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: 6px solid coral; }
+
 .carousel-container {
   width: 83%;
   display: block;
