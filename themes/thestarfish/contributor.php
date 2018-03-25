@@ -14,7 +14,7 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<?php echo CFS()->get( 'form_title' ); ?>
+				<?php echo esc_html( CFS()->get( 'form_title' ) ); ?>
 				<?php echo CFS()->get( 'apply_here' ); ?>
 
 			<?php endwhile; ?>
