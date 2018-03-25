@@ -14,9 +14,10 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+				<div class="contributor-form">
 				<?php echo esc_html( CFS()->get( 'form_title' ) ); ?>
 				<?php echo CFS()->get( 'apply_here' ); ?>
-
+				</div>
 			<?php endwhile; ?>
 
 		</main><!-- #main -->
