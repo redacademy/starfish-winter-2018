@@ -21,19 +21,22 @@
   width: 83%;
 	@include center-block;
 	padding-bottom: 4rem;
-	@include desktop {
+	@include desktop-for-footer {
 		padding-bottom: 6rem;
 	}
 }
 
 .single {
 	.carousel-cell-content {
-		order: 1;
+    order: 1;
+    @include desktop-for-footer {
+      margin-left: 1rem;
+    }
 	}
 	.carousel-cell-images {
     order: 2;
 	}
-	@include desktop {
+	@include desktop-for-footer {
 		.carousel-cell-content {
 			order: 2;
 		}
@@ -45,7 +48,7 @@
 
 .double {
 	@extend .single;
-	@include desktop {
+	@include desktop-for-footer {
 		.carousel-cell-content {
 			order: 1;
 		}
@@ -63,7 +66,6 @@
 	margin-left: 2rem;
   counter-increment: carousel-cell;
   .carousel-cell-content {
-
     p {
       font-weight: 300;
       line-height: 1.75;
@@ -95,7 +97,7 @@
 		min-width: 312px;
 		position: inherit;
 	}
-	@include desktop {
+	@include desktop-for-footer {
 		flex-direction: row;
 		.carousel-cell-content {
 			width: 40%;
@@ -123,7 +125,7 @@
 		top: 55%;
 		left: 31%;
 	}
-	@include desktop {
+	@include desktop-for-footer {
 		margin-bottom: 20%;
 		position: relative;
 		text-align: right;
@@ -164,7 +166,7 @@
 	.flickity-button-icon {
 		fill: $color__background-body;
   }
-	@include desktop {
+	@include desktop-for-footer {
 		width: 60px;
 		height: 60px;
 		.flickity-button-icon {
