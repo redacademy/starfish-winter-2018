@@ -45,7 +45,9 @@ get_header(); ?>
 											echo '<div class="carousel-cell-content">';
 												echo '<h2>' . $carousel['carousel_title'] . '</h2>';
 												echo $carousel_cell['carousel_cell_content'];
-												echo '<a href="' . esc_url(get_permalink(get_page_by_path( 'top-25' ) ) ) . '" class="btn-transparent-dark">Learn More</a>';
+												echo '<div class="button">';
+													echo '<a href="' . esc_url(get_permalink(get_page_by_path( 'top-25' ) ) ) . '" class="btn-transparent-dark">Learn More</a>';
+												echo '</div>';
 											echo '</div>';
 										echo '</div>';
 									}
