@@ -112,6 +112,7 @@ textarea {
 .wpcf7-form {
 	width: 330px;
 	padding-left: 20px;
+	margin-top: 60px;
 	
 	input[type=text] {
 		border: 1px solid $color__main-brand;
@@ -137,7 +138,6 @@ textarea {
 	p {
 		font-size: 15px;
 		color: $color__text-main;
-		
 	}
 }
 
@@ -152,4 +152,20 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   letter-spacing: .5px;
+}
+
+#text-2 {
+	margin-left: 25px;
+
+	.widget-title {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-size: 14px;
+		margin: 7px 0;
+		line-height: 25px;
+
+	}
 }
