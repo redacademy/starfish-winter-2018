@@ -24,7 +24,7 @@ get_header(); ?>
 					<?php the_content(); ?>
 
 					<?php $image = CFS()->get('member_steps_image');?>
-					<?php echo '<img src="' . $image . '" />'; ?>
+					<?php echo '<img src="' . $image . '" alt=""/>'; ?>
 					<?php echo CFS()->get( 'member_steps_content' ); ?>
 
 					<section class="member-box-area">

@@ -30,7 +30,7 @@
 	.carousel-cell-content {
     order: 1;
     @include desktop-for-footer {
-      margin-left: 1rem;
+      margin-left: 6.625rem;
     }
 	}
 	.carousel-cell-images {
@@ -50,6 +50,7 @@
 	@extend .single;
 	@include desktop-for-footer {
 		.carousel-cell-content {
+      margin-left: 0;
 			order: 1;
 		}
 		.carousel-cell-images {
@@ -139,7 +140,7 @@
 			max-width: 500px;
 			z-index: 1;
 			top: 57%;
-			left: 9%;
+			left: 3%;
 		}
 	}
 }
@@ -148,7 +149,6 @@
 
 .flickity-button {
 	background: $color__main-brand;
-	margin: 0 .5rem;
 	&:hover {
     background: $color__secondary-brand;
 	}
@@ -162,7 +162,9 @@
   height: 48px;
   border-radius: 0;
   bottom: 3%;
-  top: auto !important;
+  @include desktop-for-footer {
+    bottom: 0;
+  }
 	.flickity-button-icon {
 		fill: $color__background-body;
   }
@@ -177,7 +179,38 @@
 	}
 }
 
-.previous {
-  right: 68px;
-  left: auto !important;
+.container-double {
+  .carousel-btns {
+    left: 15%;
+    bottom: 6%;
+    @include desktop-for-footer {
+      left: 35%;
+      bottom: 31%;
+    }
+  }
+}
+.carousel-btns {
+  width: 106px;
+  height: 48px;
+  position: absolute;
+  right: 10px;
+  bottom: 6%;
+  @include desktop-for-footer {
+    width: 140px;
+    height: 68px;
+    left: 46%;
+    bottom: 40%;
+  }
+  .previous {
+    left: 0 !important;
+    @include desktop-for-footer {
+      right: 68px;
+    }
+  }
+  .next {
+    right: 0 !important;
+    @include desktop-for-footer {
+      
+    }
+  }
 }

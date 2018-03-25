@@ -829,6 +829,13 @@ a {
   content: '\f067';
   font-family: fontAwesome; }
 
+.single-post .site-main .entry-header-banner {
+  background: url("../../images/header-single.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 60px;
+  height: 80vh; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1688,7 +1695,7 @@ object {
           order: 1; }
   @media (min-width: 1135px) {
     .single .carousel-cell-content, .double .carousel-cell-content {
-      margin-left: 1rem; } }
+      margin-left: 6.625rem; } }
 
 .single .carousel-cell-images, .double .carousel-cell-images {
   -webkit-box-ordinal-group: 3;
@@ -1707,6 +1714,7 @@ object {
 
 @media (min-width: 1135px) {
   .double .carousel-cell-content {
+    margin-left: 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
@@ -1789,12 +1797,11 @@ object {
         max-width: 500px;
         z-index: 1;
         top: 57%;
-        left: 9%; } }
+        left: 3%; } }
 
 /*Carousel Slider Buttons*/
 .flickity-button {
-  background: #145B51;
-  margin: 0 .5rem; }
+  background: #145B51; }
   .flickity-button:hover {
     background: #FF8271; }
   .flickity-button:disabled {
@@ -1804,8 +1811,10 @@ object {
   width: 48px;
   height: 48px;
   border-radius: 0;
-  bottom: 3%;
-  top: auto !important; }
+  bottom: 3%; }
+  @media (min-width: 1135px) {
+    .flickity-prev-next-button {
+      bottom: 0; } }
   .flickity-prev-next-button .flickity-button-icon {
     fill: #fff; }
   @media (min-width: 1135px) {
@@ -1817,6 +1826,30 @@ object {
         width: 25px;
         height: 25px; } }
 
-.previous {
-  right: 68px;
-  left: auto !important; }
+.container-double .carousel-btns {
+  left: 15%;
+  bottom: 6%; }
+  @media (min-width: 1135px) {
+    .container-double .carousel-btns {
+      left: 35%;
+      bottom: 31%; } }
+
+.carousel-btns {
+  width: 106px;
+  height: 48px;
+  position: absolute;
+  right: 10px;
+  bottom: 6%; }
+  @media (min-width: 1135px) {
+    .carousel-btns {
+      width: 140px;
+      height: 68px;
+      left: 46%;
+      bottom: 40%; } }
+  .carousel-btns .previous {
+    left: 0 !important; }
+    @media (min-width: 1135px) {
+      .carousel-btns .previous {
+        right: 68px; } }
+  .carousel-btns .next {
+    right: 0 !important; }
