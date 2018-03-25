@@ -466,7 +466,8 @@ textarea {
 
 .wpcf7-form {
   width: 330px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  margin-top: 60px; }
   .wpcf7-form input[type=text] {
     border: 1px solid #145B51;
     border-radius: 2px;
@@ -497,6 +498,16 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   letter-spacing: .5px; }
+
+#text-2 {
+  margin-left: 25px; }
+  #text-2 .widget-title {
+    font-size: 30px;
+    margin-bottom: 5px; }
+  #text-2 p {
+    font-size: 14px;
+    margin: 7px 0;
+    line-height: 25px; }
 
 /*--------------------------------------------------------------
 # Navigation
