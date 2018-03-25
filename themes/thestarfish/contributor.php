@@ -17,7 +17,7 @@ get_header(); ?>
 				<?php echo CFS()->get( 'form_title' ); ?>
 				<?php echo CFS()->get( 'apply_here' ); ?>
 
-			<?php endwhile; ?> // End of the loop. 
+			<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
