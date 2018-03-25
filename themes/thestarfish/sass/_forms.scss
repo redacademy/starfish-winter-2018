@@ -91,38 +91,20 @@ textarea {
 	}
 }
 
-/*Carousel Slider Buttons*/
-
-.flickity-button {
-	background: $color__main-brand;
-	margin: 0 .5rem;
-	&:hover {
-		background: transparent;
-		.flickity-button-icon {
-			fill: $color__main-brand;
-		}
+.btn-transparent-dark {
+	border: $border__main-brand;
+	text-decoration: none;
+	padding: 1rem 7.165rem;
+	color: $color__main-brand;
+	background: $color__background-body;
+	border-width: $border__bold-width;
+	@include desktop {
+		padding: .75rem 3.75rem;
+		font-size: 1.25rem;
 	}
-	&:disabled {
-		display: none;
+	&:hover,
+	&:focus {
+		background: $color__main-brand;
+		color: $color__background-body;
 	}
 }
-
-.flickity-prev-next-button {
-	width: 48px;
-	height: 48px;
-	z-index: 300;
-	.flickity-button-icon {
-		fill: $color__background-body;
-		width: 20px;
-		height: 20px;
-	}
-	@include desktop {
-		width: 60px;
-		height: 60px;
-		.flickity-button-icon {
-			fill: $color__background-body;
-			width: 25px;
-			height: 25px;
-		}
-	}
-  }

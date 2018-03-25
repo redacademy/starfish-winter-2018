@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .carousel-container {
-	width: 90%;
+  width: 83%;
 	@include center-block;
 	padding-bottom: 4rem;
 	@include desktop {
@@ -16,6 +16,7 @@
 		order: 1;
 	}
 	.carousel-cell-images {
+    max-height: 180px;
 		order: 2;
 	}
 	@include desktop {
@@ -64,7 +65,7 @@
 }
 
 .carousel-double {
-	width: 90vw;
+	width: 100%;
 	height: auto;
 	margin-bottom: 20%;
 	position: relative;
@@ -98,3 +99,39 @@
 		}
 	}
 }
+
+/*Carousel Slider Buttons*/
+
+.flickity-button {
+	background: $color__main-brand;
+	margin: 0 .5rem;
+	&:hover {
+		background: transparent;
+		.flickity-button-icon {
+			fill: $color__main-brand;
+		}
+	}
+	&:disabled {
+		display: none;
+	}
+}
+
+.flickity-prev-next-button {
+	width: 48px;
+	height: 48px;
+	z-index: 300;
+	.flickity-button-icon {
+		fill: $color__background-body;
+		width: 20px;
+		height: 20px;
+	}
+	@include desktop {
+		width: 60px;
+		height: 60px;
+		.flickity-button-icon {
+			fill: $color__background-body;
+			width: 25px;
+			height: 25px;
+		}
+	}
+  }

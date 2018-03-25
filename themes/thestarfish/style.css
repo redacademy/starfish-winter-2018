@@ -449,33 +449,20 @@ textarea {
     background: #fff;
     color: #145B51; }
 
-/*Carousel Slider Buttons*/
-.flickity-button {
-  background: #145B51;
-  margin: 0 .5rem; }
-  .flickity-button:hover {
-    background: transparent; }
-    .flickity-button:hover .flickity-button-icon {
-      fill: #145B51; }
-  .flickity-button:disabled {
-    display: none; }
-
-.flickity-prev-next-button {
-  width: 48px;
-  height: 48px;
-  z-index: 300; }
-  .flickity-prev-next-button .flickity-button-icon {
-    fill: #fff;
-    width: 20px;
-    height: 20px; }
+.btn-transparent-dark {
+  border: 1px solid #145B51;
+  text-decoration: none;
+  padding: 1rem 7.165rem;
+  color: #145B51;
+  background: #fff;
+  border-width: 2px; }
   @media (min-width: 600px) {
-    .flickity-prev-next-button {
-      width: 60px;
-      height: 60px; }
-      .flickity-prev-next-button .flickity-button-icon {
-        fill: #fff;
-        width: 25px;
-        height: 25px; } }
+    .btn-transparent-dark {
+      padding: .75rem 3.75rem;
+      font-size: 1.25rem; } }
+  .btn-transparent-dark:hover, .btn-transparent-dark:focus {
+    background: #145B51;
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1454,7 +1441,7 @@ object {
 # Carousels
 --------------------------------------------------------------*/
 .carousel-container {
-  width: 90%;
+  width: 83%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1469,6 +1456,7 @@ object {
           order: 1; }
 
 .single .carousel-cell-images, .double .carousel-cell-images {
+  max-height: 180px;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2; }
@@ -1521,7 +1509,7 @@ object {
         width: 60%; } }
 
 .carousel-double {
-  width: 90vw;
+  width: 100%;
   height: auto;
   margin-bottom: 20%;
   position: relative; }
@@ -1550,3 +1538,31 @@ object {
         z-index: 1;
         top: 57%;
         left: 9%; } }
+
+/*Carousel Slider Buttons*/
+.flickity-button {
+  background: #145B51;
+  margin: 0 .5rem; }
+  .flickity-button:hover {
+    background: transparent; }
+    .flickity-button:hover .flickity-button-icon {
+      fill: #145B51; }
+  .flickity-button:disabled {
+    display: none; }
+
+.flickity-prev-next-button {
+  width: 48px;
+  height: 48px;
+  z-index: 300; }
+  .flickity-prev-next-button .flickity-button-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px; }
+  @media (min-width: 600px) {
+    .flickity-prev-next-button {
+      width: 60px;
+      height: 60px; }
+      .flickity-prev-next-button .flickity-button-icon {
+        fill: #fff;
+        width: 25px;
+        height: 25px; } }
