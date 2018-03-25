@@ -798,6 +798,13 @@ a {
   content: '\f067';
   font-family: fontAwesome; }
 
+.single-post .site-main .entry-header-banner {
+  background: url("../../images/header-single.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 60px;
+  height: 80vh; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
