@@ -1490,27 +1490,29 @@ object {
   padding-top: 3rem; }
   @media (min-width: 1135px) {
     .volunteer-perks {
-      background: url("../../images/volunteer-girl-backgraund.png") no-repeat, url("../../images/volunteer-mountain-pattern.png") no-repeat;
+      background: url("../../images/volunteer-girl-backgraund.png") bottom right no-repeat, url("../../images/volunteer-mountain-pattern.png") no-repeat;
       background-size: 63%, cover;
-      height: 800px;
+      height: 600px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      padding-bottom: 0;
+      padding-top: 0; } }
 
 .volunteer-perks-content {
   margin: 0 2rem;
   padding-bottom: 3rem; }
   @media (min-width: 1135px) {
     .volunteer-perks-content {
-      width: 424px;
-      margin-top: 5rem; } }
+      width: 450px;
+      margin-left: 7rem; } }
   .volunteer-perks-content h2 {
     margin-top: 0; }
     .volunteer-perks-content h2:after {
