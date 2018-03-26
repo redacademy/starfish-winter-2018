@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Templates
 	## Front page
+	## Workshops Page
 # Header
 # Footer
 # Team
@@ -1258,6 +1259,7 @@ object {
       .workshop-description-wrapper p {
         font-size: 1.125rem; } }
 
+/* Workshops Page Content Box Section */
 @media (min-width: 600px) {
   .workshops-content-box-area {
     display: none; } }

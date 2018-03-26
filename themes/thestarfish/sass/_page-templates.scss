@@ -349,11 +349,14 @@
     }
   }
 }
+
+/* Workshops Page Content Box Section */
+
 .workshops-content-box-area {
   @include desktop {
     display: none;
   }
-  .content-box{
+  .content-box {
     background: $color__main-brand;
     color:white;
     padding-top: 3rem;
