@@ -1362,6 +1362,47 @@ object {
       padding: 1rem 3rem;
       border-width: 2px; }
 
+/****** About US Page ******/
+.about-carousels .carousel-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 1135px) {
+    .about-carousels .carousel-container {
+      margin-top: 4rem;
+      margin-bottom: 4rem; } }
+
+@media (min-width: 1135px) {
+  .about-box-area {
+    height: 700px;
+    width: 100%;
+    background: url("../../images/about-background.png") top no-repeat;
+    position: relative; } }
+
+.about-box-area .content-box {
+  background: #145B51;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  min-width: 375px; }
+  @media (min-width: 1135px) {
+    .about-box-area .content-box {
+      width: 60%;
+      position: absolute;
+      top: 55%;
+      left: 20%; } }
+  .about-box-area .content-box h2 {
+    margin-bottom: 3rem;
+    font-size: 2.188rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .about-box-area .content-box .content-box-content {
+    margin-bottom: 2rem; }
+    .about-box-area .content-box .content-box-content .btn-transparent {
+      padding: 1rem 6rem;
+      border-width: 2px; }
+
 .donation-container {
   background: lightblue;
   background-size: cover;

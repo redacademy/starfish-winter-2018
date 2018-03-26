@@ -377,3 +377,52 @@
     }
   }
 }
+
+/****** About US Page ******/
+
+.about-carousels {
+  .carousel-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @include desktop-for-footer {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      
+    }
+  }
+}
+
+.about-box-area {
+  @include desktop-for-footer {
+    height: 700px;
+    width: 100%;
+    background: url('../../images/about-background.png') top no-repeat;
+    position: relative;
+  }
+  .content-box {
+    background: $color__main-brand;
+    color:white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    min-width: 375px;
+    @include desktop-for-footer {
+      width: 60%;
+      position: absolute;
+      top: 55%;
+      left: 20%;
+    }
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 2.188rem;
+      @include center-block;
+    }
+    .content-box-content {
+      margin-bottom: 2rem;
+      .btn-transparent {
+        padding: 1rem 6rem;
+        border-width: $border__bold-width;
+      }
+    }
+  }
+}
