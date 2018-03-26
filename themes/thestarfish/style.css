@@ -1911,6 +1911,9 @@ object {
 #learn-more {
   pointer-events: auto; }
 
+.mob-menu-header-holder {
+  position: absolute !important; }
+
 .sf-modal {
   display: none;
   position: fixed;

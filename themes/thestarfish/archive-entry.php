@@ -9,23 +9,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 <?php 
-
-
-
 $post_page_id = get_option( 'page_for_posts' );
-
 $post_page_banner = (CFS()->get('banner_image', $post_page_id)); 
-
 ?>
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="entry-header" style="background: url(<?php echo esc_url($post_page_banner); ?>); width: 100%; height: 100vh; background-size: cover; margin-top:60px; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
-			<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header><!-- .entry-header -->
 	
-      <?php
+   		   <?php
 
 			the_archive_title();
 
