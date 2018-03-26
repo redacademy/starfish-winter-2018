@@ -455,7 +455,7 @@ textarea {
   text-decoration: none;
   padding: 1rem 6.5rem;
   color: #145B51;
-  background: #fff;
+  background: transparent;
   border-width: 2px; }
   @media (min-width: 600px) {
     .btn-transparent-dark {

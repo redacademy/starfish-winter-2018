@@ -96,7 +96,7 @@ textarea {
 	text-decoration: none;
 	padding: 1rem 6.5rem;
 	color: $color__main-brand;
-	background: $color__background-body;
+	background: transparent;
 	border-width: $border__bold-width;
 	@include desktop {
 		padding: .75rem 3.75rem;
