@@ -2,7 +2,212 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/****** Front page ******/
+
+/* General Style Front Page  */
+.home {
+  .entry-content {
+    margin-top: 0;
+  }
+  h2{
+    font-size: 2.188rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+  }
+}
+
+/* Front Page About Section */
+
+.front-page-about {
+  background: url('../../images/background-who-are-we-frontpage.png') no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  @include desktop-for-footer {
+    background: url('../../images/background-about-frontpage-2.png') bottom left no-repeat, url('../../images/background-who-are-we-frontpage.png');
+    background-size: 63%, cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+.front-page-about-content {
+  margin: 0 2rem;
+  @include desktop-for-footer {
+    width: 424px;
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+  .button {
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+/* Front Page Top 25 Carousel Section */
+
+.front-page-carousel {
+  margin-top: 4rem;
+  @include desktop-for-footer {
+    margin-top: 10rem;
+    .single {
+      .carousel-cell-content {
+        order: 1;
+        margin-left: 0;
+      }
+      .carousel-cell-images {
+        order: 2;
+        margin-left: 6.625rem;
+      }
+    }
+  }
+}
+
+/* Front Page Workshops Section */
+
+.front-page-workshops {
+  background: url('../../images/workshop-background.png');
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  padding-bottom: 20%;
+  @include desktop-for-footer {
+    padding-bottom: 10%;
+  }
+}
+
+.frontpage-workshops-wrapper{
+  margin: 0 2rem;
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+  .button {
+    margin-top: 3.5rem;
+    margin-bottom: 4.5rem;
+  }
+  @include desktop-for-footer {
+    display: flex;
+    margin: 0 7rem;
+  }
+  .front-page-workshop-images {
+    position: relative;
+    @include desktop-for-footer {
+      order: 1;
+      width: 60%;
+    }
+  }
+  .first-workshop-image {
+    position: relative;
+    min-width: 282px;
+    width: 75vw;
+    @include desktop-for-footer {
+      max-width: 650px;
+      width: 45vw;
+    }
+  }
+  .second-workshop-image {
+    position: absolute;
+    width: 59vw;
+    min-width: 220px;
+    z-index: 1;
+    top: 55%;
+    left: 31%;
+    @include desktop-for-footer {
+      width: 35vw;
+      max-width: 500px;
+      left: 27%;
+    }
+  }
+  .front-page-workshop-content {
+    @include desktop-for-footer {
+      order: 2;
+      margin-left: 6.625rem;
+      width: 40%;
+    }
+  }
+}
+
+/* Front Page Journal Section */
+
+.front-page-journal {
+  margin-top: 4rem;
+  @include desktop-for-footer {
+    margin-top: 7rem;
+    .single {
+      .carousel-cell-content {
+        order: 1;
+        margin-left: 0;
+      }
+      .carousel-cell-images {
+        order: 2;
+        margin-left: 6.625rem;
+      }
+    }
+  }
+  h2 {
+    margin-top: 0;
+    margin: 0 2rem;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+      margin: 0 7rem;
+    }
+  }
+}
+
+/* Front Page Become Section */
 
 .front-page-become-box {
   height: 700px;
