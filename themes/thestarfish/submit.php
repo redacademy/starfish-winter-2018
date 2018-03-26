@@ -13,8 +13,11 @@
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+
 				<div class="submit-wrapper">
-					
+					<a class="submit-close" href="<?php echo esc_url(get_permalink(get_page_by_path( 'front-page' ) ) ); ?>" >	
+						X
+					</a>
 					<div class="submit-content">
 						<?php echo CFS()->get( 'submit_title' ); ?>
 					</div>
