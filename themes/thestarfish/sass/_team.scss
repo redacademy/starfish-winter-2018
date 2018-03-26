@@ -85,6 +85,14 @@
             object-fit: cover;
             width: 100px;
             height: 100px;
+            filter:gray;
+            -webkit-filter: grayscale(1); 
+            -webkit-transition: all 0.25s ease-in-out;  
+            &:hover{
+                filter: none;
+                -webkit-filter: grayscale(0);
+                
+            }
         }
         li{
             list-style: none;
@@ -106,11 +114,10 @@
     }
     @include desktop {
         display: flex;
-        // width:100%;
+        margin-top:150px;
         .profile-box-preview{
             display: block;
             flex-basis: 40%;
-            padding-top: 100px;
             padding-left:10px;
             padding-right:10px;
             img{
@@ -317,3 +324,13 @@
     }
 }
 
+.name-title-profile p{
+    font-weight:600;
+    margin: 0;
+    &:after {
+        content: ""; 
+        display: block;
+        width: 16%;
+        border-bottom: $border__secondary-brand-mobile;
+      }
+}
