@@ -254,7 +254,7 @@ h1 {
   letter-spacing: 1px;
   margin-top: 60px;
   margin-left: 25px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     h1 {
       font-size: 55px;
       margin-left: 70px;
@@ -431,7 +431,7 @@ textarea {
   .btn-donate a {
     margin: 0;
     font-size: 1.5rem; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .btn-donate {
       width: 300px;
       margin: 0; } }
@@ -442,7 +442,7 @@ textarea {
   padding: .75rem 7.69rem;
   color: #fff;
   background: #145B51; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .btn-transparent {
       padding: .75rem 3.5rem;
       font-size: 1.25rem;
@@ -458,7 +458,7 @@ textarea {
   color: #145B51;
   background: transparent;
   border-width: 2px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .btn-transparent-dark {
       padding: .75rem 3.75rem;
       font-size: 1.25rem; } }
@@ -471,7 +471,7 @@ textarea {
   padding: 1rem 2.5rem;
   color: #fff;
   background: #145B51; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .btn-dark {
       padding: .75rem 3.75rem;
       font-size: 1.25rem; } }
@@ -484,7 +484,7 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 60px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .wpcf7-form {
       width: 625px;
       padding-left: 80px; } }
@@ -494,7 +494,7 @@ textarea {
     width: 100%;
     padding: 8px 0;
     margin-top: 10px; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .wpcf7-form input[type=text], .wpcf7-form input[type=email] {
         padding: 14px 0;
         width: 625px; } }
@@ -503,13 +503,13 @@ textarea {
     border-radius: 2px;
     padding: 8px 0;
     margin-top: 10px; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .wpcf7-form textarea {
         padding: 0 0; } }
   .wpcf7-form p {
     font-size: 15px;
     color: #394442; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .wpcf7-form p {
         font-size: 16px; } }
   .wpcf7-form input[type=submit] {
@@ -523,14 +523,14 @@ textarea {
     font-weight: 300;
     text-decoration: none;
     letter-spacing: .5px; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .wpcf7-form input[type=submit] {
         background-color: #145B51;
         color: #fff;
         padding: 20px 80px;
         margin-left: 0; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #gform_wrapper_3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,7 +542,7 @@ textarea {
 #gform_3 {
   margin: 60px 20px 0;
   width: calc(100% - 40px); }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     #gform_3 {
       width: 500px; } }
   #gform_3 .gform_title {
@@ -599,7 +599,7 @@ textarea {
 .gform_wrapper .gform_page_footer {
   border-top: none; }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .contributor-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,11 +611,11 @@ textarea {
 #gform_1 {
   margin: 0 20px;
   width: calc(100% - 40px); }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     #gform_1 {
       width: 500px; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #secondary {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,7 +627,7 @@ textarea {
     position: absolute;
     left: 747px;
     top: 676px; } }
-  @media (min-width: 600px) and (max-width: 1000px) {
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
     #secondary {
       position: static; } }
 
@@ -649,7 +649,7 @@ textarea {
     font-size: 14px;
     margin: 7px 0;
     line-height: 25px; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       #text-2 p {
         font-size: 16px;
         margin: 18px 0;
@@ -660,7 +660,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: lightgreen; }
+  color: #FF8271; }
   a:hover, a:focus, a:active {
     color: #FF8271; }
   a:focus {
@@ -862,7 +862,7 @@ a {
   width: 85%;
   margin: auto;
   font-size: 2rem; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .single-post-title {
       padding: 100px;
       padding-top: 50px;
@@ -883,12 +883,12 @@ a {
   display: flex;
   width: 85%;
   margin: auto; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .single-post-container {
       margin-top: 250px; } }
   .single-post-container .single-post-sidebar {
     display: none; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .single-post-container .single-post-sidebar {
         -ms-flex-preferred-size: 22%;
             flex-basis: 22%;
@@ -900,7 +900,7 @@ a {
   .single-post-container .single-post-content {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .single-post-container .single-post-content {
         -ms-flex-preferred-size: 78%;
             flex-basis: 78%; } }
@@ -1024,7 +1024,7 @@ object {
   background-size: cover;
   padding-bottom: 1.719rem;
   padding-top: 5rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .front-page-about {
       background: url("../../images/background-about-frontpage-2.png") bottom left no-repeat, url("../../images/background-who-are-we-frontpage.png");
       background-size: 63%, cover;
@@ -1042,7 +1042,7 @@ object {
 
 .front-page-about-content {
   margin: 0 2rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .front-page-about-content {
       width: 424px;
       margin-top: 5rem; } }
@@ -1054,7 +1054,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .front-page-about-content h2 {
         font-size: 3.125rem; } }
   .front-page-about-content p {
@@ -1062,7 +1062,7 @@ object {
     line-height: 1.75;
     margin-top: 1.25rem;
     margin-bottom: 2.5rem; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .front-page-about-content p {
         font-size: 1.125rem; } }
   .front-page-about-content .button {
@@ -1072,7 +1072,7 @@ object {
 /* Front Page Top 25 Carousel Section */
 .front-page-carousel {
   margin-top: 4rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .front-page-carousel {
       margin-top: 10rem; }
       .front-page-carousel .single .carousel-cell-content, .front-page-carousel .double .carousel-cell-content {
@@ -1093,7 +1093,7 @@ object {
   padding-bottom: 1.719rem;
   padding-top: 5rem;
   padding-bottom: 20%; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .front-page-workshops {
       padding-bottom: 10%; } }
 
@@ -1107,7 +1107,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .frontpage-workshops-wrapper h2 {
         font-size: 3.125rem; } }
   .frontpage-workshops-wrapper p {
@@ -1115,13 +1115,13 @@ object {
     line-height: 1.75;
     margin-top: 1.25rem;
     margin-bottom: 2.5rem; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .frontpage-workshops-wrapper p {
         font-size: 1.125rem; } }
   .frontpage-workshops-wrapper .button {
     margin-top: 3.5rem;
     margin-bottom: 4.5rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .frontpage-workshops-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1129,7 +1129,7 @@ object {
       margin: 0 7rem; } }
   .frontpage-workshops-wrapper .front-page-workshop-images {
     position: relative; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .frontpage-workshops-wrapper .front-page-workshop-images {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
@@ -1139,7 +1139,7 @@ object {
     position: relative;
     min-width: 282px;
     width: 75vw; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .frontpage-workshops-wrapper .first-workshop-image {
         max-width: 650px;
         width: 45vw; } }
@@ -1150,12 +1150,12 @@ object {
     z-index: 1;
     top: 55%;
     left: 31%; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .frontpage-workshops-wrapper .second-workshop-image {
         width: 35vw;
         max-width: 500px;
         left: 27%; } }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .frontpage-workshops-wrapper .front-page-workshop-content {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -1166,7 +1166,7 @@ object {
 /* Front Page Journal Section */
 .front-page-journal {
   margin-top: 4rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .front-page-journal {
       margin-top: 7rem; }
       .front-page-journal .single .carousel-cell-content, .front-page-journal .double .carousel-cell-content {
@@ -1181,7 +1181,7 @@ object {
         margin-left: 6.625rem; } }
   .front-page-journal h2 {
     margin: 0 2rem; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .front-page-journal h2 {
         font-size: 3.125rem;
         margin: 0 7rem; } }
@@ -1207,7 +1207,7 @@ object {
     color: #fff;
     width: 53%;
     margin-left: 2rem; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .front-page-become-box h2 {
         font-size: 3.125rem; } }
     .front-page-become-box h2:after {
@@ -1216,7 +1216,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .front-page-become-box {
       background: url("../../images/mountain-range.png") center top 230px no-repeat;
       background-size: cover;
@@ -1236,7 +1236,7 @@ object {
   background-size: cover;
   height: 380px;
   width: 100%; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .front-page-become-volunteer {
       height: 485px;
       width: 525px;
@@ -1259,7 +1259,7 @@ object {
   background-size: cover;
   width: 100%;
   height: 385px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .front-page-become-member {
       height: 485px;
       width: 525px;
@@ -1298,7 +1298,7 @@ object {
   padding-bottom: 1.719rem;
   padding-top: 5rem;
   margin-bottom: 3rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .workshop-description {
       background: url("../../images/workshops-background-2.png") bottom no-repeat;
       background-size: cover;
@@ -1317,7 +1317,7 @@ object {
 
 .workshop-description-wrapper {
   margin: 0 2rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .workshop-description-wrapper {
       width: 684px;
       margin-top: 5rem; } }
@@ -1329,7 +1329,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .workshop-description-wrapper h2 {
         font-size: 3.125rem; } }
   .workshop-description-wrapper p {
@@ -1337,12 +1337,12 @@ object {
     line-height: 1.75;
     margin-top: 0;
     margin-bottom: 0; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .workshop-description-wrapper p {
         font-size: 1.125rem; } }
 
 /* Workshops Page Content Box Section */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .workshops-content-box-area {
     display: none; } }
 
@@ -1369,12 +1369,12 @@ object {
 .about-carousels .carousel-container {
   margin-top: 3rem;
   margin-bottom: 3rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .about-carousels .carousel-container {
       margin-top: 4rem;
       margin-bottom: 4rem; } }
 
-@media (min-width: 1135px) {
+@media screen and (min-width: 1135px) {
   .about-box-area {
     height: 700px;
     width: 100%;
@@ -1388,7 +1388,7 @@ object {
   padding-bottom: 3rem;
   text-align: center;
   min-width: 375px; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .about-box-area .content-box {
       width: 60%;
       position: absolute;
@@ -1424,7 +1424,7 @@ object {
   background-size: 276px;
   padding-bottom: 1.719rem;
   padding-top: 5rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .volunteer-roles {
       background: url("../../images/volunteer-bird-pattern.png") bottom right no-repeat;
       background-size: contain, cover;
@@ -1441,7 +1441,7 @@ object {
 .volunteer-roles-content {
   margin: 0 2rem;
   padding-bottom: 3rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .volunteer-roles-content {
       width: 40%;
       -webkit-box-ordinal-group: 3;
@@ -1457,7 +1457,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .volunteer-roles-content h2 {
         font-size: 3.125rem; } }
   .volunteer-roles-content p {
@@ -1465,7 +1465,7 @@ object {
     line-height: 1.75;
     margin-top: 0;
     margin-bottom: 0; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .volunteer-roles-content p {
         font-size: 1.125rem; } }
 
@@ -1474,7 +1474,7 @@ object {
   display: block;
   margin-left: auto;
   margin-right: auto; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .volunteer-roles-image {
       width: 60%;
       -webkit-box-ordinal-group: 2;
@@ -1487,7 +1487,7 @@ object {
   background-size: 252px, cover;
   padding-bottom: 9.719rem;
   padding-top: 3rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .volunteer-perks {
       background: url("../../images/volunteer-girl-backgraund.png") bottom right no-repeat, url("../../images/volunteer-mountain-pattern.png") no-repeat;
       background-size: 63%, cover;
@@ -1508,7 +1508,7 @@ object {
 .volunteer-perks-content {
   margin: 0 2rem;
   padding-bottom: 3rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .volunteer-perks-content {
       width: 450px;
       margin-left: 7rem; } }
@@ -1520,7 +1520,7 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .volunteer-perks-content h2 {
         font-size: 3.125rem; } }
   .volunteer-perks-content p {
@@ -1528,7 +1528,7 @@ object {
     line-height: 1.75;
     margin-top: 0;
     margin-bottom: 0; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .volunteer-perks-content p {
         font-size: 1.125rem; } }
 
@@ -1536,7 +1536,7 @@ object {
   margin-top: 4rem; }
   .volunteer-carousel h2 {
     margin: 0 2rem; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .volunteer-carousel h2 {
         font-size: 3.125rem;
         margin: 0 7rem;
@@ -1569,7 +1569,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 1.75rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .footer-wrapper {
       -webkit-box-align: unset;
           -ms-flex-align: unset;
@@ -1586,7 +1586,7 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .footer-wrapper .site-info {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1599,16 +1599,16 @@ object {
       margin: 1rem 0 2rem 0; }
       .footer-wrapper .site-info .footer-contact h3 {
         margin-bottom: 1.5rem; }
-        @media (min-width: 1135px) {
+        @media screen and (min-width: 1135px) {
           .footer-wrapper .site-info .footer-contact h3 {
             margin-bottom: 4rem; } }
-      @media (min-width: 1135px) {
+      @media screen and (min-width: 1135px) {
         .footer-wrapper .site-info .footer-contact {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1;
           margin: 4rem 0 2rem 0; } }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .footer-wrapper .site-info .secondary {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
@@ -1618,7 +1618,7 @@ object {
           margin-bottom: .3rem; } }
     .footer-wrapper .site-info .footer-social {
       margin-bottom: 2rem; }
-      @media (min-width: 1135px) {
+      @media screen and (min-width: 1135px) {
         .footer-wrapper .site-info .footer-social {
           -webkit-box-ordinal-group: 4;
               -ms-flex-order: 3;
@@ -1629,7 +1629,7 @@ object {
         margin-right: 2.45rem;
         border: 1px solid #fff;
         padding: .75rem; }
-        @media (min-width: 1135px) {
+        @media screen and (min-width: 1135px) {
           .footer-wrapper .site-info .footer-social .svg-inline--fa {
             margin-right: .5rem;
             border-width: 2px;
@@ -1656,7 +1656,7 @@ object {
     font-size: .75rem;
     color: #fff;
     font-weight: 300; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .footer-wrapper .site-copyright {
         font-size: .9rem;
         -webkit-box-align: unset;
@@ -1665,18 +1665,18 @@ object {
     .footer-wrapper .site-copyright .site-footer-logo {
       max-width: 59px;
       margin-right: 1rem; }
-      @media (min-width: 1135px) {
+      @media screen and (min-width: 1135px) {
         .footer-wrapper .site-copyright .site-footer-logo {
           max-width: 77px; } }
       .footer-wrapper .site-copyright .site-footer-logo img {
         max-width: 59px; }
-        @media (min-width: 1135px) {
+        @media screen and (min-width: 1135px) {
           .footer-wrapper .site-copyright .site-footer-logo img {
             max-width: 77px; } }
 
 .mc4wp-form-455 .mc4wp-form-fields {
   margin-top: .5rem; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .mc4wp-form-455 .mc4wp-form-fields {
       margin-top: 0; } }
   .mc4wp-form-455 .mc4wp-form-fields label {
@@ -1684,7 +1684,7 @@ object {
     font-size: .85rem; }
     .mc4wp-form-455 .mc4wp-form-fields label span {
       display: none; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .mc4wp-form-455 .mc4wp-form-fields label {
         font-size: 1.125rem; }
         .mc4wp-form-455 .mc4wp-form-fields label span {
@@ -1700,7 +1700,7 @@ object {
       border: 1px solid #fff;
       background: transparent;
       width: 195px; }
-      @media (min-width: 1135px) {
+      @media screen and (min-width: 1135px) {
         .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="email"] {
           margin-right: 5px;
           margin-top: .75rem;
@@ -1728,7 +1728,7 @@ object {
       background: #fff;
       color: #145B51;
       margin-left: 0; }
-      @media (min-width: 1135px) {
+      @media screen and (min-width: 1135px) {
         .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"] {
           font-size: 1.25rem;
           margin-top: .75rem;
@@ -1736,7 +1736,7 @@ object {
       .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:hover, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:active, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:focus {
         background: #145B51;
         color: #fff; }
-        @media (min-width: 1135px) {
+        @media screen and (min-width: 1135px) {
           .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:hover, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:active, .mc4wp-form-455 .mc4wp-form-fields .input-wrapper input[type="submit"]:focus {
             border-left: 1px solid #fff; } }
 
@@ -1755,7 +1755,7 @@ object {
     width: 40%; }
     .site-header .site-logo .logo {
       height: 60px; }
-      @media (min-width: 600px) {
+      @media screen and (min-width: 600px) {
         .site-header .site-logo .logo {
           margin-top: 15px;
           margin-left: 80px; } }
@@ -1763,7 +1763,7 @@ object {
   .site-header .btn-close {
     font-size: 2rem;
     margin-top: 10px; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .site-header .fa-bars,
       .site-header .btn-close {
         display: none; } }
@@ -1781,7 +1781,7 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #145B51; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     #site-navigation {
       z-index: 999;
       background: none;
@@ -1835,7 +1835,7 @@ object {
               flex-direction: column; }
       #site-navigation .menu-main-navigation-container .nav-menu li {
         height: 40px; }
-      @media (min-width: 600px) {
+      @media screen and (min-width: 600px) {
         #site-navigation .menu-main-navigation-container .nav-menu {
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
@@ -1857,7 +1857,7 @@ object {
   #site-navigation .nav-content {
     padding: 40px;
     display: none; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       #site-navigation .nav-content {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1879,7 +1879,7 @@ object {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         margin: 0; }
-      @media (min-width: 600px) {
+      @media screen and (min-width: 600px) {
         #site-navigation .nav-content .nav-donate {
           background-color: #FF8271;
           color: #fff; } }
@@ -1904,7 +1904,7 @@ object {
 #menu-close {
   margin-top: 25px; }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .menu-item-has-children a {
     pointer-events: none; } }
 
@@ -1940,7 +1940,7 @@ object {
     position: absolute;
     right: 20px;
     font-size: 2rem; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .sf-modal {
       overflow: hidden;
       -webkit-box-orient: horizontal;
@@ -2009,7 +2009,7 @@ object {
         width: 16%;
         padding-top: 1rem;
         border-bottom: 6px solid coral; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .profile-box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2080,7 +2080,7 @@ object {
     color: white;
     height: 60px;
     font-size: 1.2rem; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .nominee-meet-container-after {
       display: none; } }
 
@@ -2088,7 +2088,7 @@ object {
   display: block;
   width: 95%;
   margin: auto; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .nominee-carousel {
       display: none; } }
   .nominee-carousel .carousel-top-25 {
@@ -2107,7 +2107,7 @@ object {
   margin-top: 100px;
   display: none;
   height: 600px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .profile-scroll-box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2152,7 +2152,7 @@ object {
           font-weight: 100;
           line-height: 30px; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .content-box-area {
     background: url("../../images/about-background.png") top no-repeat;
     height: 700px; } }
@@ -2175,11 +2175,11 @@ object {
       line-height: 30px; }
   .content-box-area .content-box .judges-container-btn {
     text-align: center; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .content-box-area .content-box .judges-container-btn {
         width: 85%;
         margin: auto; } }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .content-box-area .content-box {
       width: 850px;
       height: 300px;
@@ -2203,15 +2203,15 @@ object {
   background-size: contain;
   width: 100%;
   height: 435px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .donation-container {
       background-size: cover; } }
   .donation-container .content-donation {
     margin: auto; }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .donation-container .content-donation {
         padding: 75px 0 0 130px; } }
-    @media (min-width: 600px) {
+    @media screen and (min-width: 600px) {
       .donation-container .content-donation .content-donation-info {
         width: 400px; } }
     .donation-container .content-donation .content-donation-info p {
@@ -2222,7 +2222,7 @@ object {
       margin-bottom: 50px;
       margin-left: 25px;
       width: 90%; }
-      @media (min-width: 600px) {
+      @media screen and (min-width: 600px) {
         .donation-container .content-donation .content-donation-info p {
           margin-left: 0;
           width: 100%; } }
@@ -2237,7 +2237,7 @@ object {
   font-weight: 300;
   text-decoration: none;
   letter-spacing: .5px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .btn-donate {
       width: 210px;
       margin: 0;
@@ -2257,7 +2257,7 @@ object {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .single .carousel-cell-content, .double .carousel-cell-content {
       margin-left: 6.625rem; } }
 
@@ -2266,7 +2266,7 @@ object {
       -ms-flex-order: 2;
           order: 2; }
 
-@media (min-width: 1135px) {
+@media screen and (min-width: 1135px) {
   .single .carousel-cell-content, .double .carousel-cell-content {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -2276,7 +2276,7 @@ object {
         -ms-flex-order: 1;
             order: 1; } }
 
-@media (min-width: 1135px) {
+@media screen and (min-width: 1135px) {
   .double .carousel-cell-content {
     margin-left: 0;
     -webkit-box-ordinal-group: 2;
@@ -2302,7 +2302,7 @@ object {
   .carousel-cell-container .carousel-cell-content p {
     font-weight: 300;
     line-height: 1.75; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .carousel-cell-container .carousel-cell-content p {
         font-size: 1.125rem; } }
   .carousel-cell-container .carousel-cell-content h2 {
@@ -2315,13 +2315,13 @@ object {
       width: 16%;
       padding-top: 1rem;
       border-bottom: 6px solid coral; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .carousel-cell-container .carousel-cell-content h2 {
         font-size: 3.125rem; } }
   .carousel-cell-container .carousel-cell-content h3 {
     margin-bottom: 1rem;
     font-weight: 400; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .carousel-cell-container .carousel-cell-content h3 {
         font-size: 1.75rem; } }
   .carousel-cell-container .carousel-cell-content .button {
@@ -2331,7 +2331,7 @@ object {
     width: 100%;
     min-width: 312px;
     position: inherit; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .carousel-cell-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2357,7 +2357,7 @@ object {
     z-index: 1;
     top: 55%;
     left: 31%; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .carousel-double {
       margin-bottom: 20%;
       position: relative;
@@ -2386,12 +2386,12 @@ object {
   height: 48px;
   border-radius: 0;
   bottom: 3%; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .flickity-prev-next-button {
       bottom: 0; } }
   .flickity-prev-next-button .flickity-button-icon {
     fill: #fff; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .flickity-prev-next-button {
       width: 60px;
       height: 60px; }
@@ -2403,7 +2403,7 @@ object {
 .container-double .carousel-btns {
   left: 15%;
   bottom: 6%; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .container-double .carousel-btns {
       left: 35%;
       bottom: 31%; } }
@@ -2414,7 +2414,7 @@ object {
   position: absolute;
   right: 10px;
   bottom: 6%; }
-  @media (min-width: 1135px) {
+  @media screen and (min-width: 1135px) {
     .carousel-btns {
       width: 140px;
       height: 68px;
@@ -2422,7 +2422,7 @@ object {
       bottom: 40%; } }
   .carousel-btns .previous {
     left: 0 !important; }
-    @media (min-width: 1135px) {
+    @media screen and (min-width: 1135px) {
       .carousel-btns .previous {
         right: 68px; } }
   .carousel-btns .next {
@@ -2437,19 +2437,33 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .donate-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
+  @media screen and (min-width: 600px) {
+    .donate-wrapper h3 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 300; }
+      .donate-wrapper h3:after {
+        content: "";
+        display: block;
+        width: 16%;
+        padding-top: 1rem;
+        border-bottom: 6px solid coral; } }
 
 .donate-image {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .donate-image {
       width: 55%;
       height: auto; } }
@@ -2463,21 +2477,32 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .donate-content {
       width: 45%;
-      padding: 0 100px; } }
+      padding: 0 82px; } }
 
 .close-link {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 30px; }
+  top: 46px;
+  right: 32px;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none; }
 
 .paypal-image {
   height: 50px;
-  -ms-flex-item-align: center;
-      align-self: center; }
+  -ms-flex-item-align: left;
+      align-self: left; }
+
+@media screen and (min-width: 600px) {
+  #post-486, .entry-title {
+    font-size: 50px;
+    margin: 50px 0 10px; } }
+
+.page-template-donate .site-header,
+.page-template-donate .site-footer {
+  display: none; }
 
 .submit-wrapper {
   display: -webkit-box;
@@ -2487,7 +2512,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .submit-wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2501,9 +2526,9 @@ object {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .submit-content {
-      padding: 20px 70px 0;
+      padding: 78px 40px 0;
       width: 45%; } }
 
 .submit-form {
@@ -2511,12 +2536,12 @@ object {
   padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .submit-form {
       padding: 0 40px;
       width: 55%; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #gform_fields_2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2528,20 +2553,29 @@ object {
     #gform_fields_2 > li {
       padding-right: 0; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #field_2_7 {
     margin-right: 20px; } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #field_2_7, #field_2_6 {
     width: calc(50% - 10px); } }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   #field_2_8, #field_2_5, #field_2_4 {
     width: 100%; } }
 
 .submit-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 30px; }
+  top: 46px;
+  right: 32px;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none; }
+
+#input_2_4 {
+  height: 130px; }
+
+.page-template-submit .site-header,
+.page-template-submit .site-footer {
+  display: none; }
