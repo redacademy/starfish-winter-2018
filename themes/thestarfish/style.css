@@ -256,7 +256,8 @@ h1 {
   @media (min-width: 600px) {
     h1 {
       font-size: 55px;
-      margin-left: 100px; } }
+      margin-left: 70px;
+      width: 800px; } }
 
 h2 {
   font-family: "Poppins", sans-serif;
