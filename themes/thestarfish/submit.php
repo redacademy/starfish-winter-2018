@@ -13,11 +13,18 @@
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="submit-content">
-					<?php echo CFS()->get( 'submit_title' ); ?>
-					<?php echo CFS()->get( 'submit_form' ); ?>
+				<div class="submit-wrapper">
+					
+					<div class="submit-content">
+						<?php echo CFS()->get( 'submit_title' ); ?>
+					</div>
+					
+					<div class="submit-form">
+						<?php echo CFS()->get( 'submit_form' ); ?>
+					</div>	
+				
 				</div>
-			
+				
 			<?php endwhile; ?>
 
 		</main><!-- #main -->
