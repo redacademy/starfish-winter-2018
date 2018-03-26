@@ -1863,3 +1863,21 @@ object {
         right: 68px; } }
   .carousel-btns .next {
     right: 0 !important; }
+
+.donate-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.donate-image {
+  width: 55%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.donate-content {
+  width: 45%;
+  padding: 0 100px; }
