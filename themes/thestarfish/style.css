@@ -466,29 +466,22 @@ textarea {
     color: #fff; }
 
 .wpcf7-form {
-  width: 330px;
-  padding-left: 20px;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 60px; }
   @media (min-width: 600px) {
     .wpcf7-form {
       width: 625px;
       padding-left: 80px; } }
-  .wpcf7-form input[type=text] {
+  .wpcf7-form input[type=text], .wpcf7-form input[type=email] {
     border: 1px solid #145B51;
     border-radius: 2px;
+    width: 100%;
     padding: 8px 0;
     margin-top: 10px; }
     @media (min-width: 600px) {
-      .wpcf7-form input[type=text] {
-        padding: 14px 0;
-        width: 625px; } }
-  .wpcf7-form input[type=email] {
-    border: 1px solid #145B51;
-    border-radius: 2px;
-    padding: 8px 0;
-    margin-top: 10px; }
-    @media (min-width: 600px) {
-      .wpcf7-form input[type=email] {
+      .wpcf7-form input[type=text], .wpcf7-form input[type=email] {
         padding: 14px 0;
         width: 625px; } }
   .wpcf7-form textarea {
@@ -618,8 +611,8 @@ textarea {
             justify-content: flex-end;
     margin-right: 80px;
     position: absolute;
-    left: 700px;
-    top: 600px; } }
+    left: 747px;
+    top: 676px; } }
   @media (min-width: 600px) and (max-width: 1000px) {
     #secondary {
       position: static; } }
@@ -642,6 +635,11 @@ textarea {
     font-size: 14px;
     margin: 7px 0;
     line-height: 25px; }
+    @media (min-width: 600px) {
+      #text-2 p {
+        font-size: 16px;
+        margin: 18px 0;
+        line-height: 26px; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1865,19 +1863,107 @@ object {
     right: 0 !important; }
 
 .donate-wrapper {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 600px) {
+    .donate-wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .donate-image {
-  width: 55%;
+  width: 100%;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover; }
+  @media (min-width: 600px) {
+    .donate-image {
+      width: 55%;
+      height: auto; } }
 
 .donate-content {
-  width: 45%;
-  padding: 0 100px; }
+  width: 100%; }
+  @media (min-width: 600px) {
+    .donate-content {
+      width: 45%;
+      padding: 0 100px; } }
+
+.close-link {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 30px; }
+
+.submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 600px) {
+    .submit-wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.submit-content {
+  background: url("../../images/submit-background.png") center no-repeat;
+  width: 100%;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff; }
+  @media (min-width: 600px) {
+    .submit-content {
+      padding: 20px 70px 0;
+      width: 45%; } }
+
+.submit-form {
+  width: 100%;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .submit-form {
+      padding: 0 40px;
+      width: 55%; } }
+
+@media (min-width: 600px) {
+  #gform_fields_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    #gform_fields_2 > li {
+      padding-right: 0; } }
+
+@media (min-width: 600px) {
+  #field_2_7 {
+    margin-right: 20px; } }
+
+@media (min-width: 600px) {
+  #field_2_7, #field_2_6 {
+    width: calc(50% - 10px); } }
+
+@media (min-width: 600px) {
+  #field_2_8, #field_2_5, #field_2_4 {
+    width: 100%; } }
+
+.submit-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 30px; }
