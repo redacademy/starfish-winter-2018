@@ -1,0 +1,65 @@
+.submit-wrapper {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.submit-content {
+  background: url('../../images/submit-background.png') center no-repeat;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  color: $color__background-body;
+
+  @include desktop {
+    padding: 20px 70px 0;
+    width: 45%;
+  }
+}
+
+.submit-form {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  @include desktop {
+    padding: 0 40px;
+    width: 55%;
+  }  
+}
+
+#gform_fields_2 {
+  @include desktop {
+    display: flex;
+    flex-flow: row wrap;
+     & > li {
+       padding-right: 0;
+     }
+  }
+}
+
+#field_2_7 {
+  @include desktop {
+    margin-right: 20px;
+  }
+}
+
+#field_2_7, #field_2_6 {
+  @include desktop {
+    width: calc(50% - 10px);
+  }
+}
+
+#field_2_8, #field_2_5, #field_2_4 {
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.submit-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 30px;
+}
