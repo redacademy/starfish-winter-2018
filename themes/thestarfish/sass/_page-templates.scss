@@ -281,3 +281,71 @@
     margin: 2rem;
   }
 }
+
+/****** Workshops Page ******/
+
+/* General Style Workshops */
+
+.page-template-workshops {
+  .entry-content {
+    margin-top: 0;
+  }
+  h2{
+    font-size: 2.188rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+  }
+}
+
+/* Workshops Page Description Section */
+
+.workshop-description {
+  background: url('../../images/workshop-background.png') no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  @include desktop-for-footer {
+    background: url('../../images/workshops-background-2.png') bottom no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+}
+
+.workshop-description-wrapper {
+  margin: 0 2rem;
+  @include desktop-for-footer {
+    width: 684px;
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
