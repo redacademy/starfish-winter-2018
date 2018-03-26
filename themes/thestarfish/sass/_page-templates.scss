@@ -193,17 +193,17 @@
   h2 {
     margin-top: 0;
     margin: 0 2rem;
-    &:after {
-      content: ""; 
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: $border__secondary-brand-mobile;
-    }
     @include desktop-for-footer { 
       font-size: 3.125rem;
       margin: 0 7rem;
     }
+  }
+  h3:after {
+    content: ""; 
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: $border__secondary-brand-mobile;
   }
 }
 
@@ -424,5 +424,138 @@
         border-width: $border__bold-width;
       }
     }
+  }
+}
+
+/****** Volunteer Page ******/
+
+.page-template-volunteer {
+  .entry-content {
+    margin-top: 0;
+  }
+  h2{
+    font-size: 2.188rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+  }
+}
+
+.volunteer-roles {
+  background: url('../../images/volunteer-bird-pattern.png') 105% -12% no-repeat;
+  background-size: 276px;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  @include desktop-for-footer {
+    background: url('../../images/background-about-frontpage-2.png') bottom left no-repeat, url('../../images/background-who-are-we-frontpage.png');
+    background-size: 63%, cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+.volunteer-roles-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 424px;
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.volunteer-roles-image {
+  width: 83%;
+  @include center-block;
+}
+
+.volunteer-perks {
+  background: url('../../images/volunteer-gerl-backgraund.png') bottom right no-repeat, url('../../images/voluntee-mountain-pattern.png') no-repeat;
+  background-size: 252px, cover;
+  padding-bottom: 9.719rem;
+  padding-top: 3rem;
+  @include desktop-for-footer {
+    background: url('../../images/voluntee-mountain-pattern.png'), url('../../images/volunteer-gerl-backgraund.png');
+    background-size: 63%, cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+.volunteer-perks-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 424px;
+    margin-top: 5rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.volunteer-carousel {
+  margin-top: 4rem;
+  h2 {
+    margin-top: 0;
+    margin: 0 2rem;
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+      margin: 0 7rem;
+    }
+  }
+  h3:after {
+    content: ""; 
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: $border__secondary-brand-mobile;
   }
 }

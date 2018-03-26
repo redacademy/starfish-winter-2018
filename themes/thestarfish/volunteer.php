@@ -10,25 +10,33 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header class='entry-header'>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
-				</header>
-				
-			<?php endif; ?>
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			</header>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content' ); ?>
-				
-				<?php $image = CFS()->get('volunteer_roles_image');?>
- 				<?php echo '<img src="' . $image . '" alt=""/>'; ?>
-				<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
-				<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
+				<section class="volunteer-roles">
+					<div class="volunteer-roles-content">
+						<?php echo CFS()->get( 'volunteer_roles_content' ); ?>
+					</div>
+					<div class="volunteer-roles-image">
+						<?php $image = CFS()->get('volunteer_roles_image');?>
+						<?php echo '<img src="' . $image . '" alt=""/>'; ?>
+					</div>
+
+				</section><!-- .volunteer-roles -->
+
+				<section class="volunteer-perks">
+					<div class="volunteer-perks-content">
+
+						<?php echo CFS()->get( 'volunteer_perks_content' ); ?>
+
+					</div>
+
+				</section><!-- .volunteer-perks -->
 
 				<section class="volunteer-carousel">
 					<?php
@@ -47,8 +55,8 @@ get_header(); ?>
 										echo '</div>';
 										echo '<div class="carousel-cell-content">';
 											echo $carousel_cell['carousel_cell_content'];
-											echo '<div class="btn">';
-												echo '<a href="' . esc_url(get_permalink(get_page_by_path( 'contributor' ) ) ) . '">Join the team</a>';
+											echo '<div class="button">';
+												echo '<a href="' . esc_url(get_permalink(get_page_by_path( 'contributor' ) ) ) . '" class="btn-transparent-dark">Join the team</a>';
 											echo '</div>';
 										echo '</div>';
 									echo '</div>';
@@ -58,14 +66,6 @@ get_header(); ?>
 				</section><!-- .front-page-carousel -->
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
