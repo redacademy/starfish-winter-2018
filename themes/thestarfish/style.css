@@ -2613,6 +2613,7 @@ object {
   display: none; }
 
 .submit-wrapper {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2622,6 +2623,7 @@ object {
           flex-direction: column; }
   @media screen and (min-width: 600px) {
     .submit-wrapper {
+      margin-top: 60px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -2636,7 +2638,7 @@ object {
   color: #fff; }
   @media screen and (min-width: 600px) {
     .submit-content {
-      padding: 78px 40px 0;
+      padding: 100px 60px 0;
       width: 45%; } }
 
 .submit-form {
@@ -2646,7 +2648,7 @@ object {
           box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .submit-form {
-      padding: 0 40px;
+      padding: 0 55px;
       width: 55%; } }
 
 @media screen and (min-width: 600px) {
