@@ -2141,7 +2141,14 @@ object {
       height: auto; } }
 
 .donate-content {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (min-width: 600px) {
     .donate-content {
       width: 45%;
@@ -2152,6 +2159,11 @@ object {
   top: 40px;
   right: 40px;
   font-size: 30px; }
+
+.paypal-image {
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .submit-wrapper {
   display: -webkit-box;
