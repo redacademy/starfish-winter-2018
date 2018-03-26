@@ -1839,8 +1839,14 @@ object {
   .profile-box .profile-headline {
     width: 100%; }
     .profile-box .profile-headline h1 {
-      border-bottom: 4px solid #FF8271;
+      margin-top: 0;
       margin-left: 0; }
+      .profile-box .profile-headline h1:after {
+        content: "";
+        display: block;
+        width: 16%;
+        padding-top: 1rem;
+        border-bottom: 6px solid coral; }
   @media (min-width: 600px) {
     .profile-box {
       display: -webkit-box;
@@ -1888,6 +1894,12 @@ object {
           flex-direction: row-reverse; }
 
 /* Carousel on Top 25 Page */
+.nominee-meet-container-after {
+  display: block; }
+  @media (min-width: 600px) {
+    .nominee-meet-container-after {
+      display: none; } }
+
 .nominee-carousel {
   display: block; }
   @media (min-width: 600px) {
@@ -1946,7 +1958,7 @@ object {
 
 @media (min-width: 600px) {
   .content-box-area {
-    background: lightblue;
+    background: url("../../images/about-background.png") top no-repeat;
     height: 700px; } }
 
 .content-box-area .content-box {
@@ -1966,8 +1978,11 @@ object {
       font-weight: 100;
       line-height: 30px; }
   .content-box-area .content-box .judges-container-btn {
-    width: 85%;
-    margin: auto; }
+    text-align: center; }
+    @media (min-width: 600px) {
+      .content-box-area .content-box .judges-container-btn {
+        width: 85%;
+        margin: auto; } }
   @media (min-width: 600px) {
     .content-box-area .content-box {
       width: 850px;
