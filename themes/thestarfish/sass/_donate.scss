@@ -9,17 +9,13 @@
   }
  
   h3 {
+    font-size: 22px;
+    font-weight: 300;
     @include desktop {
       margin-top: 0;
       font-size: 20px;
       font-weight: 300;
-      &:after {
-        content: ""; 
-        display: block;
-        width: 16%;
-        padding-top: 1rem;
-        border-bottom: $border__secondary-brand-mobile;
-      }  
+        
     }
   } 
 } 
@@ -37,6 +33,8 @@
 
 .donate-content {
   width: 100%;
+  margin: 0 20px;
+	width: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   @include desktop {
@@ -57,15 +55,27 @@
 .paypal-image {
   height: 50px;
   align-self: left;
+  margin-bottom: 50px;
 }
 
 #post-486, .entry-title {
+  margin: 30px 1px 8px;
+  
   @include desktop {
     font-size: 50px;
     margin: 50px 0 10px; 
   }
 }
 
+#post-486 {
+  &:after {
+    content: ""; 
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: $border__secondary-brand-mobile;
+  }  
+}
 
 .page-template-donate {
   .site-header,
@@ -73,3 +83,4 @@
     display: none;
   }
 }
+
