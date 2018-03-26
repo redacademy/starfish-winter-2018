@@ -66,6 +66,21 @@ get_header(); ?>
 							}
 						?>
 					</section><!-- .workshop-carousels -->
+
+					<section class="workshops-content-box-area">
+						<div class="content-box">
+							<div class="content-box-header">
+								<h3>Contact us to host a workshop</h3>
+							</div><!-- .content-box-header -->
+							<div class="button">
+								<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'contact' ) ) ); ?>">Contact Us to Host a Workshop</a>
+							</div>
+						</div><!-- .content-box -->
+	
+					</section><!-- .workshops-content-box-area -->
+
+</section><!-- #post-## -->
+
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
 		<?php endwhile; ?>

@@ -342,10 +342,35 @@
   p {
     font-weight: 300;
     line-height: 1.75;
-    margin-top: 1.25rem;
-    margin-bottom: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
     @include desktop-for-footer { 
       font-size: 1.125rem;
+    }
+  }
+}
+.workshops-content-box-area {
+  @include desktop {
+    display: none;
+  }
+  .content-box{
+    background: $color__main-brand;
+    color:white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    h3 {
+      margin-bottom: 2.5rem;
+      font-size: 1.563rem;
+      width: 300px;
+      @include center-block;
+    }
+    .button {
+      margin-bottom: 2rem;
+      .btn-transparent {
+        padding: 1rem 3rem;
+        border-width: $border__bold-width;
+      }
     }
   }
 }
