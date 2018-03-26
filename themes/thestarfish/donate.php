@@ -5,7 +5,7 @@
  * @package starfish_Theme
  */
 
-get_header(); ?>
+wp_head(); ?>
 	
 	<div id="primary" class="content-area"
 		<main id="main" class="content-main" role="main">
@@ -13,11 +13,14 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content' ); ?>
-
+				<div class="donate-content">
+					<?php get_template_part( 'template-parts/content' ); ?>
+					<?php the_content(); ?>
+				</div>
+		
 			<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>	
+<?php wp_footer(); ?>	
