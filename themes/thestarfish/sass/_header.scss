@@ -102,6 +102,7 @@
     }  
     .nav-content{
         padding:40px;
+        display: none;
         @include desktop {
             display: flex;
             width: 100%;

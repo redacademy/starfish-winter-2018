@@ -63,7 +63,7 @@
                 var teamTitle = data.title.rendered;
                 var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
                 var preview = '<div class="preview-content-container-executive">';
-                preview += '<h2>' + teamTitle + '</h2>';
+                preview += '<h2>' + teamTitle + '</h2>'; 
                 preview += '<img src="' + teamPhoto + '">';
                 preview += '<input type="button" class="popup-profile" value="Learn More"/>'
                 preview += '</div>';

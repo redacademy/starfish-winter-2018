@@ -1,46 +1,69 @@
 .sf-modal {
+    display:none;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 999;
     background: white;
-    display: none;
-    flex-direction: row-reverse;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
-    .popup-profile-content{
-        flex-basis: 45%;
-        .content-single-profile{
-            padding-left:100px;
-            padding-right:100px;
-            overflow: scroll;
-            height: 90%;
-            h2{
-                border-bottom: 4px solid $color__secondary-brand;
-            }
-            p{
-                line-height: 40px;
-            }
+    flex-direction: column-reverse;
+    overflow: scroll;
+    .content-single-profile{
+        padding-left:20px;
+        padding-right:20px;
+        h2{
+            border-bottom: 4px solid $color__secondary-brand;
         }
     }
-    .popup-profile-image{
-        flex-basis: 55%;
-        img{
-            object-fit: cover;
-            height: 100%;
-            width:100%;
-        }
-    }
+    .popup-profile-image img{
+        width:100%;
+        height: auto;
+    }   
     .sf-modal-close{
-        text-align: right;
-        font-size: 40px;
-        color: $color__secondary-brand;
-        padding-right:50px;
+        position: absolute;
+        right:20px;
+        font-size: 2rem;
+    }
+  @include desktop{
+        overflow: hidden;
+        flex-direction: row-reverse;
+        .popup-profile-content{
+            flex-basis: 45%;
+            .content-single-profile{
+                padding-left:100px;
+                padding-right:100px;
+                overflow: scroll;
+                height: 99.99%;
+                h2{
+                    border-bottom: 4px solid $color__secondary-brand;
+                }
+                p{
+                    line-height: 40px;
+                }
+            }
+        }
+        .popup-profile-image{
+            flex-basis: 55%;
+            img{
+                object-fit: cover;
+                height: 100%;
+                width:100%;
+            }
+        }
+        .sf-modal-close{
+            position: relative;
+            text-align: right;
+            font-size: 40px;
+            color: $color__secondary-brand;
+            padding-right:50px;
+        }
     }
 }
+
+
+
+
 
 .profile-box{
     width: 90%;
