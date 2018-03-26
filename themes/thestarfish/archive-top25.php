@@ -104,11 +104,10 @@ get_header(); ?>
 			our next round of young Canadian leaders</p>
 		</div><!-- .content-box-header -->
 
-		<div>
+		<div class="judges-container-btn">
 			<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'judges' ) ) ); ?>">
 			Meet the Judges
 			</a><!-- .content-box-button -->
-
 		</div><!-- .content-box-content -->
 	
 	</div>	
