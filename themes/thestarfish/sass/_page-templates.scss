@@ -509,12 +509,12 @@
   @include desktop-for-footer {
     background: url('../../images/volunteer-girl-backgraund.png') bottom right no-repeat, url('../../images/volunteer-mountain-pattern.png') no-repeat;
     background-size: 63%, cover;
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 3rem;
   }
 }
 
