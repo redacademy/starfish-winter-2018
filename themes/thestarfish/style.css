@@ -906,7 +906,13 @@ a {
   margin: auto;
   margin-bottom: 50px;
   font-size: 2rem;
-  border-bottom: 6px solid coral; }
+  margin-top: 0; }
+  .journal-related-title:after {
+    content: "";
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: 6px solid coral; }
 
 .journal-container {
   display: -webkit-box;
