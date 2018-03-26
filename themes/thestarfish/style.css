@@ -977,7 +977,7 @@ a {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .archive-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -996,7 +996,7 @@ a {
 .archive-box-area {
   height: 400px;
   position: relative; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .archive-box-area {
       display: block;
       margin-bottom: 250px;
@@ -1014,7 +1014,7 @@ a {
     padding-top: 80px; }
   .content-box .content-box-content {
     padding-top: 50px; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .content-box {
       width: 55%;
       height: 350px;
@@ -2543,17 +2543,14 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
-  @media screen and (min-width: 600px) {
-    .donate-wrapper h3 {
-      margin-top: 0;
-      font-size: 20px;
-      font-weight: 300; }
-      .donate-wrapper h3:after {
-        content: "";
-        display: block;
-        width: 16%;
-        padding-top: 1rem;
-        border-bottom: 6px solid coral; } }
+  .donate-wrapper h3 {
+    font-size: 22px;
+    font-weight: 300; }
+    @media screen and (min-width: 600px) {
+      .donate-wrapper h3 {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 300; } }
 
 .donate-image {
   width: 100%;
@@ -2567,6 +2564,8 @@ object {
 
 .donate-content {
   width: 100%;
+  margin: 0 20px;
+  width: calc(100% - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2590,12 +2589,22 @@ object {
 .paypal-image {
   height: 50px;
   -ms-flex-item-align: left;
-      align-self: left; }
+      align-self: left;
+  margin-bottom: 50px; }
 
-@media screen and (min-width: 600px) {
-  #post-486, .entry-title {
-    font-size: 50px;
-    margin: 50px 0 10px; } }
+#post-486, .entry-title {
+  margin: 30px 1px 8px; }
+  @media screen and (min-width: 600px) {
+    #post-486, .entry-title {
+      font-size: 50px;
+      margin: 50px 0 10px; } }
+
+#post-486:after {
+  content: "";
+  display: block;
+  width: 16%;
+  padding-top: 1rem;
+  border-bottom: 6px solid coral; }
 
 .page-template-donate .site-header,
 .page-template-donate .site-footer {
