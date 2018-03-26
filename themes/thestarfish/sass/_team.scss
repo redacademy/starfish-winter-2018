@@ -187,18 +187,18 @@
 
 // JUDGES SECTION*******************
 
-.judges-section{
+.content-box-area{
     @include desktop{
     background: lightblue;
     height: 700px;
     }
-    .judges-container{
+    .content-box{
         background: $color__main-brand;
         color:white;
         height: 400px;
         padding-top: 10px;
         padding-bottom: 60px;
-        .judges-container-content{
+        .content-box-header{
             width:85%;
             margin: auto;
             h2{
@@ -242,7 +242,7 @@
             left: 0;
             right: 0;
             margin-top: 300px;
-            .judges-container-content{
+            .content-box-header{
                 width:60%;
                 h2{
                     text-align: center;
