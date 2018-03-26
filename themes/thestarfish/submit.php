@@ -5,7 +5,7 @@
  * @package starfish_Theme
  */
 
- wp_head(); 
+ get_header(); 
 ?>
 	<div id="primary" class="submit-area"
 		<main id="main" class="submit-main" role="main">
@@ -16,7 +16,7 @@
 
 				<div class="submit-wrapper">
 					<a class="submit-close" href="<?php echo esc_url(get_permalink(get_page_by_path( 'front-page' ) ) ); ?>" >	
-						X
+						x
 					</a>
 					<div class="submit-content">
 						<?php echo CFS()->get( 'submit_title' ); ?>
@@ -33,4 +33,4 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php wp_footer(); ?> 
+	<?php get_footer(); ?> 
