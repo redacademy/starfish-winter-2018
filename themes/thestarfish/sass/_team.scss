@@ -137,12 +137,40 @@
 /* Carousel on Top 25 Page */
 .nominee-meet-container-after{
     display: block;
+    height:450px;
+    width:85%;
+    margin: auto;
+    margin-top:100px;
+    h2{
+        font-size: 2rem;
+        &:after {
+            content: ""; 
+            display: block;
+            width: 16%;
+            padding-top: 1rem;
+            border-bottom: $border__secondary-brand-mobile;
+          }
+    }
+    p{
+        font-weight:100;
+        line-height: 30px;
+    }
+    button{
+        width:100%;
+        background-color: $color__secondary-brand;
+        border: none;
+        color:white;
+        height:60px;
+        font-size: 1.2rem;
+    }
     @include desktop{
         display: none;
     }
 }
 .nominee-carousel{
     display: block;
+    width:95%;
+    margin: auto;
     @include desktop{
         display: none;
     }
@@ -150,8 +178,11 @@
         width: 100%;
         .carousel-top-25-cell {
             width: 50%;
+            margin: auto;
             img{
-                width:40%;
+                width:98%;
+                height: 275px;
+                object-fit: cover;
                 text-align: center;
             }
         }
@@ -184,6 +215,15 @@
         }
         .nominee-meet-container{
             flex-basis: 45%;
+            h2{
+                &:after {
+                    content: ""; 
+                    display: block;
+                    width: 16%;
+                    padding-top: 1rem;
+                    border-bottom: $border__secondary-brand-mobile;
+                  }
+            }
             button{
                 width:200px;
                 height: 50px;

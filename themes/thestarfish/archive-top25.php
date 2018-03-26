@@ -46,7 +46,10 @@ get_header(); ?>
 								the_post_thumbnail( 'large' ); 
 								endif; ?>
 							</a>
-							<?php the_title(); ?>
+							<strong><?php the_title(); ?></strong>
+							<br>
+							<?php echo CFS()->get( 'subtitle' ); ?>
+
 							</div>
 					<?php endforeach;
 					wp_reset_postdata();
@@ -65,7 +68,7 @@ get_header(); ?>
 				<h2>Meet the Top 25</h2>
 				<?php the_excerpt(); ?>
 				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>"><button>Nominate</button></a>
-			</div>
+</div>
 
 <div class="nominee-carousel">
 		<?php
@@ -79,14 +82,16 @@ get_header(); ?>
 			?>
 
 			<div class="carousel-top-25">
-				
 				<?php 
 				foreach ( $myposts as $post ) : setup_postdata( $post );?>
 						<div class="carousel-top-25-cell">
+						<a class="nominee-popup" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>">
 						<?php if ( has_post_thumbnail() ) : 
 								the_post_thumbnail( 'large' ); 
-							endif; ?>
-							<a class="top25-profile-picture" href="<?php the_permalink(); ?>" id="<?php echo $post->ID; ?>"><?php the_title(); ?></a>
+							endif; ?></a>
+							<strong><?php the_title(); ?></strong>
+							<br>
+							<?php echo CFS()->get( 'subtitle' ); ?>
 						</div>
 				<?php endforeach;
 				wp_reset_postdata();
