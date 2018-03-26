@@ -29,9 +29,9 @@
 					<div class="site-branding">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>					
 					</div><!-- .site-branding -->
-					<a href="#" id="menu-open">
+					<!-- <a href="#" id="menu-open">
 						<i class="fas fa-bars"></i>
-					</a>
+					</a> -->
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<div class="nav-content">
 							<a href="#" class="btn-close" id="menu-close">&times;</a>
