@@ -18,6 +18,9 @@
     font-weight: 300;
     line-height: 1.75;
   }
+  .carousel-btns {
+    left: 39.4%;
+  }
 }
 
 /* Front Page About Section */
@@ -191,7 +194,6 @@
     }
   }
   h2 {
-    margin-top: 0;
     margin: 0 2rem;
     @include desktop-for-footer { 
       font-size: 3.125rem;
@@ -508,12 +510,14 @@
   padding-bottom: 9.719rem;
   padding-top: 3rem;
   @include desktop-for-footer {
-    background: url('../../images/volunteer-girl-backgraund.png') no-repeat, url('../../images/volunteer-mountain-pattern.png') no-repeat;
+    background: url('../../images/volunteer-girl-backgraund.png') bottom right no-repeat, url('../../images/volunteer-mountain-pattern.png') no-repeat;
     background-size: 63%, cover;
     height: 800px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 3rem;
   }
 }
 
@@ -521,8 +525,8 @@
   margin: 0 2rem;
   padding-bottom: 3rem;
   @include desktop-for-footer {
-    width: 424px;
-    margin-top: 5rem;
+    width: 450px;
+    margin-left: 7rem;
   }
   h2 {
     margin-top: 0;
@@ -551,11 +555,12 @@
 .volunteer-carousel {
   margin-top: 4rem;
   h2 {
-    margin-top: 0;
     margin: 0 2rem;
     @include desktop-for-footer { 
       font-size: 3.125rem;
       margin: 0 7rem;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   h3:after {
@@ -566,3 +571,6 @@
     border-bottom: $border__secondary-brand-mobile;
   }
 }
+
+/****** Member Page ******/
+
