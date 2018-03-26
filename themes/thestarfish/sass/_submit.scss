@@ -14,7 +14,7 @@
   color: $color__background-body;
 
   @include desktop {
-    padding: 20px 70px 0;
+    padding: 78px 40px 0;
     width: 45%;
   }
 }
@@ -59,7 +59,24 @@
 
 .submit-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  font-size: 30px;
+  top: 46px;
+  right: 32px;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#input_2_4 {
+  height: 130px;
+}
+
+#input_2_4, #input_2_5, #input_2_6, #input_2_7, #input_2_8 {
+
+}
+
+.page-template-submit {
+  .site-header,
+  .site-footer {
+    display: none;
+  }
 }

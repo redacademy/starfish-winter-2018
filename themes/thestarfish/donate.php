@@ -5,7 +5,7 @@
  * @package starfish_Theme
  */
 
-wp_head(); ?>
+get_header(); ?>
 	
 	<div id="primary" class="content-area"
 		<main id="main" class="content-main" role="main">
@@ -17,7 +17,7 @@ wp_head(); ?>
 				<img src="<?php echo get_template_directory_uri() . '/images/donate-image.png'; ?>" class="donate-image" alt="Donate Image">
 					<div class="donate-content">
 						<a class="close-link" href="<?php echo esc_url(get_permalink(get_page_by_path( 'front-page' ) ) ); ?>" >	
-						X
+						x
 						</a>
 						<?php get_template_part( 'template-parts/content' ); ?>
 						<?php the_content(); ?>
@@ -30,4 +30,4 @@ wp_head(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php wp_footer(); ?>	
+<?php get_footer(); ?>	
