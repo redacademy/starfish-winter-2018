@@ -1180,7 +1180,6 @@ object {
                 order: 2;
         margin-left: 6.625rem; } }
   .front-page-journal h2 {
-    margin-top: 0;
     margin: 0 2rem; }
     @media (min-width: 1135px) {
       .front-page-journal h2 {
@@ -1536,12 +1535,17 @@ object {
 .volunteer-carousel {
   margin-top: 4rem; }
   .volunteer-carousel h2 {
-    margin-top: 0;
     margin: 0 2rem; }
     @media (min-width: 1135px) {
       .volunteer-carousel h2 {
         font-size: 3.125rem;
-        margin: 0 7rem; } }
+        margin: 0 7rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
   .volunteer-carousel h3:after {
     content: "";
     display: block;

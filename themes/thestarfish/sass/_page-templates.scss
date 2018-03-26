@@ -191,7 +191,6 @@
     }
   }
   h2 {
-    margin-top: 0;
     margin: 0 2rem;
     @include desktop-for-footer { 
       font-size: 3.125rem;
@@ -553,11 +552,12 @@
 .volunteer-carousel {
   margin-top: 4rem;
   h2 {
-    margin-top: 0;
     margin: 0 2rem;
     @include desktop-for-footer { 
       font-size: 3.125rem;
       margin: 0 7rem;
+      display: flex;
+      justify-content: flex-end;
     }
   }
   h3:after {
