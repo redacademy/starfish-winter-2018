@@ -196,12 +196,13 @@
 	}
 	@include desktop{
 		flex-direction:row;
+		justify-content: space-between;
 		.archive-story-container{
 			flex-basis:50%;
-			height:350px;
+			height:325px;
 			img{
 				width:90%;
-				
+				// padding:10px;
 			}
 		}
 		div:nth-child(5){
@@ -218,33 +219,34 @@
 		background: url("../../images/about-background.png");
 		background-size: cover;
 	}
-}
-.content-box{
-	background: $color__main-brand;
-	height:400px;
-	top: 50%;
-	text-align: center;
-	h2{
-		color:white;
-		font-size: 1.5rem;
-		padding-top:80px;
-	}
-	.content-box-content{
-		padding-top:50px;
-	}
-	@include desktop{
-		width: 55%;
-		height:350px;
-		margin:auto;
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
+	.content-box-archive{
+		background: $color__main-brand;
+		height:400px;
+		top: 50%;
+		text-align: center;
 		h2{
-			font-size: 2rem;
-			margin-top: 0;
+			color:white;
+			font-size: 1.5rem;
+			padding-top:80px;
 		}
-
+		.content-box-content-archive{
+			padding-top:50px;
+		}
+		@include desktop{
+			width: 55%;
+			height:350px;
+			margin:auto;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			h2{
+				font-size: 2rem;
+				margin-top: 0;
+			}
+	
+		}
 	}
 }
+

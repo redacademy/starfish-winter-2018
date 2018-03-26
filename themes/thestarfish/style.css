@@ -982,11 +982,14 @@ a {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .archive-container .archive-story-container {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        height: 350px; }
+        height: 325px; }
         .archive-container .archive-story-container img {
           width: 90%; }
       .archive-container div:nth-child(5) {
@@ -1002,6 +1005,32 @@ a {
       margin-bottom: 250px;
       background: url("../../images/about-background.png");
       background-size: cover; } }
+<<<<<<< HEAD
+  .archive-box-area .content-box-archive {
+    background: #145B51;
+    height: 400px;
+    top: 50%;
+    text-align: center; }
+    .archive-box-area .content-box-archive h2 {
+      color: white;
+      font-size: 1.5rem;
+      padding-top: 80px; }
+    .archive-box-area .content-box-archive .content-box-content-archive {
+      padding-top: 50px; }
+    @media screen and (min-width: 600px) {
+      .archive-box-area .content-box-archive {
+        width: 55%;
+        height: 350px;
+        margin: auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0; }
+        .archive-box-area .content-box-archive h2 {
+          font-size: 2rem;
+          margin-top: 0; } }
+=======
 
 .content-box {
   background: #145B51;
@@ -1027,6 +1056,7 @@ a {
       .content-box h2 {
         font-size: 2rem;
         margin-top: 0; } }
+>>>>>>> 864152f47d2cc6171649d0f2303076b447dcbf8f
 
 /*--------------------------------------------------------------
 # Media
