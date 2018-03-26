@@ -2,28 +2,10 @@
 # Carousels
 --------------------------------------------------------------*/
 
-.front-page-journal {
-  h2 {
-    margin-left: 1.938rem;
-    font-size: 2.188rem;
-    margin-bottom: 1rem;
-    &:after {
-      content: ""; 
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: $border__secondary-brand-mobile;
-    }
-  }
-}
-
 .carousel-container {
   width: 83%;
 	@include center-block;
 	padding-bottom: 4rem;
-	@include desktop-for-footer {
-		padding-bottom: 6rem;
-	}
 }
 
 .single {
@@ -69,22 +51,32 @@
   .carousel-cell-content {
     p {
       font-weight: 300;
-      line-height: 1.75;
+			line-height: 1.75;
+			@include desktop-for-footer {
+				font-size: 1.125rem;
+			}
     }
     h2 {
       font-size: 2.188rem;
-      margin-bottom: 1rem;
+			margin-bottom: 1rem;
+			margin-top: 0;
       &:after {
         content: ""; 
         display: block;
         width: 16%;
         padding-top: 1rem;
         border-bottom: $border__secondary-brand-mobile;
-      }
+			}
+			@include desktop-for-footer {
+				font-size: 3.125rem;
+			}
     }
     h3 {
       margin-bottom: 1rem;
-      font-weight: 400;
+			font-weight: 400;
+			@include desktop-for-footer {
+				font-size: 1.75rem;
+			}
     }
     .button {
       margin-top: 3.5rem;

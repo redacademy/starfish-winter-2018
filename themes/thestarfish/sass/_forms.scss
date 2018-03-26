@@ -96,7 +96,7 @@ textarea {
 	text-decoration: none;
 	padding: 1rem 6.5rem;
 	color: $color__main-brand;
-	background: $color__background-body;
+	background: transparent;
 	border-width: $border__bold-width;
 	@include desktop {
 		padding: .75rem 3.75rem;
@@ -105,6 +105,22 @@ textarea {
 	&:hover,
 	&:focus {
 		background: $color__main-brand;
+		color: $color__background-body;
+	}
+}
+
+.btn-dark {
+	text-decoration: none;
+	padding: 1rem 2.5rem;
+	color: $color__background-body;
+	background: $color__main-brand;
+	@include desktop {
+		padding: .75rem 3.75rem;
+		font-size: 1.25rem;
+	}
+	&:hover,
+	&:focus {
+		background: $color__secondary-brand;
 		color: $color__background-body;
 	}
 }

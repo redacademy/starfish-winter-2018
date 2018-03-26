@@ -18,8 +18,14 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="entry-content">
-					<?php the_content(); ?>
-					<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'about' ) ) ); ?>">Learn More</a>
+					<section class="front-page-about">
+						<div class="front-page-about-content">
+							<?php the_content(); ?>
+							<div class="button">
+								<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'about' ) ) ); ?>" class="btn-transparent-dark">Learn More</a>
+							</div>
+						</div>
+					</section><!-- front-page-about -->
 
 					<section class="front-page-carousel">
 						<?php
@@ -57,16 +63,26 @@ get_header(); ?>
 					</section><!-- .front-page-carousel -->
 
 					<section class="front-page-workshops">
+						<div class="frontpage-workshops-wrapper">
+							<div class="front-page-workshop-content">
+								<?php echo CFS()->get( 'workshops_content' ); ?>
+								<div class="button">
+									<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'workshops' ) ) ); ?>" class="btn-transparent-dark">Learn More</a>
+								</div>
+							</div><!-- .front-page-workshop-content -->
 
-						<?php $image1 = CFS()->get('first_workshop_image');?>
-						<?php echo '<img src="' . $image1 . '" alt="" />'; ?>
+							<div class="front-page-workshop-images">
+								<div class="first-workshop-image">
+									<?php $image1 = CFS()->get('first_workshop_image');?>
+									<?php echo '<img src="' . $image1 . '" alt="" />'; ?>
+								</div><!-- .first-workshop-image -->
 
-						<?php $image2 = CFS()->get('second_workshop_image');?>
-						<?php echo '<img src="' . $image2 . '" alt="" />'; ?>
-
-						<?php echo CFS()->get( 'workshops_content' ); ?>
-
-						<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'workshops' ) ) ); ?>">Learn More</a>
+								<div class="second-workshop-image">
+									<?php $image2 = CFS()->get('second_workshop_image');?>
+									<?php echo '<img src="' . $image2 . '" alt="" />'; ?>
+								</div><!-- .second-workshop-image -->
+							</div><!-- .front-page-workshop-images -->
+						</div><!-- .frontpage-workshops-wrapper -->
 
 					</section><!-- .front-page-workshops -->
 
@@ -109,7 +125,7 @@ get_header(); ?>
 							<h2  class="front-page-volunteer-header">Become a Volunteer</h2>
 
 							<div class="front-page-volunteer-content">
-								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
+								<a class="btn-dark" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
 									<span class="screen-reader-text"><?php echo esc_html( 'Volunteer' ); ?></span>
 								</a><!-- .content-box-button -->
 							</div><!-- .front-page-volunteer-content -->
@@ -121,7 +137,7 @@ get_header(); ?>
 								<h2 class="front-page-member-header">Become a Member</h2>
 
 							<div class="front-page-member-content">
-								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
+								<a class="btn-dark" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
 									<span class="screen-reader-text"><?php echo esc_html( 'Membership' ); ?></span>
 								</a><!-- .content-box-button -->
 							</div><!-- .front-page-member-content -->
