@@ -20,12 +20,25 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					
-					<?php the_content(); ?>
+					<section class="member-description-wrapper">
 
-					<?php $image = CFS()->get('member_steps_image');?>
-					<?php echo '<img src="' . $image . '" alt=""/>'; ?>
-					<?php echo CFS()->get( 'member_steps_content' ); ?>
+						<div class="member-description-content">
+							<?php the_content(); ?>
+						</div><!-- .member-description-content -->
+
+					</section><!-- .member-description-wrapper -->
+
+					<section class="member-steps">
+
+						<div class="member-steps-content">
+							<?php echo CFS()->get( 'member_steps_content' ); ?>
+						</div>
+						<div class="member-steps-image">
+							<?php $image = CFS()->get('member_steps_image');?>
+							<?php echo '<img src="' . $image . '" alt=""/>'; ?>
+						</div>
+
+					</section><!-- .member-steps -->
 
 					<section class="member-box-area">
 
@@ -36,14 +49,14 @@ get_header(); ?>
 							</div><!-- .content-box-header -->
 
 							<div class="content-box-content">
-								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
+								<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-member' ) ) ); ?>">Become a Member
 									<span class="screen-reader-text"><?php echo esc_html( 'Become a Member' ); ?></span>
-								</a><!-- .content-box-button -->
+								</a><!-- .btn-transparent -->
 							</div><!-- .content-box-content -->
 
-						</div>	
+						</div><!-- .content-box -->
 
-					</section><!-- #post-## -->
+					</section><!-- .member-box-area -->
 
 				</div><!-- .entry-content -->
 
@@ -51,5 +64,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	
+	<?php get_template_part( 'template-parts/content-donation', 'donation' ); ?>
 <?php get_footer(); ?>

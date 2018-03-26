@@ -574,3 +574,137 @@
 
 /****** Member Page ******/
 
+.page-template-member {
+  @extend .page-template-volunteer;
+}
+
+.member-description-wrapper {
+  background: linear-gradient(0deg,rgba(white,0),rgba(white,5.75)), url('../../images/membership-desc-1.png') bottom no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  @include desktop-for-footer {
+    background: url('../../images/membership-desc-1.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+  }
+}
+
+.member-description-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 620px;
+    margin-top: 0;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.member-steps {
+  padding-bottom: 1.719rem;
+  padding-top: 3rem;
+  margin: 0 2rem;
+  @include desktop-for-footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7rem;
+    margin: 0 7rem;
+  }
+}
+
+.member-steps-content {
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 40%;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.member-steps-image {
+  @include center-block;
+  @include desktop-for-footer {
+    width: 60%;
+    margin-left: 5rem;
+  }
+}
+
+.member-box-area {
+  @include desktop-for-footer {
+    height: 700px;
+    width: 100%;
+    background: url('../../images/membership-content-box.png') top no-repeat;
+    position: relative;
+  }
+  .content-box {
+    background: $color__main-brand;
+    color:white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    min-width: 375px;
+    @include desktop-for-footer {
+      width: 60%;
+      position: absolute;
+      top: 55%;
+      left: 20%;
+    }
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 2.188rem;
+      @include center-block;
+    }
+    .content-box-content {
+      margin-bottom: 2rem;
+      .btn-transparent {
+        padding: 1rem 6rem;
+        border-width: $border__bold-width;
+      }
+    }
+  }
+}
