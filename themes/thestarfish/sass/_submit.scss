@@ -11,12 +11,13 @@
 .submit-content {
   background: url('../../images/submit-background.png') center no-repeat;
   width: 100%;
-  padding: 40px;
+  margin-top: 55px;
+  padding: 46px;
   box-sizing: border-box;
   color: $color__background-body;
 
   @include desktop {
-    padding: 100px 60px 0;
+    padding: 55px 60px 0;
     width: 45%;
   }
 }
@@ -26,7 +27,7 @@
   padding: 40px;
   box-sizing: border-box;
   @include desktop {
-    padding: 0 55px;
+    padding: 60px 63px;
     width: 55%;
   }  
 }
@@ -61,19 +62,20 @@
 
 .submit-close {
   position: absolute;
-  top: 46px;
-  right: 32px;
+  top: 15px;
+  right: 35px;
   font-size: 36px;
   font-weight: bold;
   text-decoration: none;
 }
 
 #input_2_4 {
-  height: 130px;
+  height: 100px;
 }
 
 #input_2_4, #input_2_5, #input_2_6, #input_2_7, #input_2_8 {
-
+  border: 1px solid $color__main-brand;
+  border-radius: 2px;
 }
 
 .page-template-submit {
@@ -83,3 +85,58 @@
   }
 }
 
+#gform_2 {
+  .gform_footer {
+    padding: 2px 0 10px;
+  }
+}
+
+#gform_2 {
+  .gform_title {
+    font-weight: 300;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 100%;
+      padding-top: 1rem;
+      border-bottom: 2px solid coral;
+    } 
+  }
+}
+
+.submit-content {
+  p {
+    line-height: 1.95;
+    margin-top: 45px;
+  }
+}
+
+.submit-content {
+  h2 {
+    &:after {
+      content: ""; 
+      display: block;
+      width: 22%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    } 
+  }
+}
+
+#gform_submit_button_2 {
+  background: $color__secondary-brand;
+  color:$color__background-body;
+  border: none;
+  padding: 20px 128px;
+  font-size: 16px;
+  font-family: $font__title;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: .5px;
+  @include desktop {
+    background-color: $color__main-brand;
+    color: $color__background-body;
+    padding: 15px 60px;	
+    margin-left: 0;
+  }
+}
