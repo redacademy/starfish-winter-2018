@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Templates
 	## Front page
+	## Workshops Page
 # Header
 # Footer
 # Team
@@ -1237,6 +1238,94 @@ object {
   .front-page-become-member .front-page-member-content {
     margin: 2rem; }
 
+/****** Workshops Page ******/
+/* General Style Workshops */
+.page-template-workshops .entry-content {
+  margin-top: 0; }
+
+.page-template-workshops h2 {
+  font-size: 2.188rem;
+  margin-bottom: 1rem;
+  font-weight: 500; }
+
+.page-template-workshops p {
+  font-weight: 300;
+  line-height: 1.75; }
+
+/* Workshops Page Description Section */
+.workshop-description {
+  background: url("../../images/workshop-background.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 1135px) {
+    .workshop-description {
+      background: url("../../images/workshops-background-2.png") bottom no-repeat;
+      background-size: cover;
+      height: 800px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 7rem; } }
+
+.workshop-description-wrapper {
+  margin: 0 2rem; }
+  @media (min-width: 1135px) {
+    .workshop-description-wrapper {
+      width: 684px;
+      margin-top: 5rem; } }
+  .workshop-description-wrapper h2 {
+    margin-top: 0; }
+    .workshop-description-wrapper h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media (min-width: 1135px) {
+      .workshop-description-wrapper h2 {
+        font-size: 3.125rem; } }
+  .workshop-description-wrapper p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media (min-width: 1135px) {
+      .workshop-description-wrapper p {
+        font-size: 1.125rem; } }
+
+/* Workshops Page Content Box Section */
+@media (min-width: 600px) {
+  .workshops-content-box-area {
+    display: none; } }
+
+.workshops-content-box-area .content-box {
+  background: #145B51;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center; }
+  .workshops-content-box-area .content-box h3 {
+    margin-bottom: 2.5rem;
+    font-size: 1.563rem;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .workshops-content-box-area .content-box .button {
+    margin-bottom: 2rem; }
+    .workshops-content-box-area .content-box .button .btn-transparent {
+      padding: 1rem 3rem;
+      border-width: 2px; }
+
 .donation-container {
   background: lightblue;
   background-size: cover;
@@ -2078,7 +2167,14 @@ object {
       height: auto; } }
 
 .donate-content {
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media (min-width: 600px) {
     .donate-content {
       width: 45%;
@@ -2089,6 +2185,11 @@ object {
   top: 40px;
   right: 40px;
   font-size: 30px; }
+
+.paypal-image {
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 .submit-wrapper {
   display: -webkit-box;
