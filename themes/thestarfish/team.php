@@ -54,13 +54,16 @@ get_header(); ?>
 		<h2>
 		<?php the_title(); ?>
 		</h2>
-		
+
 		<?php the_post_thumbnail( 'large' ); ?>
+
+		<input data-id="<?php echo $post->ID; ?>" type="button" class="popup-profile-init" value="Learn More"/>
+
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
-		<input type="button" class="popup-profile" value="Learn More"/>
+		
 	</div>
 
 
@@ -121,11 +124,12 @@ wp_reset_postdata();
 		<?php the_title(); ?>
 		</h2>
 		<?php the_post_thumbnail( 'large' ); ?>
+		<input data-id="<?php echo $post->ID; ?>" type="button" class="popup-profile-init" value="Learn More"/>
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
-				<input type="button" class="popup-profile" value="Learn More"/>
+			
 
 	</div>
 
@@ -190,11 +194,11 @@ wp_reset_postdata();
 		<?php the_title(); ?>
 		</h2>
 		<?php the_post_thumbnail( 'large' ); ?>
+		<input data-id="<?php echo $post->ID; ?>" type="button" class="popup-profile-init" value="Learn More"/>
 		<?php endif; ?>
 		<?php endforeach;
 		wp_reset_postdata();
 		?>
-			<input type="button" class="popup-profile" value="Learn More"/>
 
 	</div>
 

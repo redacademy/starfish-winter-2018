@@ -46,8 +46,9 @@ get_header(); ?>
 								the_post_thumbnail( 'large' ); 
 								endif; ?>
 							</a>
-							<strong><?php the_title(); ?></strong>
-							<br>
+							<span class="name-title-profile">
+							<p><?php the_title(); ?></p>
+							</span>
 							<?php echo CFS()->get( 'subtitle' ); ?>
 
 							</div>
@@ -89,8 +90,9 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail() ) : 
 								the_post_thumbnail( 'large' ); 
 							endif; ?></a>
-							<strong><?php the_title(); ?></strong>
-							<br>
+							<span class="name-title-profile">
+							<p><?php the_title(); ?></p>
+							</span>
 							<?php echo CFS()->get( 'subtitle' ); ?>
 						</div>
 				<?php endforeach;
