@@ -170,7 +170,6 @@
                 &:focus {
                     background: $color__main-brand;
                     color: $color__background-body;
-                    border-left: none;
                     @include desktop-for-footer {
                         border-left: $border__light;
                     }
