@@ -12,7 +12,6 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -28,6 +27,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
 
 		</main><!-- #main -->
 
@@ -127,8 +127,6 @@ wp_reset_postdata();
 				<input type="button" class="popup-profile" value="Learn More"/>
 
 	</div>
-
-
 
 </div>
 

@@ -124,7 +124,14 @@
 	margin:auto;
 	margin-bottom: 50px;
 	font-size: 2rem;
-	border-bottom: $border__secondary-brand-mobile;	
+	margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
 }
 .journal-container{
 	display: flex;
