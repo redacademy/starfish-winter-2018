@@ -193,17 +193,17 @@
   h2 {
     margin-top: 0;
     margin: 0 2rem;
-    &:after {
-      content: ""; 
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: $border__secondary-brand-mobile;
-    }
     @include desktop-for-footer { 
       font-size: 3.125rem;
       margin: 0 7rem;
     }
+  }
+  h3:after {
+    content: ""; 
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: $border__secondary-brand-mobile;
   }
 }
 
@@ -546,16 +546,16 @@
   h2 {
     margin-top: 0;
     margin: 0 2rem;
-    &:after {
-      content: ""; 
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: $border__secondary-brand-mobile;
-    }
     @include desktop-for-footer { 
       font-size: 3.125rem;
       margin: 0 7rem;
     }
+  }
+  h3:after {
+    content: ""; 
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: $border__secondary-brand-mobile;
   }
 }

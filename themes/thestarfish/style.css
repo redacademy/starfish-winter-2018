@@ -1182,16 +1182,16 @@ object {
   .front-page-journal h2 {
     margin-top: 0;
     margin: 0 2rem; }
-    .front-page-journal h2:after {
-      content: "";
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: 6px solid coral; }
     @media (min-width: 1135px) {
       .front-page-journal h2 {
         font-size: 3.125rem;
         margin: 0 7rem; } }
+  .front-page-journal h3:after {
+    content: "";
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: 6px solid coral; }
 
 /* Front Page Become Section */
 .front-page-become-box {
@@ -1527,16 +1527,16 @@ object {
   .volunteer-carousel h2 {
     margin-top: 0;
     margin: 0 2rem; }
-    .volunteer-carousel h2:after {
-      content: "";
-      display: block;
-      width: 16%;
-      padding-top: 1rem;
-      border-bottom: 6px solid coral; }
     @media (min-width: 1135px) {
       .volunteer-carousel h2 {
         font-size: 3.125rem;
         margin: 0 7rem; } }
+  .volunteer-carousel h3:after {
+    content: "";
+    display: block;
+    width: 16%;
+    padding-top: 1rem;
+    border-bottom: 6px solid coral; }
 
 .footer-wrapper {
   background: #145B51;
