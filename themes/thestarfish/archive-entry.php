@@ -14,37 +14,59 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 ?>
 
 		<?php if ( have_posts() ) : ?>
-
 			<header class="entry-header" style="background: url(<?php echo esc_url($post_page_banner); ?>); width: 100%; height: 100vh; background-size: cover; margin-top:60px; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
 				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header><!-- .entry-header -->
-	
-   		   <?php
+<div class="archive-title-head">
+<h3>Latest from our Journal<h3>
+</div>
+	<div class="archive-container">
+	<?php
+			$args = array( 
+					'post_type' => 'post',
+					'posts_per_page' => 7, 
+					);
+			$myposts = get_posts($args);
+			foreach ( $myposts as $post ) : setup_postdata( $post ); 
+		?>
+		<div class="archive-story-container">
+		<h4><?php the_title(); ?></h4>
+			<a href="<?php the_permalink(); ?>"><?php 	
+			if ( has_post_thumbnail() ) {
+			the_post_thumbnail('medium');
+			}
+			the_excerpt(); ?></a>
+		</div>
+			<?php endforeach; 
+				wp_reset_postdata();?>
+		<!-- second journa -->
 
-			the_archive_title();
+      	<?php
+			$args = array( 
+					'post_type' => 'entry',
+					'posts_per_page' => 3, 
+					);
+			$myposts = get_posts($args);
+			foreach ( $myposts as $post ) : setup_postdata( $post ); 
+		?>
 
-				$args = array( 'post_type' => array ('post', 'entry') );
-				$myposts = get_posts($args);
-
-        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-     
-          <h2></h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<?php 
-					
-					if ( has_post_thumbnail() ) {
-							the_post_thumbnail('medium');
-					}
-
-					the_excerpt(); ?>
-  
-        <?php endforeach; 
-        	wp_reset_postdata();?>
-      
-		<?php endif; ?>
+		<div class="archive-story-container">
+          <h4><?php the_title(); ?></h4>
+		  <a href="<?php the_permalink(); ?>"><?php 	
+			if ( has_post_thumbnail() ) {
+			the_post_thumbnail('medium');
+			}
+			the_excerpt(); ?></a>
+		</div>
+			<?php endforeach; 
+				wp_reset_postdata();?>
+			<?php endif; ?>
+	</div>
 
 
-		<section class="entry-box-area">
+
+		<section class="archive-box-area">
 
 			<div class="content-box">
 		
@@ -53,7 +75,7 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 				</div><!-- .content-box-header -->
 
 				<div class="content-box-content">
-					<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
+					<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
 						<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
 					</a><!-- .content-box-button -->
 				</div><!-- .content-box-content -->

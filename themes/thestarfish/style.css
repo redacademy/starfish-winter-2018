@@ -941,6 +941,93 @@ a {
   color: #145B51;
   font-weight: 800; }
 
+.archive-title-head {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+  border-bottom: 3px solid 6px solid coral; }
+
+.archive-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 100px; }
+  .archive-container .archive-story-container {
+    width: 300px;
+    margin: auto; }
+  .archive-container p {
+    display: none; }
+  .archive-container h4 {
+    color: white;
+    position: absolute;
+    width: 270px;
+    text-shadow: .5px .5px .5px #585858;
+    margin-left: 20px; }
+  .archive-container img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  @media (min-width: 600px) {
+    .archive-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .archive-container .archive-story-container {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        height: 350px; }
+        .archive-container .archive-story-container img {
+          width: 90%; }
+      .archive-container div:nth-child(5) {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
+
+.archive-box-area {
+  height: 400px;
+  position: relative; }
+  @media (min-width: 600px) {
+    .archive-box-area {
+      display: block;
+      margin-bottom: 250px;
+      background: url("../../images/about-background.png");
+      background-size: cover; } }
+
+.content-box {
+  background: #145B51;
+  height: 400px;
+  top: 50%;
+  text-align: center; }
+  .content-box h2 {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 80px; }
+  .content-box .content-box-content {
+    padding-top: 50px; }
+  @media (min-width: 600px) {
+    .content-box {
+      width: 55%;
+      height: 350px;
+      margin: auto;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0; }
+      .content-box h2 {
+        font-size: 2rem;
+        margin-top: 0; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1907,6 +1994,13 @@ object {
 
 .mob-menu-header-holder {
   position: absolute !important; }
+
+.journal-banner {
+  background: url("../../images/about-background.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-top: 60px; }
 
 .sf-modal {
   display: none;
