@@ -125,7 +125,7 @@ get_header(); ?>
 							<h2  class="front-page-volunteer-header">Become a Volunteer</h2>
 
 							<div class="front-page-volunteer-content">
-								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
+								<a class="btn-dark" href="<?php echo esc_url(get_permalink(get_page_by_path( 'become-a-volunteer' ) ) ); ?>">Volunteer
 									<span class="screen-reader-text"><?php echo esc_html( 'Volunteer' ); ?></span>
 								</a><!-- .content-box-button -->
 							</div><!-- .front-page-volunteer-content -->
@@ -137,7 +137,7 @@ get_header(); ?>
 								<h2 class="front-page-member-header">Become a Member</h2>
 
 							<div class="front-page-member-content">
-								<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
+								<a class="btn-dark" href="<?php echo esc_url(get_permalink(get_page_by_path( 'member' ) ) ); ?>">Membership
 									<span class="screen-reader-text"><?php echo esc_html( 'Membership' ); ?></span>
 								</a><!-- .content-box-button -->
 							</div><!-- .front-page-member-content -->

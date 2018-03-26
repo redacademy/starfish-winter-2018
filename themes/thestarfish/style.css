@@ -465,6 +465,19 @@ textarea {
     background: #145B51;
     color: #fff; }
 
+.btn-dark {
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  background: #145B51; }
+  @media (min-width: 600px) {
+    .btn-dark {
+      padding: .75rem 3.75rem;
+      font-size: 1.25rem; } }
+  .btn-dark:hover, .btn-dark:focus {
+    background: #FF8271;
+    color: #fff; }
+
 .wpcf7-form {
   width: 330px;
   padding-left: 20px;
@@ -1109,6 +1122,19 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .front-page-become-box h2 {
+    color: #fff;
+    width: 53%;
+    margin-left: 2rem; }
+    @media (min-width: 600px) {
+      .front-page-become-box h2 {
+        font-size: 3.125rem; } }
+    .front-page-become-box h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
   @media (min-width: 600px) {
     .front-page-become-box {
       background: url("../../images/mountain-range.png") center top 230px no-repeat;
@@ -1125,7 +1151,7 @@ object {
               justify-content: center; } }
 
 .front-page-become-volunteer {
-  background: url("../../images/become-volunteer.png") center 100px no-repeat;
+  background: url("../../images/become-volunteer.png") center no-repeat;
   background-size: cover;
   height: 380px;
   width: 100%; }
@@ -1136,9 +1162,6 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1147,30 +1170,11 @@ object {
           -ms-flex-pack: end;
               justify-content: flex-end;
       margin-right: 20px; } }
-  .front-page-become-volunteer h2 {
-    color: #fff;
-    height: 170px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
   .front-page-become-volunteer .front-page-volunteer-content {
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    @media (min-width: 600px) {
-      .front-page-become-volunteer .front-page-volunteer-content {
-        width: 440px; } }
+    margin: 2rem; }
 
 .front-page-become-member {
-  background: url("../../images/become-member.png") center 100px no-repeat;
+  background: url("../../images/become-member.png") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 385px; }
@@ -1181,9 +1185,6 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1192,29 +1193,8 @@ object {
           -ms-flex-pack: end;
               justify-content: flex-end;
       margin-right: 20px; } }
-  .front-page-become-member h2 {
-    color: #fff;
-    height: 170px;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .front-page-become-member h2 {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start; } }
   .front-page-become-member .front-page-member-content {
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    @media (min-width: 600px) {
-      .front-page-become-member .front-page-member-content {
-        width: 440px; } }
+    margin: 2rem; }
 
 .donation-container {
   background: lightblue;
@@ -1873,9 +1853,6 @@ object {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4rem; }
-  @media (min-width: 1135px) {
-    .carousel-container {
-      padding-bottom: 6rem; } }
 
 .single .carousel-cell-content, .double .carousel-cell-content {
   -webkit-box-ordinal-group: 2;

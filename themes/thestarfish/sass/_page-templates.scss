@@ -214,6 +214,21 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  h2 {
+    color: #fff;
+    width: 53%;
+    margin-left: 2rem;
+    @include desktop {
+      font-size: 3.125rem;
+    }
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+  }
 
   @include desktop {
     background: 
@@ -227,7 +242,7 @@
 
 .front-page-become-volunteer {
   background: 
-  url('../../images/become-volunteer.png') center 100px no-repeat;
+  url('../../images/become-volunteer.png') center no-repeat;
   background-size: cover;
   height: 380px;
   width: 100%;
@@ -236,35 +251,19 @@
     height: 485px;
     width: 525px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
     margin-right: 20px;
   }
-  
-
-  h2 {
-    color: #fff;
-    height: 170px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-  }
 
   .front-page-volunteer-content {
-    height: 70px;
-    display: flex;
-    align-items: flex-start;
-
-    @include desktop {
-      width: 440px;
-    }
+    margin: 2rem;
   }
 }
 
 .front-page-become-member {
   background: 
-  url('../../images/become-member.png') center 100px no-repeat;
+  url('../../images/become-member.png') center no-repeat;
   background-size: cover;
   width: 100%;
   height: 385px;
@@ -273,31 +272,12 @@
     height: 485px;
     width: 525px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
     margin-right: 20px;
   }
 
-  h2 {
-    color: #fff;
-    height: 170px;
-    width: 100%;
-
-    @include desktop {
-      display: flex;
-      align-items: flex-start;
-    }
-    
-  }
-
   .front-page-member-content {
-    height: 70px;
-    display: flex;
-    align-items: flex-start;
-
-    @include desktop {
-      width: 440px;
-    }
-  }  
+    margin: 2rem;
+  }
 }

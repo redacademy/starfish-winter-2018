@@ -109,6 +109,22 @@ textarea {
 	}
 }
 
+.btn-dark {
+	text-decoration: none;
+	padding: 1rem 2.5rem;
+	color: $color__background-body;
+	background: $color__main-brand;
+	@include desktop {
+		padding: .75rem 3.75rem;
+		font-size: 1.25rem;
+	}
+	&:hover,
+	&:focus {
+		background: $color__secondary-brand;
+		color: $color__background-body;
+	}
+}
+
 // Contact Us Form //
 
 .wpcf7-form {

@@ -6,9 +6,6 @@
   width: 83%;
 	@include center-block;
 	padding-bottom: 4rem;
-	@include desktop-for-footer {
-		padding-bottom: 6rem;
-	}
 }
 
 .single {
