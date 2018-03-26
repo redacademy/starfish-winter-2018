@@ -21,6 +21,7 @@ wp_head(); ?>
 						</a>
 						<?php get_template_part( 'template-parts/content' ); ?>
 						<?php the_content(); ?>
+						<img src="<?php echo get_template_directory_uri() . '/images/paypal.png'; ?>" class="paypal-image" alt="Paypal Image">
 					</div>
 				</div>
 			
