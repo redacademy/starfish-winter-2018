@@ -1427,27 +1427,29 @@ object {
   padding-top: 5rem; }
   @media (min-width: 1135px) {
     .volunteer-roles {
-      background: url("../../images/background-about-frontpage-2.png") bottom left no-repeat, url("../../images/background-who-are-we-frontpage.png");
-      background-size: 63%, cover;
-      height: 800px;
+      background: url("../../images/volunteer-bird-pattern.png") bottom right no-repeat;
+      background-size: contain, cover;
+      height: 600px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+          -ms-flex-direction: row;
+              flex-direction: row;
+      padding-top: 7rem; } }
 
 .volunteer-roles-content {
   margin: 0 2rem;
   padding-bottom: 3rem; }
   @media (min-width: 1135px) {
     .volunteer-roles-content {
-      width: 424px;
-      margin-top: 5rem; } }
+      width: 40%;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin-right: 7rem;
+      margin-left: 6rem; } }
   .volunteer-roles-content h2 {
     margin-top: 0; }
     .volunteer-roles-content h2:after {
@@ -1473,15 +1475,22 @@ object {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 1135px) {
+    .volunteer-roles-image {
+      width: 60%;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-left: 7rem; } }
 
 .volunteer-perks {
-  background: url("../../images/volunteer-gerl-backgraund.png") bottom right no-repeat, url("../../images/voluntee-mountain-pattern.png") no-repeat;
+  background: url("../../images/volunteer-girl-backgraund.png") bottom right no-repeat, url("../../images/volunteer-mountain-pattern.png") no-repeat;
   background-size: 252px, cover;
   padding-bottom: 9.719rem;
   padding-top: 3rem; }
   @media (min-width: 1135px) {
     .volunteer-perks {
-      background: url("../../images/voluntee-mountain-pattern.png"), url("../../images/volunteer-gerl-backgraund.png");
+      background: url("../../images/volunteer-girl-backgraund.png") no-repeat, url("../../images/volunteer-mountain-pattern.png") no-repeat;
       background-size: 63%, cover;
       height: 800px;
       display: -webkit-box;
