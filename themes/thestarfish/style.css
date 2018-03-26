@@ -258,7 +258,7 @@ h1 {
     h1 {
       font-size: 55px;
       margin-left: 70px;
-      width: 800px; } }
+      max-width: 800px; } }
 
 h2 {
   font-family: "Poppins", sans-serif;
@@ -2206,7 +2206,7 @@ object {
     .carousel-btns {
       width: 140px;
       height: 68px;
-      left: 46%;
+      left: 47.4%;
       bottom: 40%; } }
   .carousel-btns .previous {
     left: 0 !important; }
