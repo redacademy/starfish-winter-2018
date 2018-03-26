@@ -1403,17 +1403,136 @@ object {
       padding: 1rem 6rem;
       border-width: 2px; }
 
-.donation-container {
-  background: lightblue;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px; }
-  .donation-container .content-donation {
-    width: 90%;
-    margin: auto; }
-    @media (min-width: 600px) {
-      .donation-container .content-donation .content-donation-info {
-        width: 400px; } }
+/****** Volunteer Page ******/
+.page-template-volunteer .entry-content {
+  margin-top: 0; }
+
+.page-template-volunteer h2 {
+  font-size: 2.188rem;
+  margin-bottom: 1rem;
+  font-weight: 500; }
+
+.page-template-volunteer p {
+  font-weight: 300;
+  line-height: 1.75; }
+
+.volunteer-roles {
+  background: url("../../images/volunteer-bird-pattern.png") 105% -12% no-repeat;
+  background-size: 276px;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem; }
+  @media (min-width: 1135px) {
+    .volunteer-roles {
+      background: url("../../images/background-about-frontpage-2.png") bottom left no-repeat, url("../../images/background-who-are-we-frontpage.png");
+      background-size: 63%, cover;
+      height: 800px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.volunteer-roles-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem; }
+  @media (min-width: 1135px) {
+    .volunteer-roles-content {
+      width: 424px;
+      margin-top: 5rem; } }
+  .volunteer-roles-content h2 {
+    margin-top: 0; }
+    .volunteer-roles-content h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media (min-width: 1135px) {
+      .volunteer-roles-content h2 {
+        font-size: 3.125rem; } }
+  .volunteer-roles-content p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media (min-width: 1135px) {
+      .volunteer-roles-content p {
+        font-size: 1.125rem; } }
+
+.volunteer-roles-image {
+  width: 83%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.volunteer-perks {
+  background: url("../../images/volunteer-gerl-backgraund.png") bottom right no-repeat, url("../../images/voluntee-mountain-pattern.png") no-repeat;
+  background-size: 252px, cover;
+  padding-bottom: 9.719rem;
+  padding-top: 3rem; }
+  @media (min-width: 1135px) {
+    .volunteer-perks {
+      background: url("../../images/voluntee-mountain-pattern.png"), url("../../images/volunteer-gerl-backgraund.png");
+      background-size: 63%, cover;
+      height: 800px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.volunteer-perks-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem; }
+  @media (min-width: 1135px) {
+    .volunteer-perks-content {
+      width: 424px;
+      margin-top: 5rem; } }
+  .volunteer-perks-content h2 {
+    margin-top: 0; }
+    .volunteer-perks-content h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media (min-width: 1135px) {
+      .volunteer-perks-content h2 {
+        font-size: 3.125rem; } }
+  .volunteer-perks-content p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media (min-width: 1135px) {
+      .volunteer-perks-content p {
+        font-size: 1.125rem; } }
+
+.volunteer-carousel {
+  margin-top: 4rem; }
+  .volunteer-carousel h2 {
+    margin-top: 0;
+    margin: 0 2rem; }
+    .volunteer-carousel h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media (min-width: 1135px) {
+      .volunteer-carousel h2 {
+        font-size: 3.125rem;
+        margin: 0 7rem; } }
 
 .footer-wrapper {
   background: #145B51;
