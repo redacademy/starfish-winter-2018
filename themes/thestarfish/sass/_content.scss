@@ -109,6 +109,11 @@
 			flex-basis: 22%;
 			display: inline;
 		}
+		a{
+			color:black;
+			text-decoration: none;
+			pointer-events: none;
+		}
 	}
 	.single-post-content{
 		flex-basis: 100%;

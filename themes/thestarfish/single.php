@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+		
 
 		<?php endwhile; // End of the loop. ?>
 		<h3 class="journal-related-title">Similar Articles</h3>
