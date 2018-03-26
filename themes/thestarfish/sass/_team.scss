@@ -70,7 +70,14 @@
     .profile-headline{
         width: 100%;
         h1{
-            border-bottom: 4px solid $color__secondary-brand;
+            margin-top: 0;
+            &:after {
+              content: ""; 
+              display: block;
+              width: 16%;
+              padding-top: 1rem;
+              border-bottom: $border__secondary-brand-mobile;
+            }   
             margin-left:0
         }
     }
@@ -128,6 +135,12 @@
 //top25**************************************
 
 /* Carousel on Top 25 Page */
+.nominee-meet-container-after{
+    display: block;
+    @include desktop{
+        display: none;
+    }
+}
 .nominee-carousel{
     display: block;
     @include desktop{
@@ -189,7 +202,7 @@
 
 .content-box-area{
     @include desktop{
-    background: lightblue;
+    background: url("../../images/about-background.png") top no-repeat;
     height: 700px;
     }
     .content-box{
@@ -212,26 +225,11 @@
             }
         }
         .judges-container-btn{
-            width:85%;
-            margin: auto;
-
-            // .content-box-button input{
-            //     width:100%;
-            //     height:50px;
-            //     font-size: 1rem;
-            //         background: $color__main-brand;
-            //         text-decoration: none;
-            //         color: white;
-            //         border: 2px solid white;
-            //         text-align: center;
-            //         padding: 2px;
-            //         margin-top: 10px;
-            //         margin-bottom:10px;
-            //         &:hover{
-            //             color:$color__main-brand;
-            //             background:white;
-            //         }
-        // }
+            text-align: center;
+            @include desktop{
+                width:85%;
+                margin: auto;
+            }
         }
         @include desktop{
             width: 850px;
@@ -252,12 +250,6 @@
                     margin-top:10px;
                 }
             }
-            // .judges-container-btn{
-            //     width: 200px;
-            //     .content-box-button input{
-            //         width: 200px;
-            //     }
-            // }
         }
     }
 }

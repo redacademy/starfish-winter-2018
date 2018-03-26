@@ -61,6 +61,11 @@ get_header(); ?>
 		</div>
 
 
+<div class="nominee-meet-container-after">
+				<h2>Meet the Top 25</h2>
+				<?php the_excerpt(); ?>
+				<a href="<?php echo esc_url(get_permalink(get_page_by_path( 'nominate' ) ) ); ?>"><button>Nominate</button></a>
+			</div>
 
 <div class="nominee-carousel">
 		<?php
