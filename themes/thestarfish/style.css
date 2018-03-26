@@ -1005,7 +1005,6 @@ a {
       margin-bottom: 250px;
       background: url("../../images/about-background.png");
       background-size: cover; } }
-<<<<<<< HEAD
   .archive-box-area .content-box-archive {
     background: #145B51;
     height: 400px;
@@ -1030,33 +1029,6 @@ a {
         .archive-box-area .content-box-archive h2 {
           font-size: 2rem;
           margin-top: 0; } }
-=======
-
-.content-box {
-  background: #145B51;
-  height: 400px;
-  top: 50%;
-  text-align: center; }
-  .content-box h2 {
-    color: white;
-    font-size: 1.5rem;
-    padding-top: 80px; }
-  .content-box .content-box-content {
-    padding-top: 50px; }
-  @media screen and (min-width: 600px) {
-    .content-box {
-      width: 55%;
-      height: 350px;
-      margin: auto;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0; }
-      .content-box h2 {
-        font-size: 2rem;
-        margin-top: 0; } }
->>>>>>> 864152f47d2cc6171649d0f2303076b447dcbf8f
 
 /*--------------------------------------------------------------
 # Media
@@ -2622,12 +2594,12 @@ object {
       align-self: left;
   margin-bottom: 50px; }
 
-#post-486, .entry-title {
+#post-486 .entry-title {
   margin: 30px 1px 8px; }
   @media screen and (min-width: 600px) {
-    #post-486, .entry-title {
+    #post-486 .entry-title {
       font-size: 50px;
-      margin: 50px 0 10px; } }
+      margin: 115px 0 10px; } }
 
 #post-486:after {
   content: "";
