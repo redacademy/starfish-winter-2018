@@ -1018,6 +1018,9 @@ object {
   font-weight: 300;
   line-height: 1.75; }
 
+.home .carousel-btns {
+  left: 39.4%; }
+
 /* Front Page About Section */
 .front-page-about {
   background: url("../../images/background-who-are-we-frontpage.png") no-repeat;
@@ -1553,6 +1556,7 @@ object {
     padding-top: 1rem;
     border-bottom: 6px solid coral; }
 
+/****** Member Page ******/
 .footer-wrapper {
   background: #145B51;
   display: -webkit-box;
@@ -2279,6 +2283,7 @@ object {
 @media (min-width: 1135px) {
   .double .carousel-cell-content {
     margin-left: 0;
+    margin-right: 7rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
@@ -2371,7 +2376,7 @@ object {
         max-width: 500px;
         z-index: 1;
         top: 57%;
-        left: 3%; } }
+        left: -10%; } }
 
 /*Carousel Slider Buttons*/
 .flickity-button {
@@ -2396,17 +2401,15 @@ object {
       width: 60px;
       height: 60px; }
       .flickity-prev-next-button .flickity-button-icon {
-        fill: #fff;
-        width: 25px;
-        height: 25px; } }
+        fill: #fff; } }
 
 .container-double .carousel-btns {
   left: 15%;
   bottom: 6%; }
   @media (min-width: 1135px) {
     .container-double .carousel-btns {
-      left: 35%;
-      bottom: 31%; } }
+      left: 40%;
+      top: 22%; } }
 
 .carousel-btns {
   width: 106px;

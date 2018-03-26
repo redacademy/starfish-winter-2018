@@ -32,7 +32,8 @@
 	@extend .single;
 	@include desktop-for-footer {
 		.carousel-cell-content {
-      margin-left: 0;
+			margin-left: 0;
+			margin-right: 7rem;
 			order: 1;
 		}
 		.carousel-cell-images {
@@ -132,7 +133,7 @@
 			max-width: 500px;
 			z-index: 1;
 			top: 57%;
-			left: 3%;
+    	left: -10%;
 		}
 	}
 }
@@ -165,8 +166,6 @@
 		height: 60px;
 		.flickity-button-icon {
 			fill: $color__background-body;
-			width: 25px;
-			height: 25px;
 		}
 	}
 }
@@ -176,8 +175,8 @@
     left: 15%;
     bottom: 6%;
     @include desktop-for-footer {
-      left: 35%;
-      bottom: 31%;
+      left: 40%;
+    	top: 22%;
     }
   }
 }
