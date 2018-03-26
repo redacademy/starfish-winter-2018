@@ -977,16 +977,19 @@ a {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .archive-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; }
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .archive-container .archive-story-container {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        height: 350px; }
+        height: 325px; }
         .archive-container .archive-story-container img {
           width: 90%; }
       .archive-container div:nth-child(5) {
@@ -996,37 +999,36 @@ a {
 .archive-box-area {
   height: 400px;
   position: relative; }
-  @media (min-width: 600px) {
+  @media screen and (min-width: 600px) {
     .archive-box-area {
       display: block;
       margin-bottom: 250px;
       background: url("../../images/about-background.png");
       background-size: cover; } }
-
-.content-box {
-  background: #145B51;
-  height: 400px;
-  top: 50%;
-  text-align: center; }
-  .content-box h2 {
-    color: white;
-    font-size: 1.5rem;
-    padding-top: 80px; }
-  .content-box .content-box-content {
-    padding-top: 50px; }
-  @media (min-width: 600px) {
-    .content-box {
-      width: 55%;
-      height: 350px;
-      margin: auto;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0; }
-      .content-box h2 {
-        font-size: 2rem;
-        margin-top: 0; } }
+  .archive-box-area .content-box-archive {
+    background: #145B51;
+    height: 400px;
+    top: 50%;
+    text-align: center; }
+    .archive-box-area .content-box-archive h2 {
+      color: white;
+      font-size: 1.5rem;
+      padding-top: 80px; }
+    .archive-box-area .content-box-archive .content-box-content-archive {
+      padding-top: 50px; }
+    @media screen and (min-width: 600px) {
+      .archive-box-area .content-box-archive {
+        width: 55%;
+        height: 350px;
+        margin: auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0; }
+        .archive-box-area .content-box-archive h2 {
+          font-size: 2rem;
+          margin-top: 0; } }
 
 /*--------------------------------------------------------------
 # Media

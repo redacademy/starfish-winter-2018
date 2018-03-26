@@ -68,13 +68,13 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 
 		<section class="archive-box-area">
 
-			<div class="content-box">
+			<div class="content-box content-box-archive">
 		
 				<div class="content-box-header">
 					<h2>Want to contribute to our Journal and get your story published?</h2>
 				</div><!-- .content-box-header -->
 
-				<div class="content-box-content">
+				<div class="content-box-content content-box-content-archive">
 					<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'submit' ) ) ); ?>">Add your voice
 						<span class="screen-reader-text"><?php echo esc_html( 'Add your voice' ); ?></span>
 					</a><!-- .content-box-button -->
