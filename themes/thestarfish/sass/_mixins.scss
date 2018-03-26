@@ -2,7 +2,8 @@
 $desktop: 600px;
 
 @mixin desktop {
-	@media (min-width: $desktop){
+	@media screen and (min-width: $desktop)
+	{
 		@content;
 	}
 }
@@ -10,7 +11,8 @@ $desktop: 600px;
 $desktop-for-footer: 1135px;
 
 @mixin desktop-for-footer {
-	@media (min-width: $desktop-for-footer){
+	@media screen and (min-width: $desktop-for-footer)
+	{
 		@content;
 	}
 }
