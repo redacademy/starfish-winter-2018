@@ -92,21 +92,21 @@ get_header(); ?>
 </div>
 </section>
 
-<section class="judges-section">
+<section class="content-box-area">
 	<div id="judges-image">
 	</div>
-	<div class="judges-container">
+	<div class="content-box">
 		
-		<div class="judges-container-content">
+		<div class="content-box-header">
 			<h2>Judges</h2>
 			<p>Just like our Top 25 list,these changemakers are committed to progressive, 
 			positive change in their communities and are lending their expertise to finding 
 			our next round of young Canadian leaders</p>
 		</div><!-- .content-box-header -->
 
-		<div class="judges-container-btn">
-			<a class="content-box-button" href="<?php echo esc_url(get_permalink(get_page_by_path( 'judges' ) ) ); ?>">
-			<input type="button" value="Meet the Judges"></input><span class="screen-reader-text"><?php echo esc_html( 'Meet the Judges' ); ?></span>
+		<div>
+			<a class="btn-transparent" href="<?php echo esc_url(get_permalink(get_page_by_path( 'judges' ) ) ); ?>">
+			Meet the Judges
 			</a><!-- .content-box-button -->
 
 		</div><!-- .content-box-content -->

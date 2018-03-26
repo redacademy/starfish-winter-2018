@@ -128,28 +128,18 @@ textarea {
 // Contact Us Form //
 
 .wpcf7-form {
-	width: 330px;
-	padding-left: 20px;
+	padding: 0 30px;
+	box-sizing: border-box;
 	margin-top: 60px;
 	@include desktop {
 		width: 625px;
 		padding-left: 80px;
 	}
 	
-	input[type=text] {
+	input[type=text], input[type=email] {
 		border: 1px solid $color__main-brand;
 		border-radius: 2px;
-		padding: 8px 0;
-		margin-top: 10px;
-		@include desktop {
-			padding: 14px 0;
-			width: 625px;
-		}
-	}
-
-	input[type=email] {
-		border: 1px solid $color__main-brand;
-		border-radius: 2px;
+		width: 100%;
 		padding: 8px 0;
 		margin-top: 10px;
 		@include desktop {
@@ -327,10 +317,9 @@ textarea {
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 80px;
-		// 
 		position: absolute;
-		left: 700px;
-		top: 600px;
+		left: 747px;
+		top: 676px;
 
 		@media (max-width: 1000px) {
 			position: static;
@@ -360,5 +349,11 @@ textarea {
 		font-size: 14px;
 		margin: 7px 0;
 		line-height: 25px;
+
+		@include desktop {
+			font-size: 16px;
+			margin: 18px 0;
+			line-height: 26px;
+		}
 	}
 }
