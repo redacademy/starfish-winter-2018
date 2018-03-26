@@ -61,13 +61,13 @@
  		/* translators: used between list items, there is a space after the comma */
  		$categories_list = get_the_category_list( esc_html( ', ' ) );
  		if ( $categories_list && starfish_categorized_blog() ) {
- 			printf( '<p>' . esc_html( 'Categories' ) . '<br>' . esc_html( '%1$s' ) . '</p>', $categories_list ); // WPCS: XSS OK.
+ 			printf( '<p>' . '<span class="sidebar-styling">' . esc_html( 'Categories' ) . '</span>' . '<br>' . esc_html( '%1$s' ) . '</p>', $categories_list ); // WPCS: XSS OK.
  		}
 
  		/* translators: used between list items, there is a space after the comma */
  		$tags_list = get_the_tag_list( '', esc_html( ', ' ) );
  		if ( $tags_list ) {
- 			printf( '<p>' . esc_html( 'Tagged' ) . '<br>' . esc_html( '%1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+ 			printf( '<p>' . '<span class="sidebar-styling">' . esc_html( 'Tagged' ) . '</span>' . '<br>' . esc_html( '%1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
  		}
  	}
  }

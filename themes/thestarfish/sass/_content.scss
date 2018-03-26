@@ -73,6 +73,7 @@
 	margin-top:60px;
 	height: 70vh;
 }
+
 .single-post-title{
 	width:85%;
 	margin: auto;
@@ -115,4 +116,33 @@
 			flex-basis: 78%;
 		}
 	}
+}
+
+//related articles bottom todo
+.journal-related-title{
+	width:85%;
+	margin:auto;
+	margin-bottom: 50px;
+	font-size: 2rem;
+	border-bottom: $border__secondary-brand-mobile;	
+}
+.journal-container{
+	display: flex;
+	justify-content: space-between;
+	width:85%;
+	margin:auto;
+	.journal-block{
+		flex-basis: 33%;
+		img{
+			height:175px;
+			width:375px;
+			object-fit: cover;
+			margin: auto;
+		}
+	}
+}
+
+.sidebar-styling{
+	color: $color__main-brand;
+	font-weight: 800;
 }
