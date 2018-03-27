@@ -2878,6 +2878,9 @@ object {
 .page-template-donate .site-footer {
   display: none; }
 
+.content-donation-info h2 {
+  margin-left: 25px; }
+
 .submit-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
