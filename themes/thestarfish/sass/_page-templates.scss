@@ -558,15 +558,23 @@
 
 .volunteer-carousel {
   margin-top: 4rem;
-  h2 {
-    margin: 0 2rem;
-    @include desktop-for-footer { 
-      font-size: 3.125rem;
-      margin: 0 7rem;
+  .join-our-team-title {
+    @include desktop-for-footer {
       display: flex;
       justify-content: flex-end;
+      margin: 0 7rem;
+      width: 88%;
+    }
+    h2 {
+      margin: 0 2rem;
+      @include desktop-for-footer { 
+        font-size: 3.125rem;
+        width: 40%;
+        margin: 0;
+      }
     }
   }
+  
   h3:after {
     content: ""; 
     display: block;

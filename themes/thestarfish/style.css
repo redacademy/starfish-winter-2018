@@ -1658,18 +1658,23 @@ object {
 
 .volunteer-carousel {
   margin-top: 4rem; }
-  .volunteer-carousel h2 {
+  @media screen and (min-width: 1135px) {
+    .volunteer-carousel .join-our-team-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin: 0 7rem;
+      width: 88%; } }
+  .volunteer-carousel .join-our-team-title h2 {
     margin: 0 2rem; }
     @media screen and (min-width: 1135px) {
-      .volunteer-carousel h2 {
+      .volunteer-carousel .join-our-team-title h2 {
         font-size: 3.125rem;
-        margin: 0 7rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; } }
+        width: 40%;
+        margin: 0; } }
   .volunteer-carousel h3:after {
     content: "";
     display: block;

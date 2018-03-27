@@ -43,8 +43,9 @@ get_header(); ?>
 						/**
 						* Set the Custom Field Suite Loops Working
 						*/
-						
-						echo '<h2>' . CFS()->get('join_our_team_carousel_title') . '</h2>';
+						echo '<div class="join-our-team-title">';
+							echo '<h2>' . CFS()->get('join_our_team_carousel_title') . '</h2>';
+						echo '</div>';
 						$carousel_cells = CFS()->get( 'join_our_team_carousel_cell' );
 							echo '<div class="carousel-container container-single">';
 								foreach($carousel_cells as $carousel_cell){
