@@ -1761,7 +1761,8 @@ object {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      padding-bottom: 9.719rem; } }
 
 .member-description-content {
   margin: 0 2rem;
@@ -1769,7 +1770,7 @@ object {
   @media screen and (min-width: 1135px) {
     .member-description-content {
       width: 620px;
-      margin-top: 0; } }
+      margin: 0 7rem; } }
   .member-description-content h2 {
     margin-top: 0; }
     .member-description-content h2:after {
@@ -1793,7 +1794,7 @@ object {
 .member-steps {
   padding-bottom: 1.719rem;
   padding-top: 3rem;
-  margin: 0 2rem; }
+  margin: 0 2rem 4rem 2rem; }
   @media screen and (min-width: 1135px) {
     .member-steps {
       display: -webkit-box;
@@ -1804,7 +1805,7 @@ object {
           -ms-flex-direction: row;
               flex-direction: row;
       padding-top: 7rem;
-      margin: 0 7rem; } }
+      margin: 0 7rem 6rem 7rem; } }
 
 .member-steps-content {
   padding-bottom: 3rem; }
