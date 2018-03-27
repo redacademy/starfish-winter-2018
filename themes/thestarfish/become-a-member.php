@@ -22,7 +22,15 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
-					<?php the_content(); ?>
+					
+					<section class="become-a-member-wrapper">
+						<div class="become-a-member-content">
+							<?php the_content(); ?>
+							<div class="paypal-button">
+								<img src="<?php echo get_template_directory_uri() . '/images/paypal.png'; ?>" alt="Paypal Image">
+							</div>
+						</div>
+					</section><!-- .become-a-member-wrapper -->
 
 				</div><!-- .entry-content -->
 
@@ -31,5 +39,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_template_part( 'template-parts/content', 'donation' ); ?>
 <?php get_footer(); ?>

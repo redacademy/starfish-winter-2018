@@ -708,3 +708,57 @@
     }
   }
 }
+
+/****** Become A Member Page ******/
+
+.page-template-become-a-member {
+  @extend .page-template-volunteer;
+}
+
+.become-a-member-wrapper {
+  background: url('../../images/member-paypal-background.png') no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+}
+
+.become-a-member-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 620px;
+    margin: 0 7rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
+.paypal-button {
+  margin-top: 3rem;
+  min-width: 312px;
+  @include center-block;
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+    width: 240px;
+  }
+}
