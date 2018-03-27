@@ -666,7 +666,8 @@ textarea {
     font-size: 15px;
     color: #394442;
     font-weight: 300; }
-  #gform_3 #gform_next_button_3_8 #gform_next_button_3_5 {
+  #gform_3 #gform_next_button_3_8, #gform_3 #gform_next_button_3_5,
+  #gform_3 #gform_submit_button_3 {
     border: 1px solid #145B51;
     text-decoration: none;
     padding: 1rem 6.5rem;
@@ -674,10 +675,13 @@ textarea {
     background: transparent;
     border-width: 2px; }
     @media screen and (min-width: 600px) {
-      #gform_3 #gform_next_button_3_8 #gform_next_button_3_5 {
+      #gform_3 #gform_next_button_3_8, #gform_3 #gform_next_button_3_5,
+      #gform_3 #gform_submit_button_3 {
         padding: 8px 30px;
         font-size: 1.25rem; } }
-    #gform_3 #gform_next_button_3_8 #gform_next_button_3_5:hover, #gform_3 #gform_next_button_3_8 #gform_next_button_3_5:focus {
+    #gform_3 #gform_next_button_3_8:hover, #gform_3 #gform_next_button_3_8:focus, #gform_3 #gform_next_button_3_5:hover, #gform_3 #gform_next_button_3_5:focus,
+    #gform_3 #gform_submit_button_3:hover,
+    #gform_3 #gform_submit_button_3:focus {
       background: #145B51;
       color: #fff; }
 

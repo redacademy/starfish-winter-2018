@@ -360,7 +360,8 @@ textarea {
 		font-weight: 300;
 	}
 
-	#gform_next_button_3_8 #gform_next_button_3_5 {
+	#gform_next_button_3_8, #gform_next_button_3_5,
+	#gform_submit_button_3 {
 		border: $border__main-brand;
 		text-decoration: none;
 		padding: 1rem 6.5rem;
