@@ -1524,15 +1524,15 @@ object {
       border-width: 2px; }
 
 /****** Volunteer Page ******/
-.page-template-volunteer .entry-content, .page-template-member .entry-content {
+.page-template-volunteer .entry-content, .page-template-member .entry-content, .page-template-become-a-member .entry-content {
   margin-top: 0; }
 
-.page-template-volunteer h2, .page-template-member h2 {
+.page-template-volunteer h2, .page-template-member h2, .page-template-become-a-member h2 {
   font-size: 2.188rem;
   margin-bottom: 1rem;
   font-weight: 500; }
 
-.page-template-volunteer p, .page-template-member p {
+.page-template-volunteer p, .page-template-member p, .page-template-become-a-member p {
   font-weight: 300;
   line-height: 1.75; }
 
@@ -1801,6 +1801,52 @@ object {
     .member-box-area .content-box .content-box-content .btn-transparent {
       padding: 1rem 6rem;
       border-width: 2px; }
+
+/****** Become A Member Page ******/
+.become-a-member-wrapper {
+  background: url("../../images/member-paypal-background.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem; }
+
+.become-a-member-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem; }
+  @media screen and (min-width: 1135px) {
+    .become-a-member-content {
+      width: 620px;
+      margin: 0 7rem; } }
+  .become-a-member-content h2 {
+    margin-top: 0; }
+    .become-a-member-content h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media screen and (min-width: 1135px) {
+      .become-a-member-content h2 {
+        font-size: 3.125rem; } }
+  .become-a-member-content p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media screen and (min-width: 1135px) {
+      .become-a-member-content p {
+        font-size: 1.125rem; } }
+
+.paypal-button {
+  margin-top: 3rem;
+  min-width: 312px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 600px) {
+    .paypal-button {
+      margin-left: 0;
+      margin-right: 0;
+      width: 240px; } }
 
 .footer-wrapper {
   background: #145B51;
@@ -2736,7 +2782,7 @@ object {
   @media screen and (min-width: 600px) {
     .donate-image {
       width: 55%;
-      height: auto; } }
+      height: -webkit-fill-available; } }
 
 .donate-content {
   width: 100%;
@@ -2752,13 +2798,13 @@ object {
   @media screen and (min-width: 600px) {
     .donate-content {
       width: 45%;
-      padding: 0 82px; } }
+      padding: 55px 82px; } }
 
 .close-link {
   position: absolute;
-  top: 46px;
-  right: 32px;
-  font-size: 36px;
+  top: 50px;
+  right: 29px;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
 
@@ -2787,7 +2833,6 @@ object {
   display: none; }
 
 .submit-wrapper {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2806,14 +2851,16 @@ object {
 .submit-content {
   background: url("../../images/submit-background.png") center no-repeat;
   width: 100%;
-  padding: 40px;
+  margin-top: 61px;
+  padding: 46px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff; }
   @media screen and (min-width: 600px) {
     .submit-content {
-      padding: 100px 60px 0;
-      width: 45%; } }
+      padding: 55px 60px 0;
+      width: 45%;
+      margin-top: 0; } }
 
 .submit-form {
   width: 100%;
@@ -2822,7 +2869,7 @@ object {
           box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .submit-form {
-      padding: 0 55px;
+      padding: 70px 63px;
       width: 55%; } }
 
 @media screen and (min-width: 600px) {
@@ -2851,15 +2898,66 @@ object {
 
 .submit-close {
   position: absolute;
-  top: 46px;
-  right: 32px;
-  font-size: 36px;
+  top: 65px;
+  right: 30px;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
+  @media screen and (min-width: 600px) {
+    .submit-close {
+      top: 15px;
+      right: 35px;
+      font-size: 36px;
+      font-weight: bold;
+      text-decoration: none; } }
 
 #input_2_4 {
-  height: 130px; }
+  height: 100px; }
+
+#input_2_4, #input_2_5, #input_2_6, #input_2_7, #input_2_8 {
+  border: 1px solid #145B51;
+  border-radius: 2px; }
 
 .page-template-submit .site-header,
 .page-template-submit .site-footer {
   display: none; }
+
+#gform_2 .gform_footer {
+  padding: 2px 0 10px; }
+
+#gform_2 .gform_title {
+  font-weight: 300; }
+  #gform_2 .gform_title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    border-bottom: 2px solid coral; }
+
+.submit-content p {
+  line-height: 1.95;
+  margin-top: 45px; }
+
+.submit-content h2:after {
+  content: "";
+  display: block;
+  width: 22%;
+  padding-top: 1rem;
+  border-bottom: 6px solid coral; }
+
+#gform_submit_button_2 {
+  background: #FF8271;
+  color: #fff;
+  border: none;
+  padding: 20px 120px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: .5px; }
+  @media screen and (min-width: 600px) {
+    #gform_submit_button_2 {
+      background-color: #145B51;
+      color: #fff;
+      padding: 15px 60px;
+      margin-left: 0; } }
