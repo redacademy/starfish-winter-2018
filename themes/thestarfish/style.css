@@ -909,6 +909,11 @@ a {
 #journal-hero-title {
   padding-top: 40vh;
   color: white; }
+  #journal-hero-title:after {
+    content: "";
+    display: block;
+    width: 16%;
+    border-bottom: 6px solid coral; }
 
 .journal-related-title {
   width: 85%;
@@ -969,8 +974,8 @@ a {
   .archive-container .archive-story-container {
     width: 300px;
     margin: auto; }
-  .archive-container p {
-    display: none; }
+    .archive-container .archive-story-container p {
+      display: none; }
   .archive-container h4 {
     color: white;
     position: absolute;
@@ -980,7 +985,9 @@ a {
     @media screen and (min-width: 600px) {
       .archive-container h4 {
         font-size: 24px;
-        width: 380px; } }
+        width: 380px;
+        margin-top: 20px;
+        margin-bottom: 0; } }
   .archive-container img {
     width: 300px;
     height: 300px;
@@ -1003,7 +1010,16 @@ a {
           width: 100%; }
       .archive-container div:nth-child(5) {
         -ms-flex-preferred-size: 99%;
-            flex-basis: 99%; } }
+            flex-basis: 99%; }
+      .archive-container .archive-story-container p {
+        display: none;
+        z-index: 999;
+        position: absolute;
+        width: 500px;
+        color: white;
+        margin-top: 125px;
+        margin-left: 20px;
+        overflow: hidden; } }
 
 .archive-box-area {
   height: 400px;
@@ -2300,6 +2316,9 @@ object {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+
+.preview-content-container-editorial {
+  padding-left: 80px; }
 
 /* Carousel on Top 25 Page */
 .nominee-meet-container-after {
