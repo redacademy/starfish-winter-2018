@@ -234,8 +234,8 @@
 
   @include desktop {
     background: 
-    url('../../images/mountain-range.png') center top 230px no-repeat;
-    background-size: cover;
+    url('../../images/mountain-range.png') top no-repeat;
+    background-size: contain;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,6 +256,8 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-right: 20px;
+    top: 50%;
+    transform: translateY(27%);
   }
 
   .front-page-volunteer-content {
@@ -277,6 +279,8 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-right: 20px;
+    top: 50%;
+    transform: translateY(27%);
   }
 
   .front-page-member-content {

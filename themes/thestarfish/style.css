@@ -1336,8 +1336,8 @@ object {
       border-bottom: 6px solid coral; }
   @media screen and (min-width: 600px) {
     .front-page-become-box {
-      background: url("../../images/mountain-range.png") center top 230px no-repeat;
-      background-size: cover;
+      background: url("../../images/mountain-range.png") top no-repeat;
+      background-size: contain;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1368,7 +1368,10 @@ object {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-right: 20px; } }
+      margin-right: 20px;
+      top: 50%;
+      -webkit-transform: translateY(27%);
+              transform: translateY(27%); } }
   .front-page-become-volunteer .front-page-volunteer-content {
     margin: 2rem; }
 
@@ -1391,7 +1394,10 @@ object {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-right: 20px; } }
+      margin-right: 20px;
+      top: 50%;
+      -webkit-transform: translateY(27%);
+              transform: translateY(27%); } }
   .front-page-become-member .front-page-member-content {
     margin: 2rem; }
 
