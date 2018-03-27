@@ -204,9 +204,6 @@ textarea {
 	}
 }
 
-
-
-
 // Nominate Form //
 
 #gform_wrapper_3 {
@@ -234,7 +231,6 @@ textarea {
 	input[type=text] {
 		border: 1px solid $color__main-brand;
 		border-radius: 2px;
-		
 		margin-top: 10px;
 	}
 
@@ -251,12 +247,20 @@ textarea {
 				margin-bottom: 25px;
 				border-bottom: 4px solid coral;
 			}
+
+			@include desktop {
+				font-weight: 400;
+				&:after {
+					content: ""; 
+					display: block;
+					width: 194%;
+					padding-top: 25px;
+					margin-bottom: 25px;
+					border-bottom: 4px solid coral;
+				}
+			}
 		}
 	}
-
-	// #input_3_9_3_container {
-	// 	margin-top: 10px;
-	// }
 
 	#input_3_9_3, #input_3_9_6, #input_3_10, #input_3_11  {
 		padding: 7px 8px;
@@ -289,27 +293,33 @@ textarea {
 		font-weight: 300;
 	}
 
-	input[type=submit] {
-		background: $color__secondary-brand;
-		color:#fff;
-		border: none;
-		// padding: 20px 128px;
-		margin-left: 8px;
-		font-size: 15px;
-		font-family: $font__title;
-		font-weight: 300;
+	#gform_next_button_3_8 {
+		border: $border__main-brand;
 		text-decoration: none;
-		letter-spacing: .5px;
+		padding: 1rem 6.5rem;
+		color: $color__main-brand;
+		background: transparent;
+		border-width: $border__bold-width;
+		@include desktop {
+			padding: 8px 30px;
+			font-size: 1.25rem;
+		}
+		&:hover,
+		&:focus {
+			background: $color__main-brand;
+			color: $color__background-body;
+		}
 	}
+}
+
+input[value=continue] {
+	font-size: 14px;
 }
 
 .gform_wrapper .gform_page_footer {
 	border-top: none;
 }
 
-.gform_next_button_3_8 {
-	
-}
 
 //Contributor Form //
 
