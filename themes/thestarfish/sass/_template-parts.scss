@@ -57,5 +57,9 @@
 		width: 210px;
     margin: 0;
     padding: 13px 70px;
-	}
+  }
+  &:hover {
+    color:#fff;
+    background: darken($color__secondary-brand, 6);
+  }
 }

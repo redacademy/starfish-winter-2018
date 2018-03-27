@@ -2591,6 +2591,9 @@ object {
       width: 210px;
       margin: 0;
       padding: 13px 70px; } }
+  .btn-donate:hover {
+    color: #fff;
+    background: #ff6752; }
 
 /*--------------------------------------------------------------
 # Carousels
