@@ -2827,7 +2827,7 @@ object {
   @media screen and (min-width: 600px) {
     .donate-content {
       width: 45%;
-      padding: 20px 82px; } }
+      padding: 55px 82px; } }
 
 .close-link {
   position: absolute;
@@ -2838,7 +2838,7 @@ object {
   @media screen and (min-width: 600px) {
     .close-link {
       position: absolute;
-      top: 50px;
+      top: 10px;
       right: 29px;
       font-size: 34px;
       font-weight: bold;
@@ -2894,7 +2894,7 @@ object {
   color: #fff; }
   @media screen and (min-width: 600px) {
     .submit-content {
-      padding: 0 72px 0;
+      padding: 24px 72px;
       width: 45%;
       margin-top: 0; } }
 
@@ -2905,7 +2905,7 @@ object {
           box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .submit-form {
-      padding: 23px 63px;
+      padding: 39px 63px 8px;
       width: 55%; } }
 
 @media screen and (min-width: 600px) {
@@ -2942,7 +2942,7 @@ object {
   @media screen and (min-width: 600px) {
     .submit-close {
       top: 28px;
-      left: 63px;
+      left: 26px;
       font-size: 36px;
       font-weight: bold;
       text-decoration: none; } }

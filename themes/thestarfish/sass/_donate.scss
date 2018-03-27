@@ -39,7 +39,7 @@
   flex-direction: column;
   @include desktop {
     width: 45%;
-    padding: 20px 82px;
+    padding: 55px 82px;
   }
 }
 
@@ -51,7 +51,7 @@
   text-decoration: none;
   @include desktop  {
     position: absolute;
-    top: 50px;
+    top: 10px;
     right: 29px;
     font-size: 34px;
     font-weight: bold;
