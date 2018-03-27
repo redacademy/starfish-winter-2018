@@ -143,8 +143,24 @@ textarea {
 		padding: 8px 0;
 		margin-top: 10px;
 		@include desktop {
-			padding: 14px 0;
+			padding: 8px 0;
 			width: 625px;
+			margin-top: 5px;
+		}
+	}
+
+	input[name=your-name] {
+		@include desktop {
+			padding: 8px 0;
+			width: 300px;
+			margin: 5px 22px 0 0;
+		}
+	}
+
+	.contact-names {
+		@include desktop {
+			display: flex;
+			flex-direction: row;
 		}
 	}
 
@@ -154,7 +170,10 @@ textarea {
 		padding: 8px 0;
 		margin-top: 10px;
 		@include desktop{
+			height: 110px;
+			width: 625px;
 			padding: 0 0;
+			margin-top: 5px;
 		}
 	}
 
@@ -171,7 +190,6 @@ textarea {
 		color:$color__background-body;
 		border: none;
 		padding: 20px 128px;
-		margin-left: 8px;
 		font-size: 16px;
 		font-family: $font__title;
 		font-weight: 300;
@@ -319,7 +337,7 @@ textarea {
 		margin-right: 80px;
 		position: absolute;
 		left: 747px;
-		top: 676px;
+		top: 690px;
 
 		@media (max-width: 1000px) {
 			position: static;
@@ -328,7 +346,7 @@ textarea {
 }
 
 #text-2 {
-	margin-left: 25px;
+	margin-left: 35px;
 	margin-bottom: 40px;
 
 	.widget-title {
@@ -342,7 +360,13 @@ textarea {
 			padding-top: 20px;
 			margin-bottom: 20px;
       border-bottom: 6px solid coral;
-    }
+		}
+		
+		@include desktop {
+			font-size: 40px;
+			margin-bottom: 35px;
+			line-height: 2;
+		}
 	}
 
 	p {
