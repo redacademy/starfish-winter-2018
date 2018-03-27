@@ -66,7 +66,7 @@
 			&:after {
 				content: ""; 
 				display: block;
-				width: 124%;
+				width: 106%;
 				padding-top: 25px;
 				margin-bottom: 25px;
 				border-bottom: 4px solid coral;
@@ -156,22 +156,22 @@
 
 	#gform_next_button_3_8, #gform_next_button_3_5,
 	#gform_submit_button_3 {
-		border: $border__main-brand;
+		background: $color__secondary-brand;
+		color:$color__background-body;
+		border: none;
+		padding: 20px 120px;
+		font-size: 16px;
+		font-family: $font__title;
+		font-weight: 300;
 		text-decoration: none;
-		padding: 1rem 6.5rem;
-		color: $color__main-brand;
-		background: transparent;
-		border-width: $border__bold-width;
+		letter-spacing: .5px;
 		@include desktop {
-			padding: 8px 30px;
-			font-size: 1.25rem;
-		}
-		&:hover,
-		&:focus {
-			background: $color__main-brand;
+			background-color: $color__main-brand;
 			color: $color__background-body;
+			padding: 15px 60px;	
+			margin-left: 0;
 		}
-	}
+	}	
 }
 
 input[value=continue] {
