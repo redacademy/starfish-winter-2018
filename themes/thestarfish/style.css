@@ -2173,6 +2173,15 @@ object {
     position: relative;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+    .site-main header .entry-title:after {
+      content: "";
+      display: block;
+      width: 26%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+      @media screen and (min-width: 600px) {
+        .site-main header .entry-title:after {
+          border-bottom: 10px solid #FF8271; } }
     .site-main header .entry-title a {
       text-decoration: none;
       color: white; }

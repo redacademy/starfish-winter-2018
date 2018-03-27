@@ -96,7 +96,7 @@ function starfish_change_header(){
 			background: linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.2)), url('{$img_header_url}') no-repeat center bottom;
 			background-size: 100%;
 			width: 100%;
-    		height: 100vh;
+    	height: 100vh;
 			color: #fff;
 	}";
 wp_add_inline_style( 'starfish-style', $custom_css );
