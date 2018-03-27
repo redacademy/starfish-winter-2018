@@ -128,6 +128,13 @@
 #journal-hero-title{
 	padding-top:40vh;
 	color: white;
+	&:after {
+		content: ""; 
+		display: block;
+		width: 16%;
+		border-bottom: $border__secondary-brand-mobile;
+	  }
+
 }
 .journal-related-title{
 	width:85%;
@@ -182,9 +189,9 @@
 	.archive-story-container{
 		width:300px;
 		margin:auto;
-	}
-	p{
-		display: none;
+		p{
+			display: none;
+		}
 	}
 	h4{
 		color:white;
@@ -195,6 +202,8 @@
 		@include desktop{
 			font-size: 24px;
 			width:380px;
+			margin-top:20px;
+			margin-bottom:0;
 		}
 	}
 	img{
@@ -202,6 +211,10 @@
 		height:300px;
 		object-fit: cover;
 	}
+	// .archive-story-container p{
+	// 	display: none;
+	// }
+
 	@include desktop{
 		flex-direction:row;
 		justify-content: space-between;
@@ -215,6 +228,16 @@
 		div:nth-child(5){
 			flex-basis: 99%;
 		}
+			.archive-story-container p{
+					display: none;
+					z-index: 999;
+					position: absolute;
+					width:500px;
+					color: white;
+					margin-top: 125px;
+					margin-left:20px;
+					overflow: hidden;
+			}
 	}
 }
 .archive-box-area{

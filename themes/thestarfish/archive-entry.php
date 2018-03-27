@@ -34,11 +34,13 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 		?>
 		<div class="archive-story-container">
 		<h4><?php the_title(); ?></h4>
+		<?php the_excerpt(); ?>
+
 			<a href="<?php the_permalink(); ?>"><?php 	
 			if ( has_post_thumbnail() ) {
 			the_post_thumbnail('medium');
 			}
-			the_excerpt(); ?></a>
+			?></a>
 		</div>
 			<?php endforeach; 
 				wp_reset_postdata();?>
@@ -54,12 +56,14 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 		?>
 
 		<div class="archive-story-container">
-          <h4><?php the_title(); ?></h4>
+		  <h4><?php the_title(); ?></h4>
+		  <?php the_excerpt(); ?>
+
 		  <a href="<?php the_permalink(); ?>"><?php 	
 			if ( has_post_thumbnail() ) {
 			the_post_thumbnail('medium');
 			}
-			the_excerpt(); ?></a>
+			 ?></a>
 		</div>
 			<?php endforeach; 
 				wp_reset_postdata();?>
