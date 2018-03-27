@@ -2969,6 +2969,59 @@ object {
         margin: 18px 0;
         line-height: 26px; } }
 
+.page-template-contributor .entry-content {
+  margin-top: 0; }
+
+.contributer-description-wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white)), url("../../images/membership-desc-1.png") bottom no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0), white), url("../../images/membership-desc-1.png") bottom no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 1135px) {
+    .contributer-description-wrapper {
+      background: url("../../images/membership-desc-1.png") center no-repeat;
+      background-size: cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-bottom: 9.719rem; } }
+
+.contributer-description-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem; }
+  @media screen and (min-width: 1135px) {
+    .contributer-description-content {
+      width: 620px;
+      margin: 0 7rem; } }
+  .contributer-description-content h2 {
+    margin-top: 0; }
+    .contributer-description-content h2:after {
+      content: "";
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: 6px solid coral; }
+    @media screen and (min-width: 1135px) {
+      .contributer-description-content h2 {
+        font-size: 3.125rem; } }
+  .contributer-description-content p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media screen and (min-width: 1135px) {
+      .contributer-description-content p {
+        font-size: 1.125rem; } }
+
 @media screen and (min-width: 600px) {
   #gform_wrapper_3 {
     display: -webkit-box;

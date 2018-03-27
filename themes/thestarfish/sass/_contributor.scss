@@ -1,0 +1,54 @@
+
+.page-template-contributor {
+  .entry-content {
+    margin-top: 0;
+  }
+}
+
+.contributer-description-wrapper {
+  background: linear-gradient(0deg,rgba(white,0),rgba(white,5.75)), url('../../images/membership-desc-1.png') bottom no-repeat;
+  background-size: cover;
+  padding-bottom: 1.719rem;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  @include desktop-for-footer {
+    background: url('../../images/membership-desc-1.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-bottom: 9.719rem;
+
+  }
+}
+
+.contributer-description-content {
+  margin: 0 2rem;
+  padding-bottom: 3rem;
+  @include desktop-for-footer {
+    width: 620px;
+    margin: 0 7rem;
+  }
+  h2 {
+    margin-top: 0;
+    &:after {
+      content: ""; 
+      display: block;
+      width: 16%;
+      padding-top: 1rem;
+      border-bottom: $border__secondary-brand-mobile;
+    }
+    @include desktop-for-footer { 
+      font-size: 3.125rem;
+    }
+  }
+  p {
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include desktop-for-footer { 
+      font-size: 1.125rem;
+    }
+  }
+}
