@@ -217,6 +217,7 @@ textarea {
 }
 
 #gform_1 {
+	font-size: 18px;
 	margin: 0 20px;
 	width: calc(100% - 40px);
 	@include desktop {
@@ -228,8 +229,27 @@ textarea {
 	font-size: 30px;
 }
 
-#gform_1, .gform_description {
-	font-size: 18px;
+.gform_description {
+	font-size: 18px;		
+	&:after {
+		content: ""; 
+		display: block;
+		width: 105%;
+		padding-top: 25px;
+		margin-bottom: 20px;
+		border-bottom: 4px solid coral;
+	}
+
+	@include desktop {
+		&:after {
+			content: ""; 
+			display: block;
+			width: 100%;
+			padding-top: 25px;
+			margin-bottom: 25px;
+			border-bottom: 4px solid coral;
+		}
+	}
 }
 
 
@@ -240,8 +260,8 @@ textarea {
 	}
 }
 
-.gform_wrapper .gform_page_footer {
-	border-top: none;
+.gform_page_footer {
+	border: none !important;
 }
 
 #field_1_2 .gfield_label, #field_1_3 .gfield_label, 

@@ -557,6 +557,7 @@ textarea {
             justify-content: center; } }
 
 #gform_1 {
+  font-size: 18px;
   margin: 0 20px;
   width: calc(100% - 40px); }
   @media screen and (min-width: 600px) {
@@ -566,15 +567,30 @@ textarea {
 #gform_1 h3 {
   font-size: 30px; }
 
-#gform_1, .gform_description {
+.gform_description {
   font-size: 18px; }
+  .gform_description:after {
+    content: "";
+    display: block;
+    width: 105%;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid coral; }
+  @media screen and (min-width: 600px) {
+    .gform_description:after {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 25px;
+      margin-bottom: 25px;
+      border-bottom: 4px solid coral; } }
 
 #input_1_1_3_container label, #input_1_1_6_container label {
   font-size: 18px;
   font-weight: 300; }
 
-.gform_wrapper .gform_page_footer {
-  border-top: none; }
+.gform_page_footer {
+  border: none !important; }
 
 #field_1_2 .gfield_label, #field_1_3 .gfield_label,
 #field_1_4 .gfield_label, #field_1_5 .gfield_label {
