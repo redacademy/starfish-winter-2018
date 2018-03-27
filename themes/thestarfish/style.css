@@ -2717,7 +2717,7 @@ object {
   @media screen and (min-width: 600px) {
     .donate-image {
       width: 55%;
-      height: auto; } }
+      height: -webkit-fill-available; } }
 
 .donate-content {
   width: 100%;
@@ -2733,13 +2733,13 @@ object {
   @media screen and (min-width: 600px) {
     .donate-content {
       width: 45%;
-      padding: 0 82px; } }
+      padding: 55px 82px; } }
 
 .close-link {
   position: absolute;
-  top: 46px;
-  right: 32px;
-  font-size: 36px;
+  top: 50px;
+  right: 29px;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
 
@@ -2835,7 +2835,7 @@ object {
   position: absolute;
   top: 65px;
   right: 30px;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
   @media screen and (min-width: 600px) {

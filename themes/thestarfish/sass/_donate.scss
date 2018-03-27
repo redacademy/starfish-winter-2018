@@ -27,7 +27,7 @@
   
   @include desktop {
     width: 55%;
-    height: auto;
+    height: -webkit-fill-available;
   }
 }
 
@@ -39,15 +39,15 @@
   flex-direction: column;
   @include desktop {
     width: 45%;
-    padding: 0 82px;
+    padding: 55px 82px;
   }
 }
 
 .close-link {
   position: absolute;
-  top: 46px;
-  right: 32px;
-  font-size: 36px;
+  top: 50px;
+  right: 29px;
+  font-size: 34px;
   font-weight: bold;
   text-decoration: none;
 }
