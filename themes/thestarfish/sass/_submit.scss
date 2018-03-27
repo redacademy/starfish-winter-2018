@@ -1,5 +1,4 @@
 .submit-wrapper {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   @include desktop {
@@ -11,7 +10,7 @@
 .submit-content {
   background: url('../../images/submit-background.png') center no-repeat;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 61px;
   padding: 46px;
   box-sizing: border-box;
   color: $color__background-body;
@@ -19,6 +18,7 @@
   @include desktop {
     padding: 55px 60px 0;
     width: 45%;
+    margin-top: 0;
   }
 }
 
@@ -27,7 +27,7 @@
   padding: 40px;
   box-sizing: border-box;
   @include desktop {
-    padding: 60px 63px;
+    padding: 70px 63px;
     width: 55%;
   }  
 }
@@ -62,11 +62,18 @@
 
 .submit-close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 65px;
+  right: 30px;
   font-size: 36px;
   font-weight: bold;
   text-decoration: none;
+  @include desktop {
+    top: 15px;
+    right: 35px;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 #input_2_4 {
@@ -127,7 +134,7 @@
   background: $color__secondary-brand;
   color:$color__background-body;
   border: none;
-  padding: 20px 128px;
+  padding: 20px 120px;
   font-size: 16px;
   font-family: $font__title;
   font-weight: 300;

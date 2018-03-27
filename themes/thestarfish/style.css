@@ -2768,7 +2768,6 @@ object {
   display: none; }
 
 .submit-wrapper {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2787,7 +2786,7 @@ object {
 .submit-content {
   background: url("../../images/submit-background.png") center no-repeat;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 61px;
   padding: 46px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2795,7 +2794,8 @@ object {
   @media screen and (min-width: 600px) {
     .submit-content {
       padding: 55px 60px 0;
-      width: 45%; } }
+      width: 45%;
+      margin-top: 0; } }
 
 .submit-form {
   width: 100%;
@@ -2804,7 +2804,7 @@ object {
           box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .submit-form {
-      padding: 60px 63px;
+      padding: 70px 63px;
       width: 55%; } }
 
 @media screen and (min-width: 600px) {
@@ -2833,11 +2833,18 @@ object {
 
 .submit-close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 65px;
+  right: 30px;
   font-size: 36px;
   font-weight: bold;
   text-decoration: none; }
+  @media screen and (min-width: 600px) {
+    .submit-close {
+      top: 15px;
+      right: 35px;
+      font-size: 36px;
+      font-weight: bold;
+      text-decoration: none; } }
 
 #input_2_4 {
   height: 100px; }
@@ -2877,7 +2884,7 @@ object {
   background: #FF8271;
   color: #fff;
   border: none;
-  padding: 20px 128px;
+  padding: 20px 120px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
