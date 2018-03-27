@@ -111,7 +111,7 @@ get_header(); ?>
 		
 		<div class="content-box-header">
 			<h2>Judges</h2>
-			<p>Just like our Top 25 list,these changemakers are committed to progressive, 
+			<p>Just like our Top 25 list, these changemakers are committed to progressive, 
 			positive change in their communities and are lending their expertise to finding 
 			our next round of young Canadian leaders</p>
 		</div><!-- .content-box-header -->
