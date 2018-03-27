@@ -2894,7 +2894,7 @@ object {
   color: #fff; }
   @media screen and (min-width: 600px) {
     .submit-content {
-      padding: 55px 60px 0;
+      padding: 0 72px 0;
       width: 45%;
       margin-top: 0; } }
 
@@ -2905,7 +2905,7 @@ object {
           box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .submit-form {
-      padding: 70px 63px;
+      padding: 23px 63px;
       width: 55%; } }
 
 @media screen and (min-width: 600px) {
@@ -2934,15 +2934,15 @@ object {
 
 .submit-close {
   position: absolute;
-  top: 70px;
-  left: 25px;
+  top: 66px;
+  left: 46px;
   font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
   @media screen and (min-width: 600px) {
     .submit-close {
-      top: 15px;
-      right: 35px;
+      top: 28px;
+      left: 63px;
       font-size: 36px;
       font-weight: bold;
       text-decoration: none; } }

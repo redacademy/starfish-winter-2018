@@ -16,7 +16,7 @@
   color: $color__background-body;
 
   @include desktop {
-    padding: 55px 60px 0;
+    padding: 0 72px 0;
     width: 45%;
     margin-top: 0;
   }
@@ -27,7 +27,7 @@
   padding: 40px;
   box-sizing: border-box;
   @include desktop {
-    padding: 70px 63px;
+    padding: 23px 63px;
     width: 55%;
   }  
 }
@@ -62,14 +62,14 @@
 
 .submit-close {
   position: absolute;
-  top: 70px;
-  left: 25px;
+  top: 66px;
+  left: 46px;
   font-size: 34px;
   font-weight: bold;
   text-decoration: none;
   @include desktop {
-    top: 15px;
-    right: 35px;
+    top: 28px;
+    left: 63px;
     font-size: 36px;
     font-weight: bold;
     text-decoration: none;
