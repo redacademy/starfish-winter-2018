@@ -264,7 +264,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-size: 45px;
   letter-spacing: .7px;
-  font-weight: 500px; }
+  font-weight: 500; }
 
 h3, h4, h5, h6 {
   clear: both;
@@ -2492,6 +2492,12 @@ object {
           font-weight: 100;
           line-height: 30px; } }
 
+.content-box-area .content-box .content-box-header h2 {
+  border-bottom: 6px solid #FF8271; }
+  @media screen and (min-width: 600px) {
+    .content-box-area .content-box .content-box-header h2 {
+      border-bottom: none; } }
+
 @media screen and (min-width: 600px) {
   .content-box-area {
     background: url("../../images/about-background.png") top no-repeat;
@@ -2507,18 +2513,19 @@ object {
     width: 85%;
     margin: auto; }
     .content-box-area .content-box .content-box-header h2 {
-      border-bottom: 6px solid #FF8271;
       width: 30%;
       padding-bottom: 20px; }
     .content-box-area .content-box .content-box-header p {
       font-weight: 100;
       line-height: 30px; }
   .content-box-area .content-box .judges-container-btn {
-    text-align: center; }
+    text-align: center;
+    margin-top: 70px; }
     @media screen and (min-width: 600px) {
       .content-box-area .content-box .judges-container-btn {
         width: 85%;
-        margin: auto; } }
+        margin: auto;
+        margin-top: 50px; } }
   @media screen and (min-width: 600px) {
     .content-box-area .content-box {
       width: 850px;
@@ -2533,7 +2540,6 @@ object {
         width: 60%; }
         .content-box-area .content-box .content-box-header h2 {
           text-align: center;
-          border-bottom: 6px solid #FF8271;
           width: 100%;
           padding-bottom: 20px;
           margin-top: 10px; } }
@@ -2591,6 +2597,9 @@ object {
       width: 210px;
       margin: 0;
       padding: 13px 70px; } }
+  .btn-donate:hover {
+    color: #fff;
+    background: #ff6752; }
 
 /*--------------------------------------------------------------
 # Carousels
@@ -3083,7 +3092,8 @@ object {
       width: 620px;
       margin: 0 7rem; } }
   .contributer-description-content h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 40px; }
     .contributer-description-content h2:after {
       content: "";
       display: block;
