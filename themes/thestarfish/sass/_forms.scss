@@ -229,19 +229,19 @@ textarea {
 	font-size: 30px;
 }
 
-.gform_description {
+#field_1_1 {
 	font-size: 18px;		
-	&:after {
+	&:before {
 		content: ""; 
 		display: block;
-		width: 105%;
+		width: 100%;
 		padding-top: 25px;
 		margin-bottom: 20px;
 		border-bottom: 4px solid coral;
 	}
 
 	@include desktop {
-		&:after {
+		&:before {
 			content: ""; 
 			display: block;
 			width: 100%;
@@ -252,6 +252,28 @@ textarea {
 	}
 }
 
+#gform_fields_1_2 {
+	font-size: 18px;		
+	&:before {
+		content: ""; 
+		display: block;
+		width: 100%;
+		padding-top: 25px;
+		margin-bottom: 20px;
+		border-bottom: 4px solid coral;
+	}
+
+	@include desktop {
+		&:before {
+			content: ""; 
+			display: block;
+			width: 97%;
+			padding-top: 25px;
+			margin-bottom: 25px;
+			border-bottom: 4px solid coral;
+		}
+	}
+}
 
 #input_1_1_3_container, #input_1_1_6_container {
 	label {
@@ -260,8 +282,41 @@ textarea {
 	}
 }
 
+#gform_next_button_1_10, #gform_submit_button_1 {
+	background: $color__secondary-brand;
+  color:$color__background-body;
+  border: none;
+  padding: 20px 120px;
+  font-size: 16px;
+  font-family: $font__title;
+  font-weight: 300;
+  text-decoration: none;
+  letter-spacing: .5px;
+  @include desktop {
+    background-color: $color__main-brand;
+    color: $color__background-body;
+    padding: 15px 60px;	
+    margin-left: 0;
+	}
+}	
+
 .gform_page_footer {
 	border: none !important;
+
+	@include desktop {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+#input_1_5, #input_1_4, #input_1_3,
+#input_1_2, #input_1_1_6, #input_1_1_3,
+#input_1_6, #input_1_7, #input_1_8  {
+	border: 1px solid $color__main-brand;
+	border-radius: 2px;
+	padding: 6px 10px;
+	margin-top: 10px;
+	font-style: italic;
 }
 
 #field_1_2 .gfield_label, #field_1_3 .gfield_label, 
@@ -270,3 +325,10 @@ textarea {
 	font-weight: 300;
 }
 
+.charleft {
+	display: none;
+}
+
+#input_1_6, #input_1_7, #input_1_8, {
+	height: 280px;
+}
