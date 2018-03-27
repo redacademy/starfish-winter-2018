@@ -17,7 +17,9 @@ $post_page_banner = (CFS()->get('banner_image', $post_page_id));
 			<header class="entry-header" style="background: url(<?php echo esc_url($post_page_banner); ?>); width: 100%; height: 100vh; background-size: cover; margin-top:60px; ">
 				<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>	
 				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				<h1 id="journal-hero-title">Journals</h1>
 			</header><!-- .entry-header -->
+
 <div class="archive-title-head">
 <h3>Latest from our Journal<h3>
 </div>
