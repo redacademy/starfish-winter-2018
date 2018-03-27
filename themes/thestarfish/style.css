@@ -2999,6 +2999,11 @@ object {
       padding: 15px 60px;
       margin-left: 0; } }
 
+#gform_confirmation_message_2 {
+  font-size: 28px;
+  margin-top: 70px;
+  margin-left: 80px; }
+
 @media screen and (min-width: 600px) {
   #secondary {
     display: -webkit-box;
@@ -3096,6 +3101,11 @@ object {
     @media screen and (min-width: 1135px) {
       .contributer-description-content p {
         font-size: 1.125rem; } }
+
+#gform_confirmation_message_1 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 70px; }
 
 @media screen and (min-width: 600px) {
   #gform_wrapper_3 {
