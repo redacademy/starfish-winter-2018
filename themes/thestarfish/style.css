@@ -2942,8 +2942,8 @@ object {
   text-decoration: none; }
   @media screen and (min-width: 600px) {
     .submit-close {
-      top: 28px;
-      left: 26px;
+      top: 10px;
+      left: 30px;
       font-size: 36px;
       font-weight: bold;
       text-decoration: none; } }
