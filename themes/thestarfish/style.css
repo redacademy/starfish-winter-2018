@@ -2812,11 +2812,18 @@ object {
 
 .close-link {
   position: absolute;
-  top: 50px;
-  right: 29px;
+  top: 65px;
   font-size: 34px;
   font-weight: bold;
   text-decoration: none; }
+  @media screen and (min-width: 600px) {
+    .close-link {
+      position: absolute;
+      top: 50px;
+      right: 29px;
+      font-size: 34px;
+      font-weight: bold;
+      text-decoration: none; } }
 
 .paypal-image {
   height: 50px;
@@ -2908,8 +2915,8 @@ object {
 
 .submit-close {
   position: absolute;
-  top: 65px;
-  right: 30px;
+  top: 70px;
+  left: 25px;
   font-size: 34px;
   font-weight: bold;
   text-decoration: none; }

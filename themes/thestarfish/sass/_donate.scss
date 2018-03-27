@@ -45,11 +45,18 @@
 
 .close-link {
   position: absolute;
-  top: 50px;
-  right: 29px;
+  top: 65px;
   font-size: 34px;
   font-weight: bold;
   text-decoration: none;
+  @include desktop  {
+    position: absolute;
+    top: 50px;
+    right: 29px;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 .paypal-image {
