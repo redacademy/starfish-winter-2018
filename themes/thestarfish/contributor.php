@@ -12,12 +12,28 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<header class="entry-header" >
+						
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
-				<div class="contributor-form">
-					<?php echo esc_html( CFS()->get( 'form_title' ) ); ?>
-					<?php echo CFS()->get( 'apply_here' ); ?>
-				</div>
+				</header><!-- .entry-header -->
+
+				<div class="entry-content">
+
+					<section class="contributer-description-wrapper">
+
+						<div class="contributer-description-content">
+							<?php the_content(); ?>
+						</div><!-- .contributer-description-content -->
+
+					</section><!-- .contributer-description-wrapper -->
+
+					<div class="contributor-form">
+						<?php echo esc_html( CFS()->get( 'form_title' ) ); ?>
+						<?php echo CFS()->get( 'apply_here' ); ?>
+					</div>
+				</div><!-- .entry-content -->
 			<?php endwhile; ?>
 
 		</main><!-- #main -->
