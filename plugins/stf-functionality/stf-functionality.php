@@ -25,26 +25,26 @@ if ( ! defined( 'WPINC' ) ) {
  *
  * @since 1.0.0
  */
-define( 'RF_DIR', dirname( __FILE__ ) );
+define( 'SF_DIR', dirname( __FILE__ ) );
 
 /**
  * General housekeeping and plugin activation tasks
  *
  * @since 1.0.0
  */
-include_once( RF_DIR . '/lib/functions/general.php' );
-register_activation_hook( __FILE__, array( 'RF_General', 'plugin_activation' ) );
+include_once( SF_DIR . '/lib/functions/general.php' );
+register_activation_hook( __FILE__, array( 'SF_General', 'plugin_activation' ) );
 
 /**
  * Post types
  *
  * @since 1.0.0
  */
-include_once( RF_DIR . '/lib/functions/post-types.php' );
+include_once( SF_DIR . '/lib/functions/post-types.php' );
 
 /**
  * Taxonomies
  *
  * @since 1.0.0
  */
-include_once( RF_DIR . '/lib/functions/taxonomies.php' );
+include_once( SF_DIR . '/lib/functions/taxonomies.php' );
