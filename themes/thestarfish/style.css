@@ -565,7 +565,13 @@ textarea {
   #gform_3 .gform_title {
     display: none; }
   #gform_3 .gform_page_footer {
-    border: none; }
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   #gform_3 input[type=text] {
     border: 1px solid #145B51;
     border-radius: 2px;
@@ -591,7 +597,55 @@ textarea {
           padding-top: 25px;
           margin-bottom: 25px;
           border-bottom: 4px solid coral; } }
-  #gform_3 #input_3_9_3, #gform_3 #input_3_9_6, #gform_3 #input_3_10, #gform_3 #input_3_11 {
+  #gform_3 #field_3_2 .gfield_label {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px; }
+    #gform_3 #field_3_2 .gfield_label:after {
+      content: "";
+      display: block;
+      width: 124%;
+      padding-top: 25px;
+      margin-bottom: 25px;
+      border-bottom: 4px solid coral; }
+    @media screen and (min-width: 600px) {
+      #gform_3 #field_3_2 .gfield_label {
+        font-weight: 400; }
+        #gform_3 #field_3_2 .gfield_label:after {
+          content: "";
+          display: block;
+          width: 166%;
+          padding-top: 25px;
+          margin-bottom: 25px;
+          border-bottom: 4px solid coral; } }
+  #gform_3 #field_3_6 .gfield_label {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px; }
+    #gform_3 #field_3_6 .gfield_label:after {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 25px;
+      margin-bottom: 25px;
+      border-bottom: 4px solid coral; }
+    @media screen and (min-width: 600px) {
+      #gform_3 #field_3_6 .gfield_label {
+        font-weight: 400; }
+        #gform_3 #field_3_6 .gfield_label:after {
+          content: "";
+          display: block;
+          width: 117%;
+          padding-top: 25px;
+          margin-bottom: 25px;
+          border-bottom: 4px solid coral; } }
+  @media screen and (min-width: 600px) {
+    #gform_3 #input_3_6 {
+      width: 490px; } }
+  #gform_3 #input_3_9_3, #gform_3 #input_3_9_6, #gform_3 #input_3_10,
+  #gform_3 #input_3_11, #gform_3 #input_3_2_3, #gform_3 #input_3_2_6,
+  #gform_3 #input_3_3, #gform_3 #input_3_4, #gform_3 #input_3_2_3,
+  #gform_3 #input_3_2_3, #gform_3 #input_3_6 {
     padding: 7px 8px;
     font-size: 15px;
     font-style: italic; }
@@ -612,7 +666,8 @@ textarea {
     font-size: 15px;
     color: #394442;
     font-weight: 300; }
-  #gform_3 #gform_next_button_3_8 {
+  #gform_3 #gform_next_button_3_8, #gform_3 #gform_next_button_3_5,
+  #gform_3 #gform_submit_button_3 {
     border: 1px solid #145B51;
     text-decoration: none;
     padding: 1rem 6.5rem;
@@ -620,10 +675,13 @@ textarea {
     background: transparent;
     border-width: 2px; }
     @media screen and (min-width: 600px) {
-      #gform_3 #gform_next_button_3_8 {
+      #gform_3 #gform_next_button_3_8, #gform_3 #gform_next_button_3_5,
+      #gform_3 #gform_submit_button_3 {
         padding: 8px 30px;
         font-size: 1.25rem; } }
-    #gform_3 #gform_next_button_3_8:hover, #gform_3 #gform_next_button_3_8:focus {
+    #gform_3 #gform_next_button_3_8:hover, #gform_3 #gform_next_button_3_8:focus, #gform_3 #gform_next_button_3_5:hover, #gform_3 #gform_next_button_3_5:focus,
+    #gform_3 #gform_submit_button_3:hover,
+    #gform_3 #gform_submit_button_3:focus {
       background: #145B51;
       color: #fff; }
 
@@ -2061,7 +2119,8 @@ object {
   .site-header .site-logo {
     width: 40%; }
     .site-header .site-logo .logo {
-      height: 60px; }
+      height: 60px;
+      margin-left: 18px; }
       @media screen and (min-width: 600px) {
         .site-header .site-logo .logo {
           margin-top: 15px;
