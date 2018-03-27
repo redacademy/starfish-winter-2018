@@ -141,6 +141,16 @@
         top: 50%;
         position: relative;
         transform: translateY(-50%); 
+        &:after {
+            content: ""; 
+            display: block;
+            width: 26%;
+            padding-top: 1rem;
+            border-bottom: $border__secondary-brand-mobile;
+            @include desktop {
+                border-bottom: 10px solid $color__secondary-brand;
+            }
+        }
         a{
             text-decoration: none;
             color:white;

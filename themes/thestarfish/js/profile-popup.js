@@ -9,7 +9,7 @@
         var postId = $(this).attr('id');
         $.ajax({
                 method: "GET",
-                url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed",
+                url: st_vars.rest_url + "wp/v2/profile/" + postId + "?_embed",
             }).done(function (data) {
                 console.log(data);
                 var teamContent = data.content.rendered;
@@ -56,7 +56,7 @@
         var postId = $(this).attr('id');
         $.ajax({
                 method: "GET",
-                url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed",
+                url: st_vars.rest_url + "wp/v2/profile/" + postId + "?_embed",
             }).done(function (data) {
                 console.log(data);
                 var teamContent = data.content.rendered;
@@ -112,7 +112,7 @@
 
         $.ajax({
                 method: "GET",
-                url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed",
+                url: st_vars.rest_url + "wp/v2/profile/" + postId + "?_embed",
             }).done(function (data) {
                 console.log(data);
                 var teamTitle = data.title.rendered;
@@ -169,7 +169,7 @@
 
         $.ajax({
                 method: "GET",
-                url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + postId + "?_embed",
+                url: st_vars.rest_url + "wp/v2/profile/" + postId + "?_embed",
             }).done(function (data) {
                 console.log(data);
                 var teamContent = data.content.rendered;
@@ -224,7 +224,7 @@
 
         $.ajax({
             method: "GET",
-            url: "http://localhost:8888/starfish/wp-json/wp/v2/profile/" + initPostId + "?_embed",
+            url: st_vars.rest_url + "wp/v2/profile/" + initPostId + "?_embed",
         }).done(function (data) {
             console.log(data);
             var teamContent = data.content.rendered;
@@ -265,4 +265,19 @@
     });
 
 
+
+
+
+    $(".archive-story-container").hover(function(){
+        $('p', this).fadeIn("fast");
+        $('p', this).css("display", "block");},
+        function()  { 
+            $('p', this).css("display", "none");
+        });
+    $(".archive-story-container").hover(function(){
+        $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");},
+        function()  {
+        $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");
+        });
+       
 })(jQuery);
