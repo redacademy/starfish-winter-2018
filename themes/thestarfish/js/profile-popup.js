@@ -226,7 +226,7 @@
             method: "GET",
             url: st_vars.rest_url + "wp/v2/profile/" + initPostId + "?_embed",
         }).done(function (data) {
-            console.log(data);
+            // console.log(data);
             var teamContent = data.content.rendered;
             var teamTitle = data.title.rendered;
             var teamPhoto = data._embedded["wp:featuredmedia"]["0"].source_url;
