@@ -266,22 +266,22 @@
 
 
 
-    $(window).resize(function () {
-    if ( $(window).width() > 600) { 
+//     $(window).resize(function () {
+//     if ( $(window).width() > 600) { 
 
-    $(".archive-story-container").hover(function(){
-        $('p', this).fadeIn("fast");
-        $('p', this).css("display", "block");},
-        function()  { 
-            $('p', this).css("display", "none");
-        });
-    $(".archive-story-container").hover(function(){
-        $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");},
-        function()  {
-        $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");
-        });
+//     $(".archive-story-container").hover(function(){
+//         $('p', this).fadeIn("fast");
+//         $('p', this).css("display", "block");},
+//         function()  { 
+//             $('p', this).css("display", "none");
+//         });
+//     $(".archive-story-container").hover(function(){
+//         $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");},
+//         function()  {
+//         $("p", this).css("text-shadow", "0.5px 0.5px 0.5px #585858");
+//         });
 
-    }
-});
+//     }
+// });
        
 })(jQuery);
